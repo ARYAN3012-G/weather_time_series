@@ -1,4 +1,4 @@
-﻿"""
+"""
 config.py — Single source of truth for the drought weather-time-series pipeline.
 
 Two tasks:
@@ -48,7 +48,7 @@ FIELD_METADATA = {
 # ---------------------------------------------------------------------------
 # Column names
 # ---------------------------------------------------------------------------
-DATE_COLUMN = "date"
+DATE_COLUMN = "valid_time"
 
 MODEL_INPUT_FEATURES = [
     "Wind_Speed_10m_Mean_24h",
