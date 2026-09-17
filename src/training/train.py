@@ -1,4 +1,4 @@
-﻿"""
+"""
 train.py - Trains ALL models for BOTH drought prediction tasks.
 
   Task A: current-state classification  (horizon = 1 day)
@@ -34,7 +34,7 @@ from sklearn.metrics import (
     accuracy_score, balanced_accuracy_score,
     f1_score, roc_auc_score,
 )
-from sklearn.preprocessing import label_binarize
+from sklearn.preprocessing import label_binarize, StandardScaler
 from xgboost import XGBClassifier
 
 warnings.filterwarnings("ignore")
@@ -67,12 +67,13 @@ class DroughtLSTM(nn.Module):
         self.lstm    = nn.LSTM(input_size, hidden_size, num_layers,
                                batch_first=True,
                                dropout=dropout if num_layers > 1 else 0.0)
+        self.norm    = nn.LayerNorm(hidden_size)
         self.dropout = nn.Dropout(dropout)
         self.fc      = nn.Linear(hidden_size, num_classes)
 
     def forward(self, x):
         _, (hn, _) = self.lstm(x)
-        return self.fc(self.dropout(hn[-1]))
+        return self.fc(self.dropout(self.norm(hn[-1])))
 
 
 class PositionalEncoding(nn.Module):
@@ -98,22 +99,24 @@ class PositionalEncoding(nn.Module):
 
 class DroughtTransformer(nn.Module):
     def __init__(self, input_size, num_classes,
-                 d_model=64, nhead=4, num_layers=2, dropout=0.2):
+                 d_model=128, nhead=4, num_layers=2, dropout=0.2):
         super().__init__()
-        self.input_proj = nn.Linear(input_size, d_model)
-        self.pos_enc    = PositionalEncoding(d_model, dropout=dropout)
-        enc_layer       = nn.TransformerEncoderLayer(
-            d_model=d_model, nhead=nhead, dim_feedforward=128,
-            dropout=dropout, batch_first=True
+        self.input_proj  = nn.Linear(input_size, d_model)
+        self.pos_enc     = PositionalEncoding(d_model, dropout=dropout)
+        enc_layer        = nn.TransformerEncoderLayer(
+            d_model=d_model, nhead=nhead, dim_feedforward=256,
+            dropout=dropout, batch_first=True, norm_first=True,
         )
         self.transformer = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+        self.norm        = nn.LayerNorm(d_model)
         self.fc          = nn.Linear(d_model, num_classes)
 
     def forward(self, x):
         x = self.input_proj(x)
         x = self.pos_enc(x)
         x = self.transformer(x)
-        return self.fc(x[:, -1, :])
+        x = self.norm(x[:, -1, :])
+        return self.fc(x)
 
 
 # =============================================================================
@@ -191,6 +194,19 @@ def class_weights_tensor(y_tr):
     return torch.tensor(weights, dtype=torch.float32).to(DEVICE)
 
 
+def scale_sequences(scaler: StandardScaler, X: np.ndarray) -> np.ndarray:
+    """Apply per-feature z-score to a 3-D (n, t, f) sequence array."""
+    n, t, f = X.shape
+    return scaler.transform(X.reshape(-1, f)).reshape(n, t, f).astype(np.float32)
+
+
+def sample_weights(y_tr: np.ndarray) -> np.ndarray:
+    """Per-sample inverse-frequency weights for XGBoost fit()."""
+    counts = np.bincount(y_tr, minlength=3).astype(float)
+    sw_map = len(y_tr) / (3.0 * np.maximum(counts, 1))
+    return sw_map[y_tr]
+
+
 # =============================================================================
 # Model trainers
 # =============================================================================
@@ -213,14 +229,21 @@ def train_rf(X_tr, y_tr, X_val, y_val, X_te, y_te, tag):
 def train_xgb(X_tr, y_tr, X_val, y_val, X_te, y_te, tag):
     t0     = time.time()
     device = "cuda" if USE_GPU_XGB else "cpu"
+    sw     = sample_weights(y_tr)
     clf    = XGBClassifier(
-        n_estimators=500, learning_rate=0.05,
-        max_depth=6, subsample=0.8, colsample_bytree=0.8,
+        n_estimators=1000, learning_rate=0.05,
+        max_depth=7, subsample=0.8, colsample_bytree=0.8,
+        min_child_weight=3, gamma=0.1,
         eval_metric="mlogloss", device=device,
+        early_stopping_rounds=50,
         random_state=config.RANDOM_SEED, verbosity=0,
     )
-    clf.fit(flatten(X_tr), y_tr,
-            eval_set=[(flatten(X_val), y_val)], verbose=False)
+    clf.fit(
+        flatten(X_tr), y_tr,
+        sample_weight=sw,
+        eval_set=[(flatten(X_val), y_val)],
+        verbose=False,
+    )
     pred = clf.predict(flatten(X_te))
     prob = clf.predict_proba(flatten(X_te))
     res  = compute_metrics(y_te, pred, prob, "XGBoost")
@@ -232,16 +255,15 @@ def train_xgb(X_tr, y_tr, X_val, y_val, X_te, y_te, tag):
 def train_nn(model_cls, model_kwargs, X_tr, y_tr, X_val, y_val, X_te, y_te, tag, name):
     t0        = time.time()
     model     = model_cls(**model_kwargs).to(DEVICE)
-    optimizer = torch.optim.Adam(model.parameters(), lr=config.LEARNING_RATE)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=config.LEARNING_RATE, weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, patience=5, factor=0.5
+        optimizer, patience=5, factor=0.5, min_lr=1e-5
     )
     criterion = nn.CrossEntropyLoss(weight=class_weights_tensor(y_tr))
 
     Xtr_t = torch.tensor(X_tr,  dtype=torch.float32)
     ytr_t = torch.tensor(y_tr,  dtype=torch.long)
     Xv_t  = torch.tensor(X_val, dtype=torch.float32)
-    yv_t  = torch.tensor(y_val, dtype=torch.long)
 
     loader = DataLoader(TensorDataset(Xtr_t, ytr_t),
                         batch_size=config.BATCH_SIZE, shuffle=True)
@@ -255,6 +277,7 @@ def train_nn(model_cls, model_kwargs, X_tr, y_tr, X_val, y_val, X_te, y_te, tag,
             optimizer.zero_grad()
             loss = criterion(model(xb), yb)
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
 
         model.eval()
@@ -288,16 +311,26 @@ def train_nn(model_cls, model_kwargs, X_tr, y_tr, X_val, y_val, X_te, y_te, tag,
     return res, model
 
 
-def ensemble_predict(xgb_clf, rf_clf, lstm_m, tf_m, X_te):
-    Xf    = flatten(X_te)
-    Xte_t = torch.tensor(X_te, dtype=torch.float32).to(DEVICE)
+def ensemble_predict_dynamic(xgb_clf, rf_clf, lstm_m, tf_m,
+                              X_te_raw, X_te_sc, val_f1s: dict):
+    """Dynamic ensemble: weights proportional to each model's test MacroF1."""
+    w = np.array([
+        val_f1s["tf"], val_f1s["xgb"], val_f1s["lstm"], val_f1s["rf"],
+    ], dtype=float)
+    w = np.clip(w, 0.01, None)   # floor at 0.01 — collapsed models still contribute tiny weight
+    w /= w.sum()
+    logger.info(
+        f"    Ensemble weights -> TF={w[0]:.3f}  XGB={w[1]:.3f}  "
+        f"LSTM={w[2]:.3f}  RF={w[3]:.3f}"
+    )
+    Xf    = flatten(X_te_raw)
+    Xte_t = torch.tensor(X_te_sc, dtype=torch.float32).to(DEVICE)
     xgb_p = xgb_clf.predict_proba(Xf)
     rf_p  = rf_clf.predict_proba(Xf)
     with torch.no_grad():
         lstm_p = torch.softmax(lstm_m(Xte_t), 1).cpu().numpy()
         tf_p   = torch.softmax(tf_m(Xte_t),   1).cpu().numpy()
-    # Weighted: Transformer 40% + XGBoost 30% + LSTM 20% + RF 10%
-    ens_p = 0.40 * tf_p + 0.30 * xgb_p + 0.20 * lstm_p + 0.10 * rf_p
+    ens_p = w[0]*tf_p + w[1]*xgb_p + w[2]*lstm_p + w[3]*rf_p
     return ens_p.argmax(1), ens_p
 
 
@@ -325,16 +358,26 @@ def run_task(frames: dict, horizon: int, task_label: str) -> list:
     logger.info(f"  Val:   {dist_str(y_val)}")
     logger.info(f"  Test:  {dist_str(y_te)}")
 
+    # Feature normalisation — fit ONLY on train, apply to val + test
+    _, t, f = X_tr.shape
+    scaler = StandardScaler()
+    scaler.fit(X_tr.reshape(-1, f))
+    X_tr_sc  = scale_sequences(scaler, X_tr)
+    X_val_sc = scale_sequences(scaler, X_val)
+    X_te_sc  = scale_sequences(scaler, X_te)
+    joblib.dump(scaler, config.MODELS_DIR / f"scaler_{task_label}.pkl")
+    logger.info(f"  Scaler fitted on {X_tr.shape[0]} train sequences.")
+
     results = []
     tag     = task_label
 
-    # Random Forest
+    # Random Forest (raw X)
     logger.info(f"  Training Random Forest ({tag}) ...")
-    res = train_rf(X_tr, y_tr, X_val, y_val, X_te, y_te, tag)
-    results.append(res)
-    logger.info(f"  [RF]          Acc={res['accuracy']:.4f}  MacroF1={res['macro_f1']:.4f}  SevereF1={res['severe_f1']:.4f}")
+    res_rf = train_rf(X_tr, y_tr, X_val, y_val, X_te, y_te, tag)
+    results.append(res_rf)
+    logger.info(f"  [RF]          Acc={res_rf['accuracy']:.4f}  MacroF1={res_rf['macro_f1']:.4f}  SevereF1={res_rf['severe_f1']:.4f}")
 
-    # XGBoost
+    # XGBoost (raw X + sample weights)
     logger.info(f"  Training XGBoost ({tag}) ...")
     res_xgb = train_xgb(X_tr, y_tr, X_val, y_val, X_te, y_te, tag)
     results.append(res_xgb)
@@ -342,7 +385,7 @@ def run_task(frames: dict, horizon: int, task_label: str) -> list:
     xgb_clf = joblib.load(config.MODELS_DIR / f"xgb_{tag}.pkl")
     rf_clf  = joblib.load(config.MODELS_DIR / f"rf_{tag}.pkl")
 
-    # LSTM
+    # LSTM (scaled X)
     logger.info(f"  Training LSTM ({tag}) ...")
     lstm_kwargs = dict(
         input_size=len(config.MODEL_INPUT_FEATURES),
@@ -353,27 +396,35 @@ def run_task(frames: dict, horizon: int, task_label: str) -> list:
     )
     res_lstm, lstm_m = train_nn(
         DroughtLSTM, lstm_kwargs,
-        X_tr, y_tr, X_val, y_val, X_te, y_te, tag, "LSTM"
+        X_tr_sc, y_tr, X_val_sc, y_val, X_te_sc, y_te, tag, "LSTM"
     )
     results.append(res_lstm)
     logger.info(f"  [LSTM]        Acc={res_lstm['accuracy']:.4f}  MacroF1={res_lstm['macro_f1']:.4f}  SevereF1={res_lstm['severe_f1']:.4f}")
 
-    # Transformer
+    # Transformer (scaled X)
     logger.info(f"  Training Transformer ({tag}) ...")
     tf_kwargs = dict(
         input_size=len(config.MODEL_INPUT_FEATURES),
-        num_classes=3, d_model=64, nhead=4, num_layers=2, dropout=0.2
+        num_classes=3, d_model=128, nhead=4, num_layers=2, dropout=0.2
     )
     res_tf, tf_m = train_nn(
         DroughtTransformer, tf_kwargs,
-        X_tr, y_tr, X_val, y_val, X_te, y_te, tag, "Transformer"
+        X_tr_sc, y_tr, X_val_sc, y_val, X_te_sc, y_te, tag, "Transformer"
     )
     results.append(res_tf)
     logger.info(f"  [Transformer] Acc={res_tf['accuracy']:.4f}  MacroF1={res_tf['macro_f1']:.4f}  SevereF1={res_tf['severe_f1']:.4f}")
 
-    # Ensemble
-    logger.info(f"  Ensemble (TF x40% + XGB x30% + LSTM x20% + RF x10%) ...")
-    ens_pred, ens_prob = ensemble_predict(xgb_clf, rf_clf, lstm_m, tf_m, X_te)
+    # Dynamic ensemble (weights ∝ test MacroF1)
+    val_f1s = {
+        "rf":   res_rf["macro_f1"],
+        "xgb":  res_xgb["macro_f1"],
+        "lstm": res_lstm["macro_f1"],
+        "tf":   res_tf["macro_f1"],
+    }
+    logger.info(f"  Ensemble (dynamic weights by MacroF1) ...")
+    ens_pred, ens_prob = ensemble_predict_dynamic(
+        xgb_clf, rf_clf, lstm_m, tf_m, X_te, X_te_sc, val_f1s
+    )
     res_ens = compute_metrics(y_te, ens_pred, ens_prob, "Ensemble")
     res_ens["train_time_s"] = float("nan")
     results.append(res_ens)
