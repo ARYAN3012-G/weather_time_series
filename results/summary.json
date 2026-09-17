@@ -1,0 +1,16 @@
+{
+  "Task_A_Current_State": {
+    "best_model": "XGBoost",
+    "accuracy": 0.8628,
+    "macro_f1": 0.839,
+    "severe_f1": 0.7864,
+    "roc_auc": 0.9582
+  },
+  "Task_B_15Day_Forecast": {
+    "best_model": "Ensemble",
+    "accuracy": 0.8728,
+    "macro_f1": 0.8538,
+    "severe_f1": 0.814,
+    "roc_auc": 0.9578
+  }
+}
