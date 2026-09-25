@@ -2,8 +2,15 @@
 sequence_builder.py
 
 Builds sliding-window sequences for TWO tasks:
-  Task A (current):  label at t+1   (next day)
-  Task B (forecast): label at t+15  (15 days ahead)
+  Task A (next-day):  1-day-ahead drought forecast   (horizon = 1)
+  Task B (forecast):  15-day-ahead drought forecast   (horizon = 15)
+
+A sequence i uses rows [i .. i+seq_len-1] as the input window (30 days).
+The target label is at row i + seq_len - 1 + forecast_horizon.
+  - Task A: target at i + 30  (next day after the window)
+  - Task B: target at i + 44  (15 days after last input day)
+
+No leakage: Water_Balance, WB30, SPEI are never in MODEL_INPUT_FEATURES.
 
 Input:  per-field processed CSV with columns:
         date, 9 weather features, Water_Balance, WB30, SPEI, label, field
