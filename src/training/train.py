@@ -465,8 +465,13 @@ def ensemble_predict(models: dict, X_te_raw, X_te_sc, val_f1s: dict):
     w = np.array([
         val_f1s["tf"], val_f1s["xgb"], val_f1s["lstm"], val_f1s["rf"],
     ], dtype=float)
-    w = np.clip(w, 0.01, None)   # floor — collapsed models still contribute tiny weight
-    w /= w.sum()
+    # Weights directly proportional to validation Macro-F1.
+    # No arbitrary minimum — a model with 0 val F1 gets 0 weight.
+    # Fallback to uniform weights only if ALL models have 0 F1.
+    if w.sum() <= 0:
+        w = np.ones_like(w) / len(w)
+    else:
+        w /= w.sum()
 
     frozen_weights = {"Transformer": w[0], "XGBoost": w[1], "LSTM": w[2], "RF": w[3]}
     logger.info(
