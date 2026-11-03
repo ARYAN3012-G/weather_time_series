@@ -1,224 +1,159 @@
-# Weather Time Series — Drought Prediction
+# Weather Module — Meteorological Drought Forecasting (v3)
 
-Hydrological drought prediction using ERA5-Land weather time series data across 8 agricultural field sites in the Rayalaseema region (Andhra Pradesh) and Karnataka.
+Forecasting **future meteorological drought classes** (from SPEI) 7, 15 and 30 days ahead using
+daily ERA5-Land weather at 7 agricultural sites in Rayalaseema (Andhra Pradesh) and Tumkur (Karnataka).
+This is stage 1 (Predict) of the integrated drought assessment system
+(weather → satellite confirmation → UAV quantification).
 
-## Overview
-
-This module implements a **pooled site-agnostic** drought prediction pipeline. One model is trained on data from all 8 sites combined — site identity is **not** used as an input feature. The model learns generalizable weather-drought relationships across sites.
-
-### Two Prediction Tasks
-
-| Task | Description | Horizon |
-|------|-------------|---------|
-| **Task A** | Next-Day Drought Forecast | 1 day ahead |
-| **Task B** | 15-Day-Ahead Drought Forecast | 15 days ahead |
-
-Both tasks use the same 30-day input window of 9 weather features to predict a drought class at the target horizon.
-
-### Three Drought Classes (from SPEI)
-
-| Class | SPEI Range | Label |
-|-------|-----------|-------|
-| Healthy | SPEI ≥ 0.0 | 0 |
-| Moderate | -1.5 ≤ SPEI < 0.0 | 1 |
-| Severe | SPEI < -1.5 | 2 |
-
-SPEI (Standardized Precipitation Evapotranspiration Index) is pre-computed in the source CSVs and used **only for label generation** — it is never an input feature (anti-leakage design).
+> **Terminology.** SPEI-30 measures *meteorological* drought (a 30-day climatic water-balance deficit).
+> It is not a direct measure of crop stress; agricultural drought is assessed in the satellite/UAV stages.
 
 ---
 
-## Input Features
+## Quick start (lab desktop)
 
-9 ERA5-Land weather variables (daily):
+```bat
+run_all.bat          :: Windows
+bash run_all.sh      # Linux / macOS / Git Bash
+```
 
-| # | Feature | Description |
-|---|---------|-------------|
-| 1 | `Wind_Speed_10m_Mean_24h` | Mean wind speed at 10m |
-| 2 | `Temperature_Air_2m_Max_24h` | Max air temperature at 2m |
-| 3 | `Temperature_Air_2m_Mean_24h` | Mean air temperature at 2m |
-| 4 | `Temperature_Air_2m_Min_24h` | Min air temperature at 2m |
-| 5 | `Derived_Relative_Humidity_2m_Max_24h` | Max relative humidity at 2m |
-| 6 | `Derived_Relative_Humidity_2m_Min_24h` | Min relative humidity at 2m |
-| 7 | `Precipitation_Flux` | Daily precipitation |
-| 8 | `ReferenceET_PenmanMonteith_FAO56` | Reference evapotranspiration (FAO-56) |
-| 9 | `Solar_Radiation_Flux` | Incoming solar radiation |
+Or step by step:
 
-### Anti-Leakage Columns (excluded from model input)
+| # | Command | What it does | Time |
+|---|---|---|---|
+| 1 | `python src/dataprep/prepare_data.py` | site audit, duplicate removal, SPEI recalibration, old-vs-new report | seconds |
+| 2 | `python -m pytest tests -q` | 18 integrity / leakage tests — **must pass before training** | seconds |
+| 3 | `python src/experiments/run_experiments.py --quick --horizons 7 --seeds 0` | smoke test (tiny models, writes to `runs/_quick`) | 1–2 min |
+| 4 | `python src/experiments/run_experiments.py --split temporal` | **main study**: 3 horizons × 3 feature sets × 4 models × 5 seeds = 180 runs | longest step |
+| 5 | `python src/experiments/run_experiments.py --split loco --feature-sets weather weather_spei` | leave-one-cluster-out: 2 folds × 3 × 2 × 4 × 5 = 240 runs | long |
+| 6 | `python src/experiments/marusov_protocol.py` | Marusov et al. protocol (binary drought, median per-site scores) | medium |
+| 7 | `python src/experiments/aggregate.py` | tables, ensembles, bootstrap CIs, severe thresholds, reports | minutes |
 
-- `Water_Balance` — derived from precipitation and ET
-- `WB30` — 30-day rolling water balance
-- `SPEI` — used only for label generation
+**Resuming:** finished runs are skipped, so after a crash or shutdown just re-run the same command.
+**Running less:** every option can be narrowed, e.g.
+`--horizons 15 --feature-sets weather_spei --models xgb lstm --seeds 0 1 2`.
+**Time:** v2 needed roughly 25 s (RF), 45 s (XGB), 200 s (LSTM), 400–500 s (Transformer) per run.
+The main study is therefore several hours on a GPU — start it first, overnight if possible.
+The log prints elapsed time after each run (`logs/run_experiments_*.log`).
+
+**Priority if time is short:** step 4 with `--seeds 0 1 2` → step 7 → step 5 → step 6 → remaining seeds.
+
+---
+
+## Corrections in v3 (why v2 results are not valid)
+
+| # | Problem in v2 | Fix in v3 |
+|---|---|---|
+| 1 | `lepakshi` and `cholasamudram` share one ERA5-Land grid cell (13.8°N, 77.6°E): 8/9 weather features identical on 100% of days, labels 99.98% identical. Counted twice as independent sites. | `lepakshi` removed as a separate weather location → **7 independent sites**. See `results/v3/audit/AUDIT.md`. |
+| 2 | SPEI standardised with all years 1979–2026 → test-period information in the labels. | Log-logistic SPEI (L-moments), per site and calendar month, **calibrated on 1979–2011 only**, parameters frozen (`results/v3/spei_calibration.json`). Accumulation history is kept across split boundaries. |
+| 3 | 1-day task: the target SPEI shares 29 of 30 accumulation days with the input; "same class as today" (persistence) scored macro-F1 0.92 vs 0.84 for the best model. | Horizons **7 / 15 / 30 days**; persistence, Markov, climatology and majority baselines reported alongside every model. |
+| 4 | Samples near split boundaries shared days across train/val/test. | **Purged split**: a sample is kept only if its whole span (input start … target date) lies in one period. |
+| 5 | One seed, no uncertainty, no spatial test. | 5 seeds, block-bootstrap 95% CIs (blocks = target month, all sites), leave-one-cluster-out. |
+
+v2 results and the v2 training script are no longer part of this repository (they remain in the
+git history, commit `f12785d`) and must not be reported as final results.
 
 ---
 
 ## Data
 
-### 8 Field Sites
+- Input: `data/processed/weather/*_with_spei.csv` (8 raw ERA5-Land site files, untouched).
+- Prepared (generated by step 1, not stored in git): `data/prepared/<site>.csv` (7 sites) — weather, `WB30`, corrected `SPEI` and `label`,
+  plus `SPEI_old` / `label_old` for comparison only (never used by models).
+- Period 1979-01-30 … 2026-06, ~17,300 days per site.
 
-| Site | District | State |
-|------|----------|-------|
-| Cholasamudram | Sri Sathya Sai | Andhra Pradesh |
-| Kurnool Balaji Villas | Kurnool | Andhra Pradesh |
-| Kurnool Dinedevarapadu | Kurnool | Andhra Pradesh |
-| Kurnool Pulliah | Kurnool | Andhra Pradesh |
-| Lepakshi | Sri Sathya Sai | Andhra Pradesh |
-| Peddakadubur | Kurnool | Andhra Pradesh |
-| Sira | Tumkur | Karnataka |
-| Somandepalle | Sri Sathya Sai | Andhra Pradesh |
+| Site | District | Cluster |
+|---|---|---|
+| Peddakadubur, Kurnool Balaji Villas, Kurnool Dinedevarapadu, Kurnool Pulliah | Kurnool | `kurnool` |
+| Cholasamudram (also represents Lepakshi's ERA5 cell), Somandepalle | Sri Sathya Sai | `south` |
+| Sira | Tumkur | `south` |
 
-### Temporal Coverage
+### Drought classes (SPEI-30)
 
-1979–2026 (~47 years of daily data per site, ~17,300 rows each).
+| Class | SPEI | Label |
+|---|---|---|
+| Healthy | ≥ 0 | 0 |
+| Moderate | −1.5 … 0 | 1 |
+| Severe | < −1.5 | 2 |
 
-### Strict Chronological Train / Validation / Test Split
-
-Splitting is based on the **target date year** (the date being predicted), not the input window dates.
-
-| Split | Years | Samples | Percentage |
-|-------|-------|---------|------------|
-| **Train** | 1979 – 2011 | 95,952 | 69.4% |
-| **Validation** | 2012 – 2018 | 20,456 | 14.8% |
-| **Test** | 2019 – 2026 | 21,869 | 15.8% |
-
-### Class Distribution per Split
-
-| Split | Healthy | Moderate | Severe |
-|-------|---------|----------|--------|
-| Train | 46,965 (48%) | 41,027 (42%) | 7,960 (8%) |
-| Validation | 9,643 (47%) | 9,140 (44%) | 1,673 (8%) |
-| Test | 14,441 (66%) | 6,309 (28%) | 1,119 (5%) |
+Class shares after recalibration (days): train 49 / 45 / 6 %, val 48 / 45 / 7 %, test 66 / 30 / 4 %
+(see `results/v3/spei_report/SPEI_REPORT.md`). The wetter test period is a real climate signal, not a calibration artefact.
 
 ---
 
-## Models
-
-### 4 Individual Models + 1 Ensemble
-
-| Model | Input Shape | Notes |
-|-------|------------|-------|
-| **Random Forest** | `(n, 270)` — flattened | `n_estimators=300`, `class_weight="balanced"` |
-| **XGBoost** | `(n, 270)` — flattened | `n_estimators=1000`, early stopping on val, sample weights |
-| **LSTM** | `(n, 30, 9)` — 3D sequence | 2-layer, hidden=128, dropout=0.35, class-weighted CE loss |
-| **Transformer** | `(n, 30, 9)` — 3D sequence | d_model=128, 4 heads, 2 layers, mean pooling, class-weighted CE loss |
-| **Ensemble** | — | Soft-voting, weights ∝ validation Macro-F1 |
-
-- **RF / XGBoost**: Input is flattened from `(n, 30, 9)` to `(n, 270)` — 270 features.
-- **LSTM / Transformer**: Input is the native 3D sequence `(n, 30, 9)`.
-
-### Transformer Architecture
+## Forecasting setup
 
 ```
-Input (30 × 9) → Linear(9, 128) → Positional Encoding → TransformerEncoder(2 layers, 4 heads)
-→ Mean Pooling → LayerNorm → Linear(128, 3)
+input X : 30 days of features, days t-29 … t
+target y: drought class on day t+h,  h ∈ {7, 15, 30}
 ```
 
-### Training Protocol
+| Feature set | Inputs | Purpose |
+|---|---|---|
+| `weather` | 9 ERA5-Land variables | v2 setting |
+| `weather_spei` | 9 weather variables + historical SPEI (days ≤ t) | our approach |
+| `spei_only` | historical SPEI only | index-history setting of Marusov et al. |
 
-- **Feature scaling**: `StandardScaler` fitted on TRAIN only, applied to VAL and TEST.
-- **Class imbalance**: Inverse-frequency weighted `CrossEntropyLoss` (LSTM/Transformer), `class_weight="balanced"` (RF), sample weights (XGBoost).
-- **Early stopping**: Monitor validation Macro-F1, patience = 15 epochs, restore best checkpoint.
-- **Optimizer**: AdamW, lr=3e-4, weight_decay=0.01.
-- **No sequence-length experiments**: Fixed 30-day window only.
+Historical SPEI is legitimate input: on day t, SPEI up to day t is known. The target-day SPEI never
+enters the input (tested in `tests/test_pipeline.py`).
 
-### Ensemble Methodology
+**Splits** (by year, purged): TRAIN 1979–2011 · VAL 2012–2018 · TEST 2019–2026.
+- `temporal`: pooled over all 7 sites (site identity is not an input).
+- `loco`: train/val on one cluster, test on the other cluster's 2019+ data (unseen in space *and* time).
+- `loso`: leave-one-site-out (available, not in the default run).
 
-Ensemble weights are proportional to each model's **validation Macro-F1**:
+**Models:** Random Forest, XGBoost (flattened 30×F input), LSTM, Transformer (sequence input),
+and a soft-voting ensemble weighted by validation macro-F1. Hyperparameters unchanged from v2
+(`src/config.py`). Scalers, early stopping, ensemble weights, model selection and severe thresholds
+use TRAIN/VAL only; TEST is touched once.
 
-```
-w = [val_f1_tf, val_f1_xgb, val_f1_lstm, val_f1_rf]
-w /= w.sum()
-ensemble_prob = w[0]*tf_prob + w[1]*xgb_prob + w[2]*lstm_prob + w[3]*rf_prob
-```
+**Baselines:** persistence (class on day t), Markov (train transition matrix t → t+h),
+climatology (train class frequency for the target calendar day), majority.
 
-- Weights are computed from validation performance and **frozen** before any test-set evaluation.
-- No arbitrary minimum weight — a model with 0 validation F1 gets 0 ensemble weight.
-- If all models have 0 F1, weights fall back to uniform (0.25 each).
-
-### Model Selection
-
-Best individual model is selected by **validation Macro-F1** (not test performance).
+**Metrics:** macro-F1, per-class precision/recall/F1, balanced accuracy, ROC-AUC, PR-AUC,
+severe ROC/PR-AUC, Brier score and Brier skill score vs climatology, confusion matrices, and
+severe-drought early-warning scores (POD, FAR, CSI) at a probability threshold tuned on validation.
 
 ---
 
-## Evaluation Metrics
+## Outputs
 
-- Accuracy
-- Balanced Accuracy
-- Macro Precision / Recall / F1
-- Per-class F1 (Healthy, Moderate, Severe)
-- ROC-AUC (One-vs-Rest, Macro average)
-- Confusion Matrix (saved per task)
-
----
-
-## Project Structure
-
-```
-weather_time_series/
-├── data/
-│   └── processed/
-│       └── weather/          # 8 site CSVs with pre-computed SPEI
-│           ├── cholasamudram_with_spei.csv
-│           ├── kurnool_balaji_villas_with_spei.csv
-│           ├── kurnool_dinedevarapadu_with_spei.csv
-│           ├── kurnool_pulliah_with_spei.csv
-│           ├── lepakshi_with_spei.csv
-│           ├── Peddakadubur_with_spei.csv
-│           ├── sira_with_spei.csv
-│           └── Somandepalle_with_spei.csv
-├── models/                   # Saved model checkpoints
-├── results/                  # CSV results, confusion matrices, summary.json
-├── src/
-│   ├── config.py             # All constants, paths, hyperparameters
-│   ├── features/
-│   │   └── sequence_builder.py   # Sliding-window sequence generation
-│   ├── training/
-│   │   └── train.py          # Full training pipeline
-│   └── utils/
-│       └── logger.py         # Logging utility
-├── requirements.txt
-└── README.md
-```
+| Path | Content |
+|---|---|
+| `results/v3/audit/` | site coordinates, ERA5 cells, pairwise identity, `AUDIT.md` |
+| `results/v3/spei_report/` | old vs corrected SPEI moments, class distributions, label transitions |
+| `results/v3/spei_calibration.json` | frozen SPEI parameters per site/month |
+| `results/v3/runs/` | per-run predictions (`preds.npz`), `run.json`, config snapshots (git-ignored, large) |
+| `results/v3/tables/REPORT_<split>.md` | **main results**: baselines vs models, mean ± std, CIs, ablation, severe analysis |
+| `results/v3/tables/summary_<split>.csv`, `all_runs_<split>.csv` | full numbers |
+| `results/v3/marusov_protocol/MARUSOV_PROTOCOL.md` | comparison with the Marusov et al. methodology |
+| `models/v3/` | saved models (only with `--save-models`) |
 
 ---
 
-## Usage
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Training
-
-```bash
-python src/training/train.py
-```
-
-### Output Files
-
-| File | Description |
-|------|-------------|
-| `results/taskA_nextday_forecast.csv` | Per-model metrics for Task A |
-| `results/taskB_15day_forecast.csv` | Per-model metrics for Task B |
-| `results/summary.json` | Best model summary (selected by val F1) |
-| `results/confusion_matrix_taskA.csv` | Best model confusion matrix (Task A) |
-| `results/confusion_matrix_taskB.csv` | Best model confusion matrix (Task B) |
-| `results/confusion_matrix_taskA_ensemble.csv` | Ensemble confusion matrix (Task A) |
-| `results/confusion_matrix_taskB_ensemble.csv` | Ensemble confusion matrix (Task B) |
-| `models/*.pkl` | Saved RF / XGBoost / Scaler models |
-| `models/*.pt` | Saved LSTM / Transformer weights |
-
----
-
-## Requirements
+## Project structure
 
 ```
-numpy>=1.24
-pandas>=2.0
-scikit-learn>=1.3
-xgboost>=2.0
-torch>=2.0
-joblib>=1.3
+src/
+  config.py                  all settings (sites, SPEI, horizons, splits, seeds, hyperparameters)
+  dataprep/spei.py           SPEI calibrator (log-logistic, L-moments, frozen params)
+  dataprep/prepare_data.py   audit → dedupe → SPEI → report → archive v2 results
+  features/sequence_builder.py  sliding windows for future forecasting
+  features/splits.py         purged chronological split, LOCO / LOSO folds
+  models/networks.py         LSTM, Transformer
+  models/trainers.py         RF / XGB / LSTM / Transformer training (per seed)
+  models/baselines.py        persistence, Markov, climatology, majority
+  evaluation/metrics.py      metrics, POD/FAR, severe threshold tuning, block bootstrap
+  experiments/run_experiments.py   main runner (resumable)
+  experiments/aggregate.py   tables + reports
+  experiments/marusov_protocol.py  published-method protocol comparison
+tests/test_pipeline.py       integrity and leakage tests
+run_all.bat / run_all.sh     full pipeline
 ```
+
+## References
+
+- Vicente-Serrano, Beguería, López-Moreno (2010). A multiscalar drought index sensitive to global warming: the SPEI. *J. Climate* 23, 1696–1718.
+- Marusov et al. Long-term drought prediction using deep neural networks based on geospatial weather data. *Environmental Modelling & Software*; arXiv:2309.06212.
+- Tang, Lin, Huang, Huete (2025). A quantum-empowered SPEI drought forecasting algorithm using spatially-aware Mamba network. arXiv:2502.20703.
+- Dikshit, Pradhan, Huete (2021). An improved SPEI drought forecasting approach using the LSTM neural network. *J. Environ. Manage.* 283, 111979.

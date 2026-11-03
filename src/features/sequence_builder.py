@@ -1,26 +1,27 @@
 """
-sequence_builder.py
+sequence_builder.py — sliding-window samples for genuine future forecasting.
 
-Builds sliding-window sequences for TWO tasks:
-  Task A (next-day):  1-day-ahead drought forecast   (horizon = 1)
-  Task B (forecast):  15-day-ahead drought forecast   (horizon = 15)
+For a sample with last input day t:
+    input  X : feature rows for days [t - seq_len + 1, ..., t]
+    target y : drought class on day t + h          (h = forecast horizon, >= 1)
 
-A sequence i uses rows [i .. i+seq_len-1] as the input window (30 days).
-The target label is at row i + seq_len - 1 + forecast_horizon.
-  - Task A: target at i + 30  (next day after the window)
-  - Task B: target at i + 44  (15 days after last input day)
+Guarantees (asserted here and in tests/test_pipeline.py):
+  * every input day is <= t < target day;
+  * windows never cross a gap in the daily record;
+  * historical SPEI (feature set 'weather_spei' / 'spei_only') is taken only
+    from input days, never from the target day.
 
-No leakage: Water_Balance, WB30, SPEI are never in MODEL_INPUT_FEATURES.
-
-Input:  per-field processed CSV with columns:
-        date, 9 weather features, Water_Balance, WB30, SPEI, label, field
-Output: X (n_seq, seq_len, 9), y (n_seq,), meta DataFrame
+meta columns: field, cluster, input_start, last_input_date, target_date, horizon,
+              label_t (class on day t, used by the persistence baseline), spei_t
 """
 from __future__ import annotations
+
 import sys
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
+from numpy.lib.stride_tricks import sliding_window_view
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import config
@@ -29,85 +30,76 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-def build_sequences_for_field(
-    field_df: pd.DataFrame,
-    sequence_length: int = config.SEQUENCE_LENGTH_DAYS,
-    forecast_horizon: int = 1,
-) -> tuple:
-    """
-    Build sequences for ONE field.
-    Returns (X, y, meta):
-      X    : (n_seq, seq_len, n_features) float32
-      y    : (n_seq,) int64
-      meta : DataFrame with 'field', 'target_date', 'horizon'
+def load_prepared(fields: list[str] | None = None) -> dict[str, pd.DataFrame]:
+    fields = fields or config.FIELDS
+    frames = {}
+    for f in fields:
+        path = config.PREPARED_DIR / f"{f}.csv"
+        if not path.exists():
+            raise FileNotFoundError(f"{path} missing — run `python src/dataprep/prepare_data.py` first")
+        frames[f] = pd.read_csv(path, parse_dates=[config.DATE_COLUMN])
+    return frames
 
-    A sequence i uses rows [i .. i+seq_len-1] as input
-    and row i+seq_len-1+forecast_horizon as the label target.
-    No leakage: target day's weather is never in the input window.
-    """
-    assert not set(config.MODEL_INPUT_FEATURES) & set(config.LEAKAGE_COLUMNS)
 
-    date_col = config.DATE_COLUMN
-    field_df = field_df.sort_values(date_col).reset_index(drop=True)
+def build_sequences_for_field(df: pd.DataFrame, feature_cols: list[str],
+                              sequence_length: int, horizon: int):
+    if horizon < 1:
+        raise ValueError("horizon must be >= 1 (genuine future forecasting)")
+    df = df.sort_values(config.DATE_COLUMN).reset_index(drop=True)
+    dates = df[config.DATE_COLUMN].to_numpy("datetime64[D]")
+    feats = df[feature_cols].to_numpy(np.float32)
+    labels = df["label"].to_numpy(np.int64)
+    spei = df["SPEI"].to_numpy(np.float32)
 
-    field_name = field_df['field'].iloc[0] if 'field' in field_df.columns else 'unknown'
-
-    feature_mat = field_df[config.MODEL_INPUT_FEATURES].values.astype(np.float32)
-    labels = field_df['label'].values.astype(np.int64)
-    dates = field_df[date_col].values
-
-    n_rows = len(field_df)
-    # Need seq_len input days + forecast_horizon days to reach target
-    n_seq = n_rows - sequence_length - forecast_horizon + 1
-
+    n = len(df)
+    n_seq = n - sequence_length - horizon + 1
     if n_seq <= 0:
-        logger.warning(f'[{field_name}] Not enough rows ({n_rows}) for seq_len={sequence_length} + horizon={forecast_horizon}. Skipping.')
-        return (
-            np.empty((0, sequence_length, len(config.MODEL_INPUT_FEATURES)), dtype=np.float32),
-            np.empty((0,), dtype=np.int64),
-            pd.DataFrame(columns=['field', 'target_date', 'horizon'])
-        )
+        return np.empty((0, sequence_length, len(feature_cols)), np.float32), np.empty(0, np.int64), pd.DataFrame()
 
-    X = np.empty((n_seq, sequence_length, len(config.MODEL_INPUT_FEATURES)), dtype=np.float32)
-    y = np.empty((n_seq,), dtype=np.int64)
-    target_dates = []
+    first = np.arange(n_seq)
+    last = first + sequence_length - 1
+    tgt = last + horizon
 
-    for i in range(n_seq):
-        X[i] = feature_mat[i: i + sequence_length]
-        target_idx = i + sequence_length - 1 + forecast_horizon
-        y[i] = labels[target_idx]
-        target_dates.append(dates[target_idx])
+    # keep only windows on a contiguous daily record and with finite inputs
+    span_days = (dates[tgt] - dates[first]).astype(int)
+    ok = span_days == (sequence_length - 1 + horizon)
+    row_finite = np.isfinite(feats).all(axis=1)
+    win_finite = sliding_window_view(row_finite, sequence_length)[:n_seq].all(axis=1)
+    ok &= win_finite
+    first, last, tgt = first[ok], last[ok], tgt[ok]
+
+    windows = sliding_window_view(feats, sequence_length, axis=0)       # (n-L+1, F, L)
+    X = np.ascontiguousarray(windows[first].transpose(0, 2, 1))          # (n, L, F)
+    y = labels[tgt]
 
     meta = pd.DataFrame({
-        'field': field_name,
-        'target_date': target_dates,
-        'horizon': forecast_horizon,
+        "field": df["field"].iloc[0],
+        "cluster": config.FIELD_TO_CLUSTER[df["field"].iloc[0]],
+        "input_start": pd.to_datetime(dates[first]),
+        "last_input_date": pd.to_datetime(dates[last]),
+        "target_date": pd.to_datetime(dates[tgt]),
+        "horizon": horizon,
+        "label_t": labels[last],
+        "spei_t": spei[last],
+        # target-day SPEI: used ONLY to build the binary Marusov-protocol label, never as input
+        "spei_target": spei[tgt],
     })
-
-    logger.info(f'[{field_name}] horizon={forecast_horizon:2d}d -> {n_seq} sequences ({sequence_length}-day windows).')
+    assert ((meta.target_date - meta.last_input_date).dt.days == horizon).all()
+    assert (meta.last_input_date < meta.target_date).all()
     return X, y, meta
 
 
-def build_sequences_all_fields(
-    labeled_frames: dict,
-    sequence_length: int = config.SEQUENCE_LENGTH_DAYS,
-    forecast_horizon: int = 1,
-) -> tuple:
-    """Build and pool sequences for all fields."""
-    X_list, y_list, meta_list = [], [], []
-    for field_name, df in labeled_frames.items():
-        X, y, meta = build_sequences_for_field(df, sequence_length, forecast_horizon)
-        if len(y) > 0:
-            X_list.append(X)
-            y_list.append(y)
-            meta_list.append(meta)
-
-    if not X_list:
-        raise RuntimeError('No sequences built for any field.')
-
-    X_all = np.concatenate(X_list, axis=0)
-    y_all = np.concatenate(y_list, axis=0)
-    meta_all = pd.concat(meta_list, ignore_index=True)
-
-    logger.info(f'Pooled: X={X_all.shape}, y={y_all.shape}, fields={meta_all["field"].nunique()}')
-    return X_all, y_all, meta_all
+def build_sequences_all_fields(frames: dict[str, pd.DataFrame], feature_set: str,
+                               horizon: int, sequence_length: int = config.SEQUENCE_LENGTH_DAYS):
+    feature_cols = config.FEATURE_SETS[feature_set]
+    Xs, ys, metas = [], [], []
+    for name in sorted(frames):
+        X, y, meta = build_sequences_for_field(frames[name], feature_cols, sequence_length, horizon)
+        if len(y):
+            Xs.append(X); ys.append(y); metas.append(meta)
+    if not Xs:
+        raise RuntimeError("No sequences built")
+    X = np.concatenate(Xs); y = np.concatenate(ys)
+    meta = pd.concat(metas, ignore_index=True)
+    logger.info(f"Sequences [{feature_set}, h={horizon}]: X={X.shape} from {meta.field.nunique()} sites")
+    return X, y, meta
