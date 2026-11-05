@@ -88,11 +88,21 @@ WEATHER_FEATURES = [
 # Historical SPEI is allowed as input: it is only ever taken from days <= t
 # (the last input day), which are known at forecast time. The target-day SPEI
 # is never in the input window (enforced in sequence_builder + tests).
+# Calendar features: sin/cos of day-of-year of EACH INPUT DAY (computed from that
+# row's own date in sequence_builder). They tell the model the season, which matters
+# because SPEI is standardised per calendar month. Input-window dates only.
+DOY_FEATURES = ["DOY_sin", "DOY_cos"]
+
 FEATURE_SETS = {
-    "weather":      WEATHER_FEATURES,               # v2 setting
-    "weather_spei": WEATHER_FEATURES + ["SPEI"],    # weather + historical SPEI
-    "spei_only":    ["SPEI"],                       # index history only (Marusov-style)
+    "weather":          WEATHER_FEATURES,                          # v2 setting
+    "weather_spei":     WEATHER_FEATURES + ["SPEI"],               # weather + historical SPEI
+    "spei_only":        ["SPEI"],                                  # index history only (Marusov-style)
+    "weather_doy":      WEATHER_FEATURES + DOY_FEATURES,           # + season (extra experiment)
+    "weather_spei_doy": WEATHER_FEATURES + ["SPEI"] + DOY_FEATURES,
 }
+# Feature sets run when --feature-sets is not given (the main study).
+# The *_doy sets are a separate experiment: run them explicitly with --feature-sets.
+DEFAULT_FEATURE_SETS = ["weather", "weather_spei", "spei_only"]
 MODEL_INPUT_FEATURES = WEATHER_FEATURES  # backwards-compatible alias
 
 # ---------------------------------------------------------------------------

@@ -59,7 +59,7 @@ def parse_args():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--split", default="temporal", choices=["temporal", "loco", "loso"])
     ap.add_argument("--horizons", type=int, nargs="+", default=config.HORIZONS)
-    ap.add_argument("--feature-sets", nargs="+", default=list(config.FEATURE_SETS),
+    ap.add_argument("--feature-sets", nargs="+", default=config.DEFAULT_FEATURE_SETS,
                     choices=list(config.FEATURE_SETS))
     ap.add_argument("--models", nargs="+", default=config.MODELS, choices=list(TRAINERS))
     ap.add_argument("--seeds", type=int, nargs="+", default=config.SEEDS)

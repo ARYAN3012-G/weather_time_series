@@ -22,7 +22,7 @@ Or step by step:
 | # | Command | What it does | Time |
 |---|---|---|---|
 | 1 | `python src/dataprep/prepare_data.py` | site audit, duplicate removal, SPEI recalibration, old-vs-new report | seconds |
-| 2 | `python -m pytest tests -q` | 18 integrity / leakage tests — **must pass before training** | seconds |
+| 2 | `python -m pytest tests -q` | 22 integrity / leakage tests — **must pass before training** | seconds |
 | 3 | `python src/experiments/run_experiments.py --quick --horizons 7 --seeds 0` | smoke test (tiny models, writes to `runs/_quick`) | 1–2 min |
 | 4 | `python src/experiments/run_experiments.py --split temporal` | **main study**: 3 horizons × 3 feature sets × 4 models × 5 seeds = 180 runs | longest step |
 | 5 | `python src/experiments/run_experiments.py --split loco --feature-sets weather weather_spei` | leave-one-cluster-out: 2 folds × 3 × 2 × 4 × 5 = 240 runs | long |
@@ -93,6 +93,13 @@ target y: drought class on day t+h,  h ∈ {7, 15, 30}
 | `weather` | 9 ERA5-Land variables | v2 setting |
 | `weather_spei` | 9 weather variables + historical SPEI (days ≤ t) | our approach |
 | `spei_only` | historical SPEI only | index-history setting of Marusov et al. |
+| `weather_doy` | `weather` + sin/cos day-of-year of each input day | season information (extra experiment) |
+| `weather_spei_doy` | `weather_spei` + sin/cos day-of-year of each input day | season information (extra experiment) |
+
+The `*_doy` sets are **not** part of the default run (`config.DEFAULT_FEATURE_SETS`). SPEI is standardised
+per calendar month, so the season matters; the date features use only input-window dates (tested).
+Run them separately after the main study:
+`python src/experiments/run_experiments.py --split temporal --feature-sets weather_doy weather_spei_doy`
 
 Historical SPEI is legitimate input: on day t, SPEI up to day t is known. The target-day SPEI never
 enters the input (tested in `tests/test_pipeline.py`).

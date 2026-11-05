@@ -63,7 +63,7 @@ def test_no_identical_weather_between_prepared_sites(frames):
 def _synthetic(seed=0, years=(1979, 2026)):
     rng = np.random.default_rng(seed)
     dates = pd.date_range(f"{years[0]}-01-01", f"{years[1]}-12-31", freq="D")
-    doy = dates.dayofyear.to_numpy()
+    doy = dates.day_of_year.to_numpy()
     p = rng.gamma(0.6, 4 + 3 * np.sin(2 * np.pi * doy / 365), len(dates))
     pet = 4 + 1.5 * np.cos(2 * np.pi * doy / 365) + rng.normal(0, 0.3, len(dates))
     return pd.DataFrame({config.DATE_COLUMN: dates, "Precipitation_Flux": p,
@@ -135,6 +135,39 @@ def test_inputs_strictly_before_target(frames, h):
         assert y[i] == by_date.loc[meta.target_date[i], "label"]
         # historical SPEI channel ends at day t, never at the target day
         assert X[i, -1, -1] == pytest.approx(by_date.loc[meta.last_input_date[i], "SPEI"], rel=1e-5)
+
+
+@needs_data
+@pytest.mark.parametrize("h", config.HORIZONS)
+def test_doy_features_use_input_dates_only(frames, h):
+    """Day-of-year channels must encode each INPUT day's date, never the target date."""
+    df = frames[config.FIELDS[0]]
+    cols = config.FEATURE_SETS["weather_spei_doy"]
+    X, _, meta = build_sequences_for_field(df, cols, config.SEQUENCE_LENGTH_DAYS, h)
+    i_sin, i_cos = cols.index("DOY_sin"), cols.index("DOY_cos")
+
+    def enc(dates):
+        a = 2 * np.pi * (pd.DatetimeIndex(dates).day_of_year.to_numpy() - 1) / 365.25
+        return np.sin(a), np.cos(a)
+
+    rng = np.random.default_rng(1)
+    for i in rng.choice(len(meta), 50, replace=False):
+        days = pd.date_range(meta.input_start[i], meta.last_input_date[i], freq="D")
+        s, c = enc(days)
+        np.testing.assert_allclose(X[i, :, i_sin], s, atol=1e-6)
+        np.testing.assert_allclose(X[i, :, i_cos], c, atol=1e-6)
+        # the target date's encoding must not appear as the last input day
+        ts, tc = enc([meta.target_date[i]])
+        assert not (np.isclose(X[i, -1, i_sin], ts[0], atol=1e-6) and np.isclose(X[i, -1, i_cos], tc[0], atol=1e-6))
+    # the other channels are unchanged by adding the date features
+    X_base, _, _ = build_sequences_for_field(df, config.FEATURE_SETS["weather_spei"], config.SEQUENCE_LENGTH_DAYS, h)
+    np.testing.assert_array_equal(X[:, :, :len(cols) - 2], X_base)
+
+
+def test_doy_sets_not_in_default_run():
+    assert config.DEFAULT_FEATURE_SETS == ["weather", "weather_spei", "spei_only"]
+    for fs in ("weather", "weather_spei", "spei_only"):
+        assert not set(config.DOY_FEATURES) & set(config.FEATURE_SETS[fs])
 
 
 @needs_data

@@ -41,11 +41,23 @@ def load_prepared(fields: list[str] | None = None) -> dict[str, pd.DataFrame]:
     return frames
 
 
+def add_doy_features(df: pd.DataFrame) -> pd.DataFrame:
+    """sin/cos of day-of-year from each row's own date. A window therefore only
+    carries the dates of its input days, never the target date."""
+    df = df.copy()
+    angle = 2 * np.pi * (df[config.DATE_COLUMN].dt.day_of_year - 1) / 365.25
+    df["DOY_sin"] = np.sin(angle)
+    df["DOY_cos"] = np.cos(angle)
+    return df
+
+
 def build_sequences_for_field(df: pd.DataFrame, feature_cols: list[str],
                               sequence_length: int, horizon: int):
     if horizon < 1:
         raise ValueError("horizon must be >= 1 (genuine future forecasting)")
     df = df.sort_values(config.DATE_COLUMN).reset_index(drop=True)
+    if any(c in config.DOY_FEATURES for c in feature_cols):
+        df = add_doy_features(df)
     dates = df[config.DATE_COLUMN].to_numpy("datetime64[D]")
     feats = df[feature_cols].to_numpy(np.float32)
     labels = df["label"].to_numpy(np.int64)

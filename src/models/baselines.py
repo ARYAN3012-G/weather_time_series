@@ -36,14 +36,14 @@ def markov(meta_tr, y_tr, meta_te, k: int = 3) -> np.ndarray:
 
 
 def climatology(meta_tr, y_tr, meta_te, k: int = 3, half_window: int = 15) -> np.ndarray:
-    doy_tr = np.minimum(pd.to_datetime(meta_tr["target_date"]).dt.dayofyear.to_numpy(), 365) - 1
+    doy_tr = np.minimum(pd.to_datetime(meta_tr["target_date"]).dt.day_of_year.to_numpy(), 365) - 1
     counts = np.ones((365, k))
     np.add.at(counts, (doy_tr, y_tr), 1)
     smooth = np.zeros_like(counts)
     for s in range(-half_window, half_window + 1):
         smooth += np.roll(counts, s, axis=0)
     probs = smooth / smooth.sum(1, keepdims=True)
-    doy_te = np.minimum(pd.to_datetime(meta_te["target_date"]).dt.dayofyear.to_numpy(), 365) - 1
+    doy_te = np.minimum(pd.to_datetime(meta_te["target_date"]).dt.day_of_year.to_numpy(), 365) - 1
     return probs[doy_te]
 
 

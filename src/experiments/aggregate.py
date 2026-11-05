@@ -41,6 +41,9 @@ from utils.report import to_md
 logger = get_logger("aggregate")
 ENSEMBLE_MEMBERS = ["rf", "xgb", "lstm", "transformer"]
 BASELINES = ["persistence", "markov", "climatology", "majority"]
+# Their probabilities are (nearly) constant over time, so a tuned severe threshold
+# gives meaningless POD/FAR (e.g. POD 1.0 by flagging every day). Not reported.
+NO_SEVERE_WARNING = ["climatology", "majority"]
 KEY = ["macro_f1", "severe_f1", "balanced_accuracy", "roc_auc_macro_ovr", "pr_auc_macro",
        "severe_pr_auc", "brier", "bss_vs_climatology",
        "tuned_severe_f1", "tuned_severe_pod", "tuned_severe_far", "tuned_severe_csi", "val_macro_f1"]
@@ -104,9 +107,13 @@ def aggregate_base(split: str, fold: str, base: Path, n_boot: int):
                 pv = sum(wi * per_model[m][seed][0] for wi, m in zip(w, ENSEMBLE_MEMBERS))
                 pt = sum(wi * per_model[m][seed][1] for wi, m in zip(w, ENSEMBLE_MEMBERS))
                 per_model.setdefault("ensemble", {})[seed] = (pv, pt)
+                m_ens = evaluate(y_val, y_te, pv, pt, brier_clim)
+                # weights were fitted on validation, so the ensemble's validation score is
+                # in-sample: report test only, and never pick the ensemble "by validation"
+                m_ens["val_macro_f1"] = np.nan
                 rows.append({**ctx, "feature_set": fs, "model": "ensemble", "seed": seed, "kind": "model",
                              "ensemble_weights": json.dumps(dict(zip(ENSEMBLE_MEMBERS, np.round(w, 4).tolist()))),
-                             **evaluate(y_val, y_te, pv, pt, brier_clim)})
+                             **m_ens})
         for m, seeds in per_model.items():
             seed_mean[(fs, m)] = (np.mean([v[0] for v in seeds.values()], 0),
                                   np.mean([v[1] for v in seeds.values()], 0))
@@ -156,7 +163,10 @@ def write_report(split: str, summ: pd.DataFrame, confusions: dict, path: Path):
              "[95% block-bootstrap CI of the seed-averaged prediction; blocks = target month]. "
              "Δ vs ref = paired bootstrap CI of (model − strongest baseline by validation macro-F1); "
              "an interval entirely above 0 means the model significantly beats that baseline. "
-             "Severe POD/FAR use a probability threshold tuned on VALIDATION only.\n"]
+             "Severe POD/FAR use a probability threshold tuned on VALIDATION only; not shown for "
+             "climatology/majority (near-constant probabilities make a tuned threshold meaningless). "
+             "Ensemble: test scores only (its weights are fitted on validation, so its validation "
+             "score would be in-sample; it is never chosen as 'best by validation').\n"]
     for fold in summ.fold.unique():
         for h in sorted(summ.horizon.unique()):
             s = summ[(summ.fold == fold) & (summ.horizon == h)].copy()
@@ -176,8 +186,10 @@ def write_report(split: str, summ: pd.DataFrame, confusions: dict, path: Path):
                 "bal. acc": [fmt(r.balanced_accuracy_mean, r.balanced_accuracy_std) for _, r in s.iterrows()],
                 "ROC-AUC": [fmt(r.roc_auc_macro_ovr_mean, r.roc_auc_macro_ovr_std) for _, r in s.iterrows()],
                 "BSS vs clim": [fmt(r.bss_vs_climatology_mean, r.bss_vs_climatology_std) for _, r in s.iterrows()],
-                "severe POD (tuned)": [fmt(r.tuned_severe_pod_mean, r.tuned_severe_pod_std) for _, r in s.iterrows()],
-                "severe FAR (tuned)": [fmt(r.tuned_severe_far_mean, r.tuned_severe_far_std) for _, r in s.iterrows()],
+                "severe POD (tuned)": ["" if r.model in NO_SEVERE_WARNING else
+                                       fmt(r.tuned_severe_pod_mean, r.tuned_severe_pod_std) for _, r in s.iterrows()],
+                "severe FAR (tuned)": ["" if r.model in NO_SEVERE_WARNING else
+                                       fmt(r.tuned_severe_far_mean, r.tuned_severe_far_std) for _, r in s.iterrows()],
                 "val macro-F1": [fmt(r.val_macro_f1_mean, r.val_macro_f1_std) for _, r in s.iterrows()],
                 "seeds": s.n_seeds,
             })
@@ -185,7 +197,7 @@ def write_report(split: str, summ: pd.DataFrame, confusions: dict, path: Path):
             lines.append(to_md(tbl, index=False))
             models = s[s.kind == "model"]
             if not models.empty:
-                best = models.sort_values("val_macro_f1_mean", ascending=False).iloc[0]
+                best = models.sort_values("val_macro_f1_mean", ascending=False, na_position="last").iloc[0]
                 lines.append(f"\nBest model by **validation** macro-F1: `{best.feature_set}/{best.model}` "
                              f"(test macro-F1 {best.macro_f1_mean:.3f}).")
                 cm = confusions.get((fold, h))
