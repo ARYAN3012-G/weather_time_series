@@ -136,3 +136,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # All results are written at this point. On Windows, the GPU libraries can abort
+    # during process shutdown (0xc0000409 in ucrtbase.dll) after long runs, giving a
+    # non-zero exit code that stops run_all.bat although nothing failed. Flush the logs,
+    # then end the process directly so that shutdown code never runs.
+    # (Errors inside main() still raise before this point and exit with code 1.)
+    import logging, os
+    logging.shutdown()
+    sys.stdout.flush(); sys.stderr.flush()
+    if os.name == "nt":
+        import ctypes
+        k32 = ctypes.windll.kernel32
+        k32.GetCurrentProcess.restype = ctypes.c_void_p
+        k32.TerminateProcess(ctypes.c_void_p(k32.GetCurrentProcess()), 0)
+    os._exit(0)

@@ -1,0 +1,4 @@
+,pred_Healthy,pred_Moderate,pred_Severe
+true_Healthy,4401,746,45
+true_Moderate,1215,1139,153
+true_Severe,41,242,85

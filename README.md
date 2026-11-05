@@ -8,6 +8,11 @@ This is stage 1 (Predict) of the integrated drought assessment system
 > **Terminology.** SPEI-30 measures *meteorological* drought (a 30-day climatic water-balance deficit).
 > It is not a direct measure of crop stress; agricultural drought is assessed in the satellite/UAV stages.
 
+**Results (full v3 run, November 2026): see [`results/v3/RESULTS.md`](results/v3/RESULTS.md).**
+In short: at 7 and 15 days the models significantly beat persistence (validation-selected model:
+macro-F1 0.768 vs 0.634 at 7 days, 0.630 vs 0.494 at 15 days, 95 % CIs above zero); at 30 days no model
+beats persistence. Weather + SPEI history beats weather alone and SPEI history alone at every horizon.
+
 ---
 
 ## Quick start (lab desktop)
@@ -32,8 +37,8 @@ Or step by step:
 **Resuming:** finished runs are skipped, so after a crash or shutdown just re-run the same command.
 **Running less:** every option can be narrowed, e.g.
 `--horizons 15 --feature-sets weather_spei --models xgb lstm --seeds 0 1 2`.
-**Time:** v2 needed roughly 25 s (RF), 45 s (XGB), 200 s (LSTM), 400–500 s (Transformer) per run.
-The main study is therefore several hours on a GPU — start it first, overnight if possible.
+**Time (measured, RTX 2000 Ada):** main study 2.6 h, leave-one-cluster-out 2.0 h, Marusov protocol
+0.6 h, date feature sets 1.9 h, aggregation 3 min — about 7 h in total. Start it overnight if possible.
 The log prints elapsed time after each run (`logs/run_experiments_*.log`).
 
 **Priority if time is short:** step 4 with `--seeds 0 1 2` → step 7 → step 5 → step 6 → remaining seeds.
@@ -127,6 +132,7 @@ severe-drought early-warning scores (POD, FAR, CSI) at a probability threshold t
 
 | Path | Content |
 |---|---|
+| `results/v3/RESULTS.md` | **summary of all results and of the work done** (start here) |
 | `results/v3/audit/` | site coordinates, ERA5 cells, pairwise identity, `AUDIT.md` |
 | `results/v3/spei_report/` | old vs corrected SPEI moments, class distributions, label transitions |
 | `results/v3/spei_calibration.json` | frozen SPEI parameters per site/month |
