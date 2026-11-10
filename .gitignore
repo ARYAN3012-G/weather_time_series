@@ -22,3 +22,7 @@ data/prepared/
 
 # local Python virtual environment
 .venv/
+
+# AgERA5 update tool: originals backup and raw downloads
+data/processed/weather/backup_*/
+data/downloads/

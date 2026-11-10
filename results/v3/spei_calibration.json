@@ -649,7 +649,7 @@
   },
   "checks": {
     "cholasamudram": {
-      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "wb30_check_max_abs_diff": 8.526512829121202e-14,
       "fallback_months": []
     },
     "kurnool_balaji_villas": {
@@ -657,11 +657,11 @@
       "fallback_months": []
     },
     "kurnool_dinedevarapadu": {
-      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "wb30_check_max_abs_diff": 1.1368683772161603e-13,
       "fallback_months": []
     },
     "kurnool_pulliah": {
-      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "wb30_check_max_abs_diff": 1.4210854715202004e-13,
       "fallback_months": []
     },
     "Peddakadubur": {

@@ -84,7 +84,8 @@ def audit_sites(frames: dict) -> pd.DataFrame:
             same_feat.append(eq.mean())
         rec["n_features_identical_99pct"] = int(sum(s >= 0.99 for s in same_feat))
         rec["precip_corr"] = round(float(A.loc[idx, "Precipitation_Flux"].corr(B.loc[idx, "Precipitation_Flux"])), 4)
-        rec["label_agreement"] = round(float((A.loc[idx, "label"] == B.loc[idx, "label"]).mean()), 4)
+        old = A.loc[idx, "label"].notna() & B.loc[idx, "label"].notna()   # v2 labels (absent for days added later)
+        rec["label_agreement"] = round(float((A.loc[idx, "label"][old] == B.loc[idx, "label"][old]).mean()), 4)
         rec["same_era5_cell"] = (sites.set_index("field").loc[a, "era5_land_cell"]
                                  == sites.set_index("field").loc[b, "era5_land_cell"])
         pair_rows.append(rec)
@@ -147,7 +148,7 @@ def recompute_spei(df: pd.DataFrame) -> tuple[pd.DataFrame, SPEICalibrator, dict
     out["SPEI"] = spei_new
     out["label"] = config.classify_spei(spei_new)
     out["SPEI_old"] = df["SPEI"]
-    out["label_old"] = df["label"].astype(int)
+    out["label_old"] = df["label"].astype("Int64")   # empty for days appended by tools/update_agera5.py
     out["period"] = period_of_year(out[config.DATE_COLUMN].dt.year)
     info = {"wb30_check_max_abs_diff": max_diff,
             "fallback_months": [m for m, p in cal.params_.items() if p["method"] != "loglogistic"]}
@@ -159,6 +160,8 @@ def recompute_spei(df: pd.DataFrame) -> tuple[pd.DataFrame, SPEICalibrator, dict
 # ---------------------------------------------------------------------------
 def spei_report(prepared: dict[str, pd.DataFrame]) -> None:
     allp = pd.concat(prepared.values(), ignore_index=True)
+    allp = allp[allp.label_old.notna()].copy()   # old-vs-new comparison only where a v2 label exists
+    allp["label_old"] = allp["label_old"].astype(int)
 
     # per site / period SPEI moments
     rows = []

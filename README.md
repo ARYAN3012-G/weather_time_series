@@ -170,3 +170,15 @@ run_all.bat / run_all.sh     full pipeline
 - Marusov et al. Long-term drought prediction using deep neural networks based on geospatial weather data. *Environmental Modelling & Software*; arXiv:2309.06212.
 - Tang, Lin, Huang, Huete (2025). A quantum-empowered SPEI drought forecasting algorithm using spatially-aware Mamba network. arXiv:2502.20703.
 - Dikshit, Pradhan, Huete (2021). An improved SPEI drought forecasting approach using the LSTM neural network. *J. Environ. Manage.* 283, 111979.
+
+## Data update (2026-11-10)
+
+The raw files were extended from late June 2026 to **2 November 2026** with
+`python tools/update_agera5.py` (CDS dataset `sis-agrometeorological-indicators-timeseries`,
+AgERA5 v2.0, the same source as the original files; needs a CDS account and `~/.cdsapirc`).
+Only new rows are appended - existing rows are byte-identical, overlapping days were checked
+against the download (max difference 0.31 %, solar radiation rounding). New rows have no v2
+`SPEI`/`label` (v3 recomputes SPEI with the frozen 1979-2011 calibration, which is unchanged).
+Jun-Oct 2026 rainfall is 31-57 % below the 1979-2011 normal at all sites (2026 kharif drought).
+The v3 results in `results/v3/tables/` were produced with data up to June 2026; rerunning the
+pipeline adds Jul-Oct 2026 to the TEST period.
