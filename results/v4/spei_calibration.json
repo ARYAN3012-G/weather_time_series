@@ -1,0 +1,588 @@
+{
+  "method": "loglogistic",
+  "grouping": "month",
+  "sites": {
+    "cholasamudram": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 50.85179972210952,
+          "beta": 4.984834586606256,
+          "gamma": -171.89586170392909,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 50.07886007550788,
+          "beta": 5.127509461053783,
+          "gamma": -202.99075872666745,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 42.57033209412132,
+          "beta": 3.9354704096571527,
+          "gamma": -224.05798244513946,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 51.118863255300056,
+          "beta": 3.7717505334711467,
+          "gamma": -236.47569845209205,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 131.28065096150243,
+          "beta": 6.313018739433175,
+          "gamma": -286.73764684447895,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 227.23421947151385,
+          "beta": 7.5293034060741615,
+          "gamma": -326.6235835608752,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 114.00963427337103,
+          "beta": 4.670632809708623,
+          "gamma": -201.22490470212404,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 231.23962644104796,
+          "beta": 8.262875881244293,
+          "gamma": -280.50587826384225,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 265.0238187680431,
+          "beta": 7.429815007013359,
+          "gamma": -310.6844283445163,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 280.70523651057204,
+          "beta": 7.259500538883982,
+          "gamma": -286.1471922337921,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 200.4305571599212,
+          "beta": 6.00421946254726,
+          "gamma": -224.9764076691673,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 91.32986452859585,
+          "beta": 4.736953258183697,
+          "gamma": -178.54335340406863,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    },
+    "kurnool_balaji_villas": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 26.93146578660062,
+          "beta": 3.7631097557288844,
+          "gamma": -153.8682203492764,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 66.64157027557746,
+          "beta": 8.013365173193737,
+          "gamma": -218.60761592279877,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 33.06042646930584,
+          "beta": 3.5633134286224353,
+          "gamma": -215.58397297097525,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 26.153893788833617,
+          "beta": 2.8340379766189527,
+          "gamma": -224.30623073729052,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 45.33042077232569,
+          "beta": 2.796025488245121,
+          "gamma": -244.48352870835814,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 151.45616828175167,
+          "beta": 4.058415541898119,
+          "gamma": -297.63269895859304,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 186.60470960250856,
+          "beta": 4.667513388187109,
+          "gamma": -256.10058798926497,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 532.471005823092,
+          "beta": 13.605644638714027,
+          "gamma": -542.3474638275,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 302.7162946058226,
+          "beta": 6.404193163456359,
+          "gamma": -331.0422696175571,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 186.63060085741944,
+          "beta": 4.345034914651294,
+          "gamma": -208.78100639171842,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 110.93714261487283,
+          "beta": 3.6349215897678513,
+          "gamma": -188.09030086079449,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 37.55500649554404,
+          "beta": 2.786585170273593,
+          "gamma": -150.7865619822848,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    },
+    "kurnool_dinedevarapadu": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 29.615017410166473,
+          "beta": 3.96466253729848,
+          "gamma": -159.48908885618184,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 55.35322315447344,
+          "beta": 6.5878234418124,
+          "gamma": -211.3995623849087,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 27.376885289609277,
+          "beta": 3.088961615265896,
+          "gamma": -213.40738841798284,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 29.205080940428477,
+          "beta": 3.0470230718891256,
+          "gamma": -229.19951091668764,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 53.782547004997106,
+          "beta": 3.423943366765488,
+          "gamma": -254.02255094314742,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 153.01018790776308,
+          "beta": 4.616882891528496,
+          "gamma": -306.44442010424666,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 153.09544487847006,
+          "beta": 4.37904886883803,
+          "gamma": -243.76246182961452,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 395.058597976893,
+          "beta": 11.383419506164076,
+          "gamma": -430.10102568461207,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 270.28049147584045,
+          "beta": 6.112676644448904,
+          "gamma": -316.5108700885691,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 180.9769144479329,
+          "beta": 4.192418173453467,
+          "gamma": -204.76363371417705,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 128.10997144198294,
+          "beta": 4.100811954900931,
+          "gamma": -202.13685064287012,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 39.24546790651887,
+          "beta": 2.8037755855105964,
+          "gamma": -153.9816731884667,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    },
+    "Peddakadubur": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 34.35360002201169,
+          "beta": 4.347055465573065,
+          "gamma": -167.58092993820074,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 48.79303625089086,
+          "beta": 5.490474451388956,
+          "gamma": -207.16642273630978,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 44.45152738029871,
+          "beta": 4.954317229648941,
+          "gamma": -231.4564188473074,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 39.07943059917044,
+          "beta": 3.7786572262015907,
+          "gamma": -241.70257744964283,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 100.76568938020387,
+          "beta": 6.1547600000994525,
+          "gamma": -305.58823640740206,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 216.3051856825181,
+          "beta": 6.347945056498289,
+          "gamma": -374.74814435540065,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 160.34065724910036,
+          "beta": 4.841786532450153,
+          "gamma": -253.05698575637808,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 438.78804624784954,
+          "beta": 12.827201120141766,
+          "gamma": -476.66022239116865,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 285.6347795049309,
+          "beta": 6.545115862485559,
+          "gamma": -332.38625488778285,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 187.64573802744616,
+          "beta": 4.416344410788893,
+          "gamma": -214.6750039967729,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 197.9281324963776,
+          "beta": 6.701841393950572,
+          "gamma": -280.2046024299866,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 34.31859422542621,
+          "beta": 2.55443301193287,
+          "gamma": -157.26215448406572,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    },
+    "sira": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 44.941954973433674,
+          "beta": 4.641988610353756,
+          "gamma": -172.61335573871514,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 65.71183968840899,
+          "beta": 6.94984540158764,
+          "gamma": -220.67041867456786,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 39.689604361014865,
+          "beta": 3.482684446587793,
+          "gamma": -219.55022908650062,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 54.2690953279741,
+          "beta": 3.4924369451321846,
+          "gamma": -231.67932491984186,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 180.17236894984924,
+          "beta": 7.549182822480002,
+          "gamma": -321.7026758893473,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 416.9000598708274,
+          "beta": 13.60644317136844,
+          "gamma": -496.10462217363033,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 217.9188171900527,
+          "beta": 8.586877079011789,
+          "gamma": -272.34237907144967,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 285.8255558140959,
+          "beta": 9.722569820128795,
+          "gamma": -309.82158607313505,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 279.817551866856,
+          "beta": 7.749487461687179,
+          "gamma": -311.5252946305927,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 243.7697538914518,
+          "beta": 6.196845609331321,
+          "gamma": -245.5337864301965,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 212.5635093669357,
+          "beta": 6.573060249198813,
+          "gamma": -245.4334861921337,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 94.55344377151893,
+          "beta": 4.643440206278801,
+          "gamma": -190.55744554108034,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    },
+    "Somandepalle": {
+      "scale_days": 30,
+      "calib_start": 1979,
+      "calib_end": 2011,
+      "clip": 4.0,
+      "params": {
+        "1": {
+          "alpha": 51.23035250904684,
+          "beta": 4.913873781408287,
+          "gamma": -170.80947685947805,
+          "method": "loglogistic",
+          "n_ref": 994
+        },
+        "2": {
+          "alpha": 59.19832338864913,
+          "beta": 6.0786945426046834,
+          "gamma": -212.49991275878617,
+          "method": "loglogistic",
+          "n_ref": 932
+        },
+        "3": {
+          "alpha": 41.796639320454986,
+          "beta": 3.9239335022118373,
+          "gamma": -227.09032607525967,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "4": {
+          "alpha": 40.36207535661575,
+          "beta": 3.297374171544378,
+          "gamma": -234.73988597886492,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "5": {
+          "alpha": 106.33597991072273,
+          "beta": 6.0190701313086965,
+          "gamma": -280.76791592112545,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "6": {
+          "alpha": 225.1398372410093,
+          "beta": 8.138311062762346,
+          "gamma": -349.3834624880768,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "7": {
+          "alpha": 81.6595486406667,
+          "beta": 3.6157488226334915,
+          "gamma": -193.42822031979662,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "8": {
+          "alpha": 217.43497510351827,
+          "beta": 7.997080071190178,
+          "gamma": -286.2549828154974,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "9": {
+          "alpha": 256.00940587368115,
+          "beta": 7.297606981832956,
+          "gamma": -318.1460624744444,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "10": {
+          "alpha": 222.0379444210966,
+          "beta": 6.091001166544278,
+          "gamma": -244.49023442492904,
+          "method": "loglogistic",
+          "n_ref": 1023
+        },
+        "11": {
+          "alpha": 185.65148303761424,
+          "beta": 5.98114198101744,
+          "gamma": -222.3743368648104,
+          "method": "loglogistic",
+          "n_ref": 990
+        },
+        "12": {
+          "alpha": 79.35192562461823,
+          "beta": 4.0666853738627164,
+          "gamma": -167.76818042445683,
+          "method": "loglogistic",
+          "n_ref": 1023
+        }
+      }
+    }
+  },
+  "checks": {
+    "cholasamudram": {
+      "wb30_check_max_abs_diff": 8.526512829121202e-14,
+      "fallback_months": []
+    },
+    "kurnool_balaji_villas": {
+      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "fallback_months": []
+    },
+    "kurnool_dinedevarapadu": {
+      "wb30_check_max_abs_diff": 1.1368683772161603e-13,
+      "fallback_months": []
+    },
+    "Peddakadubur": {
+      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "fallback_months": []
+    },
+    "sira": {
+      "wb30_check_max_abs_diff": 8.526512829121202e-14,
+      "fallback_months": []
+    },
+    "Somandepalle": {
+      "wb30_check_max_abs_diff": 5.684341886080802e-14,
+      "fallback_months": []
+    }
+  },
+  "removed_duplicates": {
+    "lepakshi": "cholasamudram",
+    "kurnool_pulliah": "kurnool_balaji_villas"
+  }
+}

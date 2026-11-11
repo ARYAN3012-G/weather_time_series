@@ -20,14 +20,14 @@ from pathlib import Path
 PROJECT_ROOT    = Path(__file__).resolve().parent.parent
 RAW_WEATHER_DIR = PROJECT_ROOT / "data" / "processed" / "weather"  # original v2 CSVs (read-only input)
 PREPARED_DIR    = PROJECT_ROOT / "data" / "prepared"               # v3 corrected per-site CSVs
-RESULTS_DIR     = PROJECT_ROOT / "results" / "v3"
+RESULTS_DIR     = PROJECT_ROOT / "results" / "v4"
 RUNS_DIR        = RESULTS_DIR / "runs"                              # per-run predictions + configs
 TABLES_DIR      = RESULTS_DIR / "tables"
 AUDIT_DIR       = RESULTS_DIR / "audit"
 SPEI_REPORT_DIR = RESULTS_DIR / "spei_report"
 MARUSOV_DIR     = RESULTS_DIR / "marusov_protocol"
 ARCHIVE_DIR     = PROJECT_ROOT / "results" / "archive" / "v2_pre_correction"
-MODELS_DIR      = PROJECT_ROOT / "models" / "v3"
+MODELS_DIR      = PROJECT_ROOT / "models" / "v4"
 LOGS_DIR        = PROJECT_ROOT / "logs"
 SPEI_CALIBRATION_FILE = RESULTS_DIR / "spei_calibration.json"
 
@@ -45,18 +45,22 @@ ALL_RAW_FIELDS = [
     "kurnool_pulliah", "lepakshi", "Peddakadubur", "sira", "Somandepalle",
 ]
 
-# duplicate -> canonical site kept. Verified in prepare_data.py audit:
-# same ERA5-Land grid cell (13.8N, 77.6E); 8/9 weather features identical on 100% of days.
-DUPLICATE_SITES = {"lepakshi": "cholasamudram"}
+# Weather data: AgERA5 v2.0 (Copernicus CDS "sis-agrometeorological-indicators-timeseries"),
+# 0.1-degree cells. Each site file holds the cell its field centre lies in (Peddakadubur and
+# kurnool_pulliah were re-downloaded for the correct cell: tools/set_site_cell.py).
+# duplicate -> canonical site kept. Verified in prepare_data.py audit (identical cell):
+#   lepakshi        = cholasamudram         (13.8N, 77.6E)
+#   kurnool_pulliah = kurnool_balaji_villas (15.8N, 78.1E)
+DUPLICATE_SITES = {"lepakshi": "cholasamudram", "kurnool_pulliah": "kurnool_balaji_villas"}
 
-FIELDS = [f for f in ALL_RAW_FIELDS if f not in DUPLICATE_SITES]   # 7 independent sites
+FIELDS = [f for f in ALL_RAW_FIELDS if f not in DUPLICATE_SITES]   # 6 independent weather cells
 
 FIELD_METADATA = {
     "cholasamudram":          {"district": "Sri Sathya Sai", "state": "Andhra Pradesh",
                                "also_represents": ["lepakshi"]},
-    "kurnool_balaji_villas":  {"district": "Kurnool",        "state": "Andhra Pradesh"},
+    "kurnool_balaji_villas":  {"district": "Kurnool",        "state": "Andhra Pradesh",
+                               "also_represents": ["kurnool_pulliah"]},
     "kurnool_dinedevarapadu": {"district": "Kurnool",        "state": "Andhra Pradesh"},
-    "kurnool_pulliah":        {"district": "Kurnool",        "state": "Andhra Pradesh"},
     "Peddakadubur":           {"district": "Kurnool",        "state": "Andhra Pradesh"},
     "sira":                   {"district": "Tumkur",         "state": "Karnataka"},
     "Somandepalle":           {"district": "Sri Sathya Sai", "state": "Andhra Pradesh"},
@@ -64,7 +68,7 @@ FIELD_METADATA = {
 
 # Spatial clusters for leave-one-cluster-out (from label/precip correlation audit)
 CLUSTERS = {
-    "kurnool": ["Peddakadubur", "kurnool_balaji_villas", "kurnool_dinedevarapadu", "kurnool_pulliah"],
+    "kurnool": ["Peddakadubur", "kurnool_balaji_villas", "kurnool_dinedevarapadu"],
     "south":   ["Somandepalle", "cholasamudram", "sira"],
 }
 FIELD_TO_CLUSTER = {f: c for c, fs in CLUSTERS.items() for f in fs}
@@ -99,10 +103,13 @@ FEATURE_SETS = {
     "spei_only":        ["SPEI"],                                  # index history only (Marusov-style)
     "weather_doy":      WEATHER_FEATURES + DOY_FEATURES,           # + season (extra experiment)
     "weather_spei_doy": WEATHER_FEATURES + ["SPEI"] + DOY_FEATURES,
+    # physics-informed hybrid: + water-balance ensemble probabilities (built in sequence_builder)
+    "weather_spei_doy_wb": WEATHER_FEATURES + ["SPEI"] + DOY_FEATURES,
 }
 # Feature sets run when --feature-sets is not given (the main study).
-# The *_doy sets are a separate experiment: run them explicitly with --feature-sets.
-DEFAULT_FEATURE_SETS = ["weather", "weather_spei", "spei_only"]
+# Main study (fixed before the rerun): v2 setting, + SPEI, Marusov-style index only, + season,
+# and the physics-informed hybrid (+ water-balance ensemble probabilities).
+DEFAULT_FEATURE_SETS = ["weather", "weather_spei", "spei_only", "weather_spei_doy", "weather_spei_doy_wb"]
 MODEL_INPUT_FEATURES = WEATHER_FEATURES  # backwards-compatible alias
 
 # ---------------------------------------------------------------------------

@@ -40,7 +40,7 @@ from utils.report import to_md
 
 logger = get_logger("aggregate")
 ENSEMBLE_MEMBERS = ["rf", "xgb", "lstm", "transformer"]
-BASELINES = ["persistence", "markov", "climatology", "majority"]
+BASELINES = ["persistence", "markov", "climatology", "majority", "wb_ensemble"]
 # Their probabilities are (nearly) constant over time, so a tuned severe threshold
 # gives meaningless POD/FAR (e.g. POD 1.0 by flagging every day). Not reported.
 NO_SEVERE_WARNING = ["climatology", "majority"]

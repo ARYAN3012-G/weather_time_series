@@ -122,7 +122,7 @@ def main():
                 bdir = base / "baselines"
                 if not (bdir / "persistence" / "preds.npz").exists() or args.overwrite:
                     bl = all_baselines(meta[masks["train"]], y[masks["train"]],
-                                       meta[masks["val"]], meta[masks["test"]])
+                                       meta[masks["val"]], meta[masks["test"]], frames=frames)
                     for name, (pv, pt) in bl.items():
                         (bdir / name).mkdir(parents=True, exist_ok=True)
                         np.savez_compressed(bdir / name / "preds.npz", p_val=pv, p_test=pt)

@@ -182,3 +182,23 @@ against the download (max difference 0.31 %, solar radiation rounding). New rows
 Jun-Oct 2026 rainfall is 31-57 % below the 1979-2011 normal at all sites (2026 kharif drought).
 The v3 results in `results/v3/tables/` were produced with data up to June 2026; rerunning the
 pipeline adds Jul-Oct 2026 to the TEST period.
+
+## v4 (2026-11-11): correct weather cells, physical baseline, hybrid model
+
+Results go to `results/v4/` (v3 kept for comparison). Changes, all fixed before the rerun:
+
+- **Weather data = AgERA5 v2.0** (Copernicus CDS `sis-agrometeorological-indicators-timeseries`),
+  0.1° cells (earlier text called it ERA5-Land). Each site file now holds the cell that the site's
+  **field centre** lies in. `Peddakadubur` (was 15.7N 77.3E) and `kurnool_pulliah` (was 15.6N 78.1E,
+  22 km from the field) were re-downloaded for 15.8N 77.3E and 15.8N 78.1E with
+  `tools/set_site_cell.py`; the old files are in `data/processed/weather/archive_wrong_cell/`.
+- `kurnool_pulliah` now lies in the same cell as `kurnool_balaji_villas` and is removed as a
+  duplicate (like `lepakshi`): **6 independent weather cells**.
+- **New baseline `wb_ensemble`** (physical, no learning): the water balance already observed in the
+  SPEI-30 window plus each 1979-2011 year's water balance for the unknown days, frozen calibration;
+  class probabilities = share of years. Training samples never use their own year.
+- **New feature set `weather_spei_doy_wb`** (physics-informed hybrid): `weather_spei_doy` + the three
+  `wb_ensemble` probabilities. Main study = weather, weather_spei, spei_only, weather_spei_doy,
+  weather_spei_doy_wb.
+- AgERA5 is published about a week after real time: an h-day forecast from the last observation
+  gives roughly h - 7 days of usable warning in operation.

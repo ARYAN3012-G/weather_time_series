@@ -103,6 +103,15 @@ def build_sequences_for_field(df: pd.DataFrame, feature_cols: list[str],
 
 def build_sequences_all_fields(frames: dict[str, pd.DataFrame], feature_set: str,
                                horizon: int, sequence_length: int = config.SEQUENCE_LENGTH_DAYS):
+    """Feature sets ending in '_wb' (physics-informed hybrid) = the base set + the 3 class
+    probabilities of the water-balance ensemble (models.baselines.wb_ensemble), which uses only
+    data up to the last input day and the 1979-2011 climatology, repeated on every input day."""
+    if feature_set.endswith("_wb"):
+        from models.baselines import wb_ensemble
+        X, y, meta = build_sequences_all_fields(frames, feature_set[:-3], horizon, sequence_length)
+        p = wb_ensemble(meta, frames).astype(np.float32)
+        X = np.concatenate([X, np.repeat(p[:, None, :], X.shape[1], axis=1)], axis=2)
+        return X, y, meta
     feature_cols = config.FEATURE_SETS[feature_set]
     Xs, ys, metas = [], [], []
     for name in sorted(frames):

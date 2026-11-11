@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import config  # noqa: E402
 from dataprep.spei import SPEICalibrator, accumulate, water_balance  # noqa: E402
-from features.sequence_builder import build_sequences_for_field, load_prepared  # noqa: E402
+from features.sequence_builder import build_sequences_all_fields, build_sequences_for_field, load_prepared  # noqa: E402
 from features.splits import make_masks, purged_periods, spatial_folds  # noqa: E402
 from models.baselines import climatology, markov, persistence  # noqa: E402
 
@@ -37,8 +37,8 @@ def frames():
 
 # ---------------------------------------------------------------- sites
 def test_duplicate_removed_from_config():
-    assert "lepakshi" not in config.FIELDS
-    assert len(config.FIELDS) == 7
+    assert "lepakshi" not in config.FIELDS and "kurnool_pulliah" not in config.FIELDS
+    assert len(config.FIELDS) == 6
     assert set(config.FIELD_TO_CLUSTER) == set(config.FIELDS)
 
 
@@ -164,8 +164,9 @@ def test_doy_features_use_input_dates_only(frames, h):
     np.testing.assert_array_equal(X[:, :, :len(cols) - 2], X_base)
 
 
-def test_doy_sets_not_in_default_run():
-    assert config.DEFAULT_FEATURE_SETS == ["weather", "weather_spei", "spei_only"]
+def test_default_feature_sets_fixed_before_rerun():
+    assert config.DEFAULT_FEATURE_SETS == ["weather", "weather_spei", "spei_only", "weather_spei_doy",
+                                           "weather_spei_doy_wb"]
     for fs in ("weather", "weather_spei", "spei_only"):
         assert not set(config.DOY_FEATURES) & set(config.FEATURE_SETS[fs])
 
@@ -225,3 +226,35 @@ def test_baselines_use_only_past_information():
     assert np.allclose(mk.sum(1), 1) and mk[0].argmax() == 2
     cl = climatology(meta_tr, y_tr, meta_te)
     assert np.allclose(cl.sum(1), 1)
+
+
+@needs_data
+def test_wb_ensemble_never_sees_the_days_it_forecasts(frames):
+    """Changing the weather on the forecast days (t, t+h] must not change the water-balance
+    ensemble for samples outside the calibration years (VAL/TEST). Training samples share the
+    frozen 1979-2011 SPEI calibration that also defines their labels and SPEI inputs; their own
+    year is additionally left out of the ensemble members."""
+    from models.baselines import wb_ensemble
+    f = config.FIELDS[0]
+    h = 15
+    _, _, meta = build_sequences_all_fields({f: frames[f]}, "spei_only", h)
+    pick = meta.iloc[[len(meta) - 3000, len(meta) - 500]].reset_index(drop=True)   # two TEST-period samples
+    assert (pd.to_datetime(pick["last_input_date"]).dt.year > config.SPEI_CALIB_END).all()
+    p1 = wb_ensemble(pick, {f: frames[f]})
+    for i in range(len(pick)):
+        t = pd.to_datetime(pick["last_input_date"].iloc[i])
+        g = frames[f].copy()
+        m = (g[config.DATE_COLUMN] > t) & (g[config.DATE_COLUMN] <= t + pd.Timedelta(days=h))
+        g.loc[m, "Precipitation_Flux"] = g.loc[m, "Precipitation_Flux"] + 50.0
+        p2 = wb_ensemble(pick.iloc[[i]].reset_index(drop=True), {f: g})
+        assert np.allclose(p1[i], p2[0])
+
+
+@needs_data
+def test_hybrid_feature_set_adds_three_constant_channels(frames):
+    f = config.FIELDS[0]
+    X, y, meta = build_sequences_all_fields({f: frames[f]}, "weather_spei_doy", 15)
+    Xw, yw, metaw = build_sequences_all_fields({f: frames[f]}, "weather_spei_doy_wb", 15)
+    assert Xw.shape == X.shape[:2] + (X.shape[2] + 3,)
+    assert np.array_equal(y, yw) and np.allclose(Xw[:, :, :-3], X)
+    assert np.allclose(Xw[:, 0, -3:], Xw[:, -1, -3:]) and np.allclose(Xw[:, 0, -3:].sum(1), 1.0)
