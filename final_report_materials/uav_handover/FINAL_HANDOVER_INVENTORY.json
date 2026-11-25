@@ -1,0 +1,1250 @@
+[
+  {
+    "path": "00_START_HERE.md",
+    "size_bytes": 2649
+  },
+  {
+    "path": "01_COMPLETE_UAV_KNOWLEDGE.md",
+    "size_bytes": 49842
+  },
+  {
+    "path": "02_final_source_code/configs/config_v11.yaml",
+    "size_bytes": 2763
+  },
+  {
+    "path": "02_final_source_code/configs/field_gsd_registry.json",
+    "size_bytes": 5943
+  },
+  {
+    "path": "02_final_source_code/src/inference/memory_safe_postprocess.py",
+    "size_bytes": 6970
+  },
+  {
+    "path": "02_final_source_code/src/inference/memory_safe_report.py",
+    "size_bytes": 3615
+  },
+  {
+    "path": "02_final_source_code/src/inference/postprocess.py",
+    "size_bytes": 7531
+  },
+  {
+    "path": "02_final_source_code/src/inference/predict_v11.py",
+    "size_bytes": 14502
+  },
+  {
+    "path": "02_final_source_code/src/inference/report.py",
+    "size_bytes": 25288
+  },
+  {
+    "path": "02_final_source_code/src/inference/tile_v11.py",
+    "size_bytes": 15787
+  },
+  {
+    "path": "02_final_source_code/src/segmentation/model.py",
+    "size_bytes": 7104
+  },
+  {
+    "path": "02_final_source_code/src/utils/constants.py",
+    "size_bytes": 2201
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/classifier/__init__.py",
+    "size_bytes": 357
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/classifier/dataset.py",
+    "size_bytes": 15202
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/classifier/losses.py",
+    "size_bytes": 7604
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/classifier/model.py",
+    "size_bytes": 9132
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/classifier/train.py",
+    "size_bytes": 16094
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/__init__.py",
+    "size_bytes": 289
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/predict.py",
+    "size_bytes": 11188
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/report_before_indexed_png.py",
+    "size_bytes": 24263
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/tile.py",
+    "size_bytes": 10667
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/tile_v11_before_fp32.py",
+    "size_bytes": 10755
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/inference/tile_v11_before_weight_removal.py",
+    "size_bytes": 10764
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/__init__.py",
+    "size_bytes": 1018
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/boundary_components.py",
+    "size_bytes": 6523
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/disk_components.py",
+    "size_bytes": 4349
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/gsd.py",
+    "size_bytes": 2451
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/indices.py",
+    "size_bytes": 3159
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/masks.py",
+    "size_bytes": 5004
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/strip_components.py",
+    "size_bytes": 3921
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/preprocessing/tensor_builder.py",
+    "size_bytes": 6090
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/pseudo_label/__init__.py",
+    "size_bytes": 310
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/pseudo_label/label.py",
+    "size_bytes": 10718
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/pseudo_label/postprocess.py",
+    "size_bytes": 8541
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/pseudo_label/sliding_window.py",
+    "size_bytes": 7678
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/pseudo_label/viz.py",
+    "size_bytes": 7079
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/__init__.py",
+    "size_bytes": 548
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/compositor.py",
+    "size_bytes": 12388
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/dataset.py",
+    "size_bytes": 11786
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/eval_calibration_v11.py",
+    "size_bytes": 16312
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/eval_confusion_v11.py",
+    "size_bytes": 17372
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/eval_dryweed_v11.py",
+    "size_bytes": 16399
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/eval_source_independent_v11.py",
+    "size_bytes": 17490
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/losses.py",
+    "size_bytes": 10933
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/model_b3.py",
+    "size_bytes": 7105
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/model_b3_v91.py",
+    "size_bytes": 7099
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/model_deeplab.py",
+    "size_bytes": 581
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train.py",
+    "size_bytes": 20676
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_b3.py",
+    "size_bytes": 20561
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_b3_v91.py",
+    "size_bytes": 20808
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_before_local_pseudo_fix.py",
+    "size_bytes": 20467
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_before_v5_fix.py",
+    "size_bytes": 20228
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_deeplab_v10.py",
+    "size_bytes": 20819
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_v11.py",
+    "size_bytes": 20688
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/segmentation/train_v12.py",
+    "size_bytes": 20688
+  },
+  {
+    "path": "02_final_source_code/supporting_source/src/utils/__init__.py",
+    "size_bytes": 408
+  },
+  {
+    "path": "03_dataset_and_training/pending_independent_test/class_mapping.json",
+    "size_bytes": 136
+  },
+  {
+    "path": "03_dataset_and_training/pending_independent_test/cvat_labels.json",
+    "size_bytes": 679
+  },
+  {
+    "path": "03_dataset_and_training/pending_independent_test/field_confirmation.csv",
+    "size_bytes": 830
+  },
+  {
+    "path": "03_dataset_and_training/pending_independent_test/test_manifest.json",
+    "size_bytes": 65580
+  },
+  {
+    "path": "03_dataset_and_training/training_metrics_summary.csv",
+    "size_bytes": 2006
+  },
+  {
+    "path": "03_dataset_and_training/v11_checkpoint_metadata.json",
+    "size_bytes": 50
+  },
+  {
+    "path": "03_dataset_and_training/v11_training_history_1.csv",
+    "size_bytes": 1712
+  },
+  {
+    "path": "03_dataset_and_training/v11_training_metrics_summary.json",
+    "size_bytes": 3148
+  },
+  {
+    "path": "04_evaluation_results/calibration_comparison.csv",
+    "size_bytes": 639
+  },
+  {
+    "path": "04_evaluation_results/evaluation_artifact_index.json",
+    "size_bytes": 1404
+  },
+  {
+    "path": "04_evaluation_results/final_project_summary.json",
+    "size_bytes": 1210
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/accuracy_comparison.json",
+    "size_bytes": 11360
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/dataset_provenance_audit.json",
+    "size_bytes": 19979
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/drought_decision_tests.json",
+    "size_bytes": 3418
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/extended_calibration.json",
+    "size_bytes": 14210
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/field_provenance_audit.json",
+    "size_bytes": 2469
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/final_output_verification.json",
+    "size_bytes": 3905
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/independent_test_candidates.json",
+    "size_bytes": 12732
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/metashape_provenance_verified.json",
+    "size_bytes": 44213
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/orthomosaic_gsd_metadata.json",
+    "size_bytes": 49488
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/provenance_step50.json",
+    "size_bytes": 2922
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/small_orthomosaic_results.json",
+    "size_bytes": 9536
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/source_disjoint_evaluation.json",
+    "size_bytes": 4646
+  },
+  {
+    "path": "04_evaluation_results/historical_evidence/source_overlap.json",
+    "size_bytes": 2558
+  },
+  {
+    "path": "04_evaluation_results/model_comparison.csv",
+    "size_bytes": 563
+  },
+  {
+    "path": "04_evaluation_results/research_limitations.json",
+    "size_bytes": 495
+  },
+  {
+    "path": "05_inference_optimization/evidence/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "size_bytes": 172424
+  },
+  {
+    "path": "05_inference_optimization/evidence/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "size_bytes": 160372
+  },
+  {
+    "path": "05_inference_optimization/evidence/KNL_puddur_batch_benchmark.json",
+    "size_bytes": 245262
+  },
+  {
+    "path": "05_inference_optimization/evidence/KNL_puddur_resource_monitor.json",
+    "size_bytes": 226591
+  },
+  {
+    "path": "05_inference_optimization/evidence/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "size_bytes": 164189
+  },
+  {
+    "path": "05_inference_optimization/evidence/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "size_bytes": 152700
+  },
+  {
+    "path": "05_inference_optimization/evidence/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "size_bytes": 218614
+  },
+  {
+    "path": "05_inference_optimization/evidence/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "size_bytes": 203465
+  },
+  {
+    "path": "05_inference_optimization/evidence/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "size_bytes": 128673
+  },
+  {
+    "path": "05_inference_optimization/evidence/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "size_bytes": 119499
+  },
+  {
+    "path": "05_inference_optimization/evidence/auxiliary_mask_optimization.json",
+    "size_bytes": 990
+  },
+  {
+    "path": "05_inference_optimization/evidence/balaji_optimized_benchmark.json",
+    "size_bytes": 325075
+  },
+  {
+    "path": "05_inference_optimization/evidence/balaji_resource_monitor.json",
+    "size_bytes": 301010
+  },
+  {
+    "path": "05_inference_optimization/evidence/boundary_components_equivalence.json",
+    "size_bytes": 8367
+  },
+  {
+    "path": "05_inference_optimization/evidence/boundary_integration_equivalence.json",
+    "size_bytes": 6120
+  },
+  {
+    "path": "05_inference_optimization/evidence/disk_components_equivalence.json",
+    "size_bytes": 7927
+  },
+  {
+    "path": "05_inference_optimization/evidence/final_memory_safety_audit.json",
+    "size_bytes": 3990
+  },
+  {
+    "path": "05_inference_optimization/evidence/knl_optimized_benchmark.json",
+    "size_bytes": 573
+  },
+  {
+    "path": "05_inference_optimization/evidence/large_morphology_benchmark.json",
+    "size_bytes": 1050
+  },
+  {
+    "path": "05_inference_optimization/evidence/memory_safe_decision_equivalence.json",
+    "size_bytes": 3223
+  },
+  {
+    "path": "05_inference_optimization/evidence/memory_safe_integration_test.json",
+    "size_bytes": 771
+  },
+  {
+    "path": "05_inference_optimization/evidence/memory_safe_postprocess_equivalence.json",
+    "size_bytes": 8204
+  },
+  {
+    "path": "05_inference_optimization/evidence/morphological_optimization_benchmark.json",
+    "size_bytes": 3037
+  },
+  {
+    "path": "05_inference_optimization/evidence/pdf_thumbnail_equivalence.json",
+    "size_bytes": 3778
+  },
+  {
+    "path": "05_inference_optimization/evidence/pulliah_optimized_benchmark.json",
+    "size_bytes": 68374
+  },
+  {
+    "path": "05_inference_optimization/evidence/remaining_batch_summary.json",
+    "size_bytes": 1671
+  },
+  {
+    "path": "05_inference_optimization/evidence/rolling_stitching_equivalence.json",
+    "size_bytes": 2607
+  },
+  {
+    "path": "05_inference_optimization/evidence/same_gpu_equivalence.json",
+    "size_bytes": 970
+  },
+  {
+    "path": "05_inference_optimization/evidence/shilpa half part orthomosaic3_batch_benchmark.json",
+    "size_bytes": 253871
+  },
+  {
+    "path": "05_inference_optimization/evidence/shilpa half part orthomosaic3_resource_monitor.json",
+    "size_bytes": 234606
+  },
+  {
+    "path": "05_inference_optimization/evidence/strip_components_equivalence.json",
+    "size_bytes": 5378
+  },
+  {
+    "path": "05_inference_optimization/inference_benchmarks.csv",
+    "size_bytes": 3313
+  },
+  {
+    "path": "05_inference_optimization/knl_inference_comparison.csv",
+    "size_bytes": 124
+  },
+  {
+    "path": "06_field_results/class_wise_results.csv",
+    "size_bytes": 4584
+  },
+  {
+    "path": "06_field_results/field_wise_results.csv",
+    "size_bytes": 3601
+  },
+  {
+    "path": "06_field_results/field_wise_results.json",
+    "size_bytes": 12825
+  },
+  {
+    "path": "06_field_results/individual_fields/BALAJI_VILLAS_TIE_POINTS/report.json",
+    "size_bytes": 1894
+  },
+  {
+    "path": "06_field_results/individual_fields/BALAJI_VILLAS_TIE_POINTS/report.pdf",
+    "size_bytes": 96491
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_DDP_ORTHO/report.json",
+    "size_bytes": 1865
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_DDP_ORTHO/report.pdf",
+    "size_bytes": 43274
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_MAIZE_TOWER_TILE_POINTS/report.json",
+    "size_bytes": 1889
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_MAIZE_TOWER_TILE_POINTS/report.pdf",
+    "size_bytes": 79122
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_puddur/report.json",
+    "size_bytes": 1874
+  },
+  {
+    "path": "06_field_results/individual_fields/KNL_puddur/report.pdf",
+    "size_bytes": 38003
+  },
+  {
+    "path": "06_field_results/individual_fields/LEPAKSHI_TIE_POINTS/report.json",
+    "size_bytes": 1862
+  },
+  {
+    "path": "06_field_results/individual_fields/LEPAKSHI_TIE_POINTS/report.pdf",
+    "size_bytes": 59059
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F1_ORTHO_30_05/report.json",
+    "size_bytes": 1752
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F1_ORTHO_30_05/report.pdf",
+    "size_bytes": 35578
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.json",
+    "size_bytes": 1831
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.pdf",
+    "size_bytes": 63468
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F4_ORTHO_30_05/report.json",
+    "size_bytes": 1751
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F4_ORTHO_30_05/report.pdf",
+    "size_bytes": 39438
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "size_bytes": 1765
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F6_ORTHO_30_05/report.pdf",
+    "size_bytes": 29858
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F7_ORTHO_30_05/report.json",
+    "size_bytes": 1755
+  },
+  {
+    "path": "06_field_results/individual_fields/PEDHAKADUBUR_F7_ORTHO_30_05/report.pdf",
+    "size_bytes": 50596
+  },
+  {
+    "path": "06_field_results/individual_fields/PULLIAH_1_ORTHOMOSAIC/report.json",
+    "size_bytes": 1884
+  },
+  {
+    "path": "06_field_results/individual_fields/PULLIAH_1_ORTHOMOSAIC/report.pdf",
+    "size_bytes": 81280
+  },
+  {
+    "path": "06_field_results/individual_fields/SIRA_TIE_POINTS_01/report.json",
+    "size_bytes": 1849
+  },
+  {
+    "path": "06_field_results/individual_fields/SIRA_TIE_POINTS_01/report.pdf",
+    "size_bytes": 42419
+  },
+  {
+    "path": "06_field_results/individual_fields/SOMANDHAPALLE_TIE_POINTS/report.json",
+    "size_bytes": 1865
+  },
+  {
+    "path": "06_field_results/individual_fields/SOMANDHAPALLE_TIE_POINTS/report.pdf",
+    "size_bytes": 50586
+  },
+  {
+    "path": "06_field_results/individual_fields/shilpa half part orthomosaic3/report.json",
+    "size_bytes": 1889
+  },
+  {
+    "path": "06_field_results/individual_fields/shilpa half part orthomosaic3/report.pdf",
+    "size_bytes": 72886
+  },
+  {
+    "path": "07_figures/calibration_comparison.png",
+    "size_bytes": 210786
+  },
+  {
+    "path": "07_figures/field_class_composition.png",
+    "size_bytes": 281873
+  },
+  {
+    "path": "07_figures/field_drought_percentage.png",
+    "size_bytes": 253193
+  },
+  {
+    "path": "07_figures/field_overlays/BALAJI_VILLAS_TIE_POINTS.jpg",
+    "size_bytes": 1224445
+  },
+  {
+    "path": "07_figures/field_overlays/KNL_DDP_ORTHO.jpg",
+    "size_bytes": 477581
+  },
+  {
+    "path": "07_figures/field_overlays/KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+    "size_bytes": 965337
+  },
+  {
+    "path": "07_figures/field_overlays/KNL_puddur.jpg",
+    "size_bytes": 453127
+  },
+  {
+    "path": "07_figures/field_overlays/LEPAKSHI_TIE_POINTS.jpg",
+    "size_bytes": 679168
+  },
+  {
+    "path": "07_figures/field_overlays/PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+    "size_bytes": 302221
+  },
+  {
+    "path": "07_figures/field_overlays/PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+    "size_bytes": 529288
+  },
+  {
+    "path": "07_figures/field_overlays/PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+    "size_bytes": 283378
+  },
+  {
+    "path": "07_figures/field_overlays/PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+    "size_bytes": 229730
+  },
+  {
+    "path": "07_figures/field_overlays/PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+    "size_bytes": 404759
+  },
+  {
+    "path": "07_figures/field_overlays/PULLIAH_1_ORTHOMOSAIC.jpg",
+    "size_bytes": 961712
+  },
+  {
+    "path": "07_figures/field_overlays/SIRA_TIE_POINTS_01.jpg",
+    "size_bytes": 424756
+  },
+  {
+    "path": "07_figures/field_overlays/SOMANDHAPALLE_TIE_POINTS.jpg",
+    "size_bytes": 570271
+  },
+  {
+    "path": "07_figures/field_overlays/shilpa half part orthomosaic3.jpg",
+    "size_bytes": 942085
+  },
+  {
+    "path": "07_figures/field_stress_score.png",
+    "size_bytes": 231397
+  },
+  {
+    "path": "07_figures/inference_optimization.png",
+    "size_bytes": 95452
+  },
+  {
+    "path": "07_figures/model_comparison.png",
+    "size_bytes": 105163
+  },
+  {
+    "path": "07_figures/v11_history_1_loss.png",
+    "size_bytes": 150323
+  },
+  {
+    "path": "07_figures/v11_history_1_miou.png",
+    "size_bytes": 142913
+  },
+  {
+    "path": "09_file_manifest.json",
+    "size_bytes": 56499
+  },
+  {
+    "path": "10_technical_reference/UAV_TECHNICAL_SOURCE_REFERENCE.txt",
+    "size_bytes": 582947
+  },
+  {
+    "path": "10_technical_reference/dataset_inventory.json",
+    "size_bytes": 2
+  },
+  {
+    "path": "10_technical_reference/source_code_inventory.json",
+    "size_bytes": 19272
+  },
+  {
+    "path": "10_technical_reference/training_script_inventory.json",
+    "size_bytes": 73
+  },
+  {
+    "path": "11_experimental_history/configurations/barren_manifest.yaml",
+    "size_bytes": 5303
+  },
+  {
+    "path": "11_experimental_history/configurations/config.yaml",
+    "size_bytes": 6260
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v10.yaml",
+    "size_bytes": 2786
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v11.yaml",
+    "size_bytes": 2763
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v12.yaml",
+    "size_bytes": 2761
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v5.yaml",
+    "size_bytes": 2763
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v5_before_local.yaml",
+    "size_bytes": 3029
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v6.yaml",
+    "size_bytes": 2763
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v7.yaml",
+    "size_bytes": 2763
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v8.yaml",
+    "size_bytes": 2762
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v9.yaml",
+    "size_bytes": 2762
+  },
+  {
+    "path": "11_experimental_history/configurations/config_v9_1.yaml",
+    "size_bytes": 2786
+  },
+  {
+    "path": "11_experimental_history/configurations/field_gsd_registry.json",
+    "size_bytes": 5943
+  },
+  {
+    "path": "11_experimental_history/configurations/orthomosaics_meta.yaml",
+    "size_bytes": 4055
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/drought_detection/configs/barren_manifest.yaml",
+    "size_bytes": 5303
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/additional_field_previews/preview_manifest.json",
+    "size_bytes": 2595
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/final_dataset_integrity.json",
+    "size_bytes": 313
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/test_manifest.json",
+    "size_bytes": 65580
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/dataset_provenance_audit.json",
+    "size_bytes": 19979
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/field_provenance_audit.json",
+    "size_bytes": 2469
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/final_memory_safety_audit.json",
+    "size_bytes": 3990
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/metashape_provenance_verified.json",
+    "size_bytes": 44213
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/provenance_step50.json",
+    "size_bytes": 2922
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/source_overlap.json",
+    "size_bytes": 2558
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/pseudo_labels/manifest.yaml",
+    "size_bytes": 845879
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/dataset_provenance_audit.json",
+    "size_bytes": 19979
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/field_provenance_audit.json",
+    "size_bytes": 2469
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/final_memory_safety_audit.json",
+    "size_bytes": 3990
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/metashape_provenance_verified.json",
+    "size_bytes": 44213
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/provenance_step50.json",
+    "size_bytes": 2922
+  },
+  {
+    "path": "11_experimental_history/dataset_provenance/runs/v11_ablation/source_overlap.json",
+    "size_bytes": 2558
+  },
+  {
+    "path": "11_experimental_history/historical_file_manifest.json",
+    "size_bytes": 36283
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/classifier/training_report_30.json",
+    "size_bytes": 40976
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/classifier/training_report_30_3.json",
+    "size_bytes": 40840
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/knl_optimized_inference.log",
+    "size_bytes": 77843
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/results_v11/KNL_DDP_ORTHO/inference.log",
+    "size_bytes": 415416
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/results_v11/KNL_DDP_ORTHO/report.json",
+    "size_bytes": 1430
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/calibration_v11.json",
+    "size_bytes": 266
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report.json",
+    "size_bytes": 8677
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report_v10.json",
+    "size_bytes": 8719
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report_v11.json",
+    "size_bytes": 4579
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report_v12.json",
+    "size_bytes": 2944
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report_v9.json",
+    "size_bytes": 8723
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/segmentation/training_report_v9_1.json",
+    "size_bytes": 8704
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "size_bytes": 172424
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "size_bytes": 160372
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/KNL_puddur_batch_benchmark.json",
+    "size_bytes": 245262
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/KNL_puddur_resource_monitor.json",
+    "size_bytes": 226591
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "size_bytes": 164189
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "size_bytes": 152700
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "size_bytes": 218614
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "size_bytes": 203465
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "size_bytes": 128673
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "size_bytes": 119499
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/accuracy_comparison.json",
+    "size_bytes": 11360
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/auxiliary_mask_optimization.json",
+    "size_bytes": 990
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/balaji_optimized_benchmark.json",
+    "size_bytes": 325075
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/balaji_resource_monitor.json",
+    "size_bytes": 301010
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/boundary_components_equivalence.json",
+    "size_bytes": 8367
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/boundary_integration_equivalence.json",
+    "size_bytes": 6120
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/dataset_provenance_audit.json",
+    "size_bytes": 19979
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/disk_components_equivalence.json",
+    "size_bytes": 7927
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/drought_decision_tests.json",
+    "size_bytes": 3418
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/extended_calibration.json",
+    "size_bytes": 14210
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/field_provenance_audit.json",
+    "size_bytes": 2469
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/final_memory_safety_audit.json",
+    "size_bytes": 3990
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/final_output_verification.json",
+    "size_bytes": 3905
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/independent_test_candidates.json",
+    "size_bytes": 12732
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/knl_optimized_benchmark.json",
+    "size_bytes": 573
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/large_morphology_benchmark.json",
+    "size_bytes": 1050
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/KNL_MAIZE_TOWER_TILE_POINTS_batch.log",
+    "size_bytes": 66868
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/KNL_puddur_batch.log",
+    "size_bytes": 113016
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/LEPAKSHI_TIE_POINTS_batch.log",
+    "size_bytes": 61038
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/SIRA_TIE_POINTS_01_batch.log",
+    "size_bytes": 83341
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/SOMANDHAPALLE_TIE_POINTS_batch.log",
+    "size_bytes": 48255
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/balaji_inference.log",
+    "size_bytes": 148841
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/remaining_batch_master.log",
+    "size_bytes": 269595
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/logs/shilpa half part orthomosaic3_batch.log",
+    "size_bytes": 114473
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_decision_equivalence.json",
+    "size_bytes": 3223
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_integration_test/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "size_bytes": 1765
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_integration_test.json",
+    "size_bytes": 771
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_postprocess_equivalence.json",
+    "size_bytes": 8204
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_BALAJI_VILLAS_GCD_REPORT01_06.txt",
+    "size_bytes": 3418
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_DDP_GSD_REPORT.txt",
+    "size_bytes": 3481
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_MAIZE_TOWERS_GSD REPORT_01.txt",
+    "size_bytes": 3885
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_puddur_GSD_REPORT.txt",
+    "size_bytes": 4175
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKABUR_F4_GCD_REPORT.txt",
+    "size_bytes": 3610
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F1_GCD_REPORT.txt",
+    "size_bytes": 3743
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F6_GCD REPORT.txt",
+    "size_bytes": 2727
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F7_GCD_REPORT.txt",
+    "size_bytes": 3373
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADUBUR_F3_GCD REPORT31.txt",
+    "size_bytes": 3386
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PULLIAH_GSD Report.pdf1.txt",
+    "size_bytes": 3688
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SHILPA_GSD_DATA.txt",
+    "size_bytes": 3696
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SIRA_GSD_REPORT_01.txt",
+    "size_bytes": 3423
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SOMANDHAPALLE_GCD_01.txt",
+    "size_bytes": 3441
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_lepakshi ortho_01_06.txt",
+    "size_bytes": 3411
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/metashape_provenance_verified.json",
+    "size_bytes": 44213
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/morphological_optimization_benchmark.json",
+    "size_bytes": 3037
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/orthomosaic_gsd_metadata.json",
+    "size_bytes": 49488
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/pdf_thumbnail_equivalence.json",
+    "size_bytes": 3778
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/provenance_step50.json",
+    "size_bytes": 2922
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/pulliah_optimized_benchmark.json",
+    "size_bytes": 68374
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/remaining_batch_summary.json",
+    "size_bytes": 1671
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/rolling_stitching_equivalence.json",
+    "size_bytes": 2607
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence/memory_safe/report.json",
+    "size_bytes": 1765
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence/reference/report.json",
+    "size_bytes": 1765
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence.json",
+    "size_bytes": 970
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/shilpa half part orthomosaic3_batch_benchmark.json",
+    "size_bytes": 253871
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/shilpa half part orthomosaic3_resource_monitor.json",
+    "size_bytes": 234606
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/small_orthomosaic_results.json",
+    "size_bytes": 9536
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/source_disjoint_evaluation.json",
+    "size_bytes": 4646
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/source_overlap.json",
+    "size_bytes": 2558
+  },
+  {
+    "path": "11_experimental_history/recorded_experiments/v11_ablation/strip_components_equivalence.json",
+    "size_bytes": 5378
+  },
+  {
+    "path": "12_custom_annotation_tool/ANNOTATION_CLASS_MAPPING.json",
+    "size_bytes": 1044
+  },
+  {
+    "path": "12_custom_annotation_tool/ANNOTATION_METHODOLOGY.md",
+    "size_bytes": 1915
+  },
+  {
+    "path": "12_custom_annotation_tool/annotate_balanced200.py",
+    "size_bytes": 23407
+  },
+  {
+    "path": "13_architecture_and_methodology/01_model_architecture.md",
+    "size_bytes": 7255
+  },
+  {
+    "path": "13_architecture_and_methodology/02_feature_engineering.md",
+    "size_bytes": 14511
+  },
+  {
+    "path": "13_architecture_and_methodology/03_training_methodology.md",
+    "size_bytes": 56098
+  },
+  {
+    "path": "13_architecture_and_methodology/04_pseudo_labeling.md",
+    "size_bytes": 10866
+  },
+  {
+    "path": "13_architecture_and_methodology/05_calibration.md",
+    "size_bytes": 16471
+  },
+  {
+    "path": "13_architecture_and_methodology/06_inference_and_optimization.md",
+    "size_bytes": 48779
+  },
+  {
+    "path": "13_architecture_and_methodology/07_area_and_reporting.md",
+    "size_bytes": 27933
+  },
+  {
+    "path": "13_architecture_and_methodology/README.md",
+    "size_bytes": 967
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/01_complete_system.md",
+    "size_bytes": 803
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/01_complete_system.mmd",
+    "size_bytes": 765
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/02_segformer_b2.md",
+    "size_bytes": 668
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/02_segformer_b2.mmd",
+    "size_bytes": 633
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/03_training_pipeline.md",
+    "size_bytes": 555
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/03_training_pipeline.mmd",
+    "size_bytes": 515
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/04_annotation_workflow.md",
+    "size_bytes": 453
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/04_annotation_workflow.mmd",
+    "size_bytes": 411
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/05_optimized_inference.md",
+    "size_bytes": 674
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/05_optimized_inference.mmd",
+    "size_bytes": 632
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/06_visual_stress_decision.md",
+    "size_bytes": 505
+  },
+  {
+    "path": "13_architecture_and_methodology/diagrams/06_visual_stress_decision.mmd",
+    "size_bytes": 460
+  },
+  {
+    "path": "13_architecture_and_methodology/technical_manifest.json",
+    "size_bytes": 1980
+  },
+  {
+    "path": "annotate_balanced200.py",
+    "size_bytes": 23407
+  },
+  {
+    "path": "source_inventory.json",
+    "size_bytes": 4111
+  }
+]

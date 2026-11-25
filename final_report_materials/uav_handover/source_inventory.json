@@ -1,0 +1,210 @@
+[
+  {
+    "path": "src/classifier/__init__.py",
+    "size_bytes": 357
+  },
+  {
+    "path": "src/classifier/dataset.py",
+    "size_bytes": 15202
+  },
+  {
+    "path": "src/classifier/losses.py",
+    "size_bytes": 7604
+  },
+  {
+    "path": "src/classifier/model.py",
+    "size_bytes": 9132
+  },
+  {
+    "path": "src/classifier/train.py",
+    "size_bytes": 16094
+  },
+  {
+    "path": "src/inference/__init__.py",
+    "size_bytes": 289
+  },
+  {
+    "path": "src/inference/memory_safe_postprocess.py",
+    "size_bytes": 6970
+  },
+  {
+    "path": "src/inference/memory_safe_report.py",
+    "size_bytes": 3615
+  },
+  {
+    "path": "src/inference/postprocess.py",
+    "size_bytes": 7531
+  },
+  {
+    "path": "src/inference/predict.py",
+    "size_bytes": 11188
+  },
+  {
+    "path": "src/inference/predict_v11.py",
+    "size_bytes": 14502
+  },
+  {
+    "path": "src/inference/report.py",
+    "size_bytes": 25288
+  },
+  {
+    "path": "src/inference/report_before_indexed_png.py",
+    "size_bytes": 24263
+  },
+  {
+    "path": "src/inference/tile.py",
+    "size_bytes": 10667
+  },
+  {
+    "path": "src/inference/tile_v11.py",
+    "size_bytes": 15787
+  },
+  {
+    "path": "src/inference/tile_v11_before_fp32.py",
+    "size_bytes": 10755
+  },
+  {
+    "path": "src/inference/tile_v11_before_weight_removal.py",
+    "size_bytes": 10764
+  },
+  {
+    "path": "src/preprocessing/__init__.py",
+    "size_bytes": 1018
+  },
+  {
+    "path": "src/preprocessing/boundary_components.py",
+    "size_bytes": 6523
+  },
+  {
+    "path": "src/preprocessing/disk_components.py",
+    "size_bytes": 4349
+  },
+  {
+    "path": "src/preprocessing/gsd.py",
+    "size_bytes": 2451
+  },
+  {
+    "path": "src/preprocessing/indices.py",
+    "size_bytes": 3159
+  },
+  {
+    "path": "src/preprocessing/masks.py",
+    "size_bytes": 5004
+  },
+  {
+    "path": "src/preprocessing/strip_components.py",
+    "size_bytes": 3921
+  },
+  {
+    "path": "src/preprocessing/tensor_builder.py",
+    "size_bytes": 6090
+  },
+  {
+    "path": "src/pseudo_label/__init__.py",
+    "size_bytes": 310
+  },
+  {
+    "path": "src/pseudo_label/label.py",
+    "size_bytes": 10718
+  },
+  {
+    "path": "src/pseudo_label/postprocess.py",
+    "size_bytes": 8541
+  },
+  {
+    "path": "src/pseudo_label/sliding_window.py",
+    "size_bytes": 7678
+  },
+  {
+    "path": "src/pseudo_label/viz.py",
+    "size_bytes": 7079
+  },
+  {
+    "path": "src/segmentation/__init__.py",
+    "size_bytes": 548
+  },
+  {
+    "path": "src/segmentation/compositor.py",
+    "size_bytes": 12388
+  },
+  {
+    "path": "src/segmentation/dataset.py",
+    "size_bytes": 11786
+  },
+  {
+    "path": "src/segmentation/eval_calibration_v11.py",
+    "size_bytes": 16312
+  },
+  {
+    "path": "src/segmentation/eval_confusion_v11.py",
+    "size_bytes": 17372
+  },
+  {
+    "path": "src/segmentation/eval_dryweed_v11.py",
+    "size_bytes": 16399
+  },
+  {
+    "path": "src/segmentation/eval_source_independent_v11.py",
+    "size_bytes": 17490
+  },
+  {
+    "path": "src/segmentation/losses.py",
+    "size_bytes": 10933
+  },
+  {
+    "path": "src/segmentation/model.py",
+    "size_bytes": 7104
+  },
+  {
+    "path": "src/segmentation/model_b3.py",
+    "size_bytes": 7105
+  },
+  {
+    "path": "src/segmentation/model_b3_v91.py",
+    "size_bytes": 7099
+  },
+  {
+    "path": "src/segmentation/model_deeplab.py",
+    "size_bytes": 581
+  },
+  {
+    "path": "src/segmentation/train.py",
+    "size_bytes": 20676
+  },
+  {
+    "path": "src/segmentation/train_b3.py",
+    "size_bytes": 20561
+  },
+  {
+    "path": "src/segmentation/train_b3_v91.py",
+    "size_bytes": 20808
+  },
+  {
+    "path": "src/segmentation/train_before_local_pseudo_fix.py",
+    "size_bytes": 20467
+  },
+  {
+    "path": "src/segmentation/train_before_v5_fix.py",
+    "size_bytes": 20228
+  },
+  {
+    "path": "src/segmentation/train_deeplab_v10.py",
+    "size_bytes": 20819
+  },
+  {
+    "path": "src/segmentation/train_v11.py",
+    "size_bytes": 20688
+  },
+  {
+    "path": "src/segmentation/train_v12.py",
+    "size_bytes": 20688
+  },
+  {
+    "path": "src/utils/__init__.py",
+    "size_bytes": 408
+  },
+  {
+    "path": "src/utils/constants.py",
+    "size_bytes": 2201
+  }
+]

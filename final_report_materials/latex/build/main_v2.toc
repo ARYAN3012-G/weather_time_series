@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}%
+\contentsline {section}{\numberline {3}Research Gaps, Problem Statement and Objectives}{4}{section.3}%
+\contentsline {section}{\numberline {4}Study Area, Data and Overall Architecture}{4}{section.4}%
+\contentsline {section}{\numberline {5}Kharif Module: Weather Forecast and Satellite Confirmation}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Weather forecasting (Module 1)}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Satellite confirmation (Module 2)}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Combined kharif chain: replay against government orders}{7}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Rabi Module}{8}{section.6}%
+\contentsline {section}{\numberline {7}UAV Module: Visual Drought-Stress Segmentation}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Data and labels}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Model}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Training}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Orthomosaic inference, area and decision}{13}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Results}{14}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Implementation and Work Status}{16}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion, Limitations and Future Work}{17}{section.9}%
+\contentsline {section}{References}{17}{section.9}%

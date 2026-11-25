@@ -1,0 +1,4 @@
+[
+  "scripts/diagnose_pseudo_labels.py",
+  "scripts/pseudo_annotate.py"
+]

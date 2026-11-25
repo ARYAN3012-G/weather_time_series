@@ -1,0 +1,64 @@
+[
+  {
+    "file": "KNL_puddur_batch_benchmark.json",
+    "matching_keys": [
+      "report.area_stats.per_class"
+    ]
+  },
+  {
+    "file": "accuracy_comparison.json",
+    "matching_keys": [
+      "[0].per_class_iou",
+      "[0].confusion_matrix",
+      "[1].per_class_iou",
+      "[1].confusion_matrix",
+      "[2].per_class_iou",
+      "[2].confusion_matrix"
+    ]
+  },
+  {
+    "file": "balaji_optimized_benchmark.json",
+    "matching_keys": [
+      "report.area_stats.per_class"
+    ]
+  },
+  {
+    "file": "extended_calibration.json",
+    "matching_keys": [
+      "[0].per_class_iou",
+      "[0].confusion_matrix",
+      "[1].per_class_iou",
+      "[1].confusion_matrix",
+      "[2].per_class_iou",
+      "[2].confusion_matrix"
+    ]
+  },
+  {
+    "file": "pulliah_optimized_benchmark.json",
+    "matching_keys": [
+      "report.area_stats.per_class"
+    ]
+  },
+  {
+    "file": "shilpa half part orthomosaic3_batch_benchmark.json",
+    "matching_keys": [
+      "report.area_stats.per_class"
+    ]
+  },
+  {
+    "file": "small_orthomosaic_results.json",
+    "matching_keys": [
+      "results[0].report.area_stats.per_class",
+      "results[1].report.area_stats.per_class",
+      "results[2].report.area_stats.per_class"
+    ]
+  },
+  {
+    "file": "source_disjoint_evaluation.json",
+    "matching_keys": [
+      "[0].confusion_matrix",
+      "[1].confusion_matrix",
+      "[2].confusion_matrix"
+    ]
+  }
+]

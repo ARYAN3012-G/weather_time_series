@@ -1,0 +1,333 @@
+{
+  "total_tests": 18,
+  "passed": 18,
+  "failed": 0,
+  "total_image_pixels_compared": 16607702,
+  "total_array_differences": 0,
+  "results": [
+    {
+      "case": "synthetic_257x301",
+      "strip_rows": 128,
+      "pixels": 77357,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.814705991999972,
+      "optimized_seconds": 0.08017498599997452,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_257x301",
+      "strip_rows": 256,
+      "pixels": 77357,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.814705991999972,
+      "optimized_seconds": 0.06394340899998951,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_513x701",
+      "strip_rows": 128,
+      "pixels": 359613,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.95707285900005,
+      "optimized_seconds": 0.26700602599999,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_513x701",
+      "strip_rows": 256,
+      "pixels": 359613,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.95707285900005,
+      "optimized_seconds": 0.22957959099994696,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_1024x1024",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 2.1506165509999846,
+      "optimized_seconds": 0.7268372700000327,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_1024x1024",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 2.1506165509999846,
+      "optimized_seconds": 0.6587453910000249,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_1537x1025",
+      "strip_rows": 128,
+      "pixels": 1575425,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 2.529821910999999,
+      "optimized_seconds": 1.1075425349999932,
+      "status": "PASS"
+    },
+    {
+      "case": "synthetic_1537x1025",
+      "strip_rows": 256,
+      "pixels": 1575425,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 2.529821910999999,
+      "optimized_seconds": 1.0039205069999753,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F1_ORTHO_30_05",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.4328175250000186,
+      "optimized_seconds": 0.3830841970000165,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F1_ORTHO_30_05",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.4328175250000186,
+      "optimized_seconds": 0.3295365959999117,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F3_OTHOMOSAIC 31",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.3848101209999868,
+      "optimized_seconds": 0.3941403180000407,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F3_OTHOMOSAIC 31",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.3848101209999868,
+      "optimized_seconds": 0.3378666629999998,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F4_ORTHO_30_05",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 0.7183568749999267,
+      "optimized_seconds": 0.3039012920000914,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F4_ORTHO_30_05",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 0.7183568749999267,
+      "optimized_seconds": 0.276557347999983,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F6_ORTHO_30_05",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.3641284059999634,
+      "optimized_seconds": 0.37200081699995735,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F6_ORTHO_30_05",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.3641284059999634,
+      "optimized_seconds": 0.31934701600005155,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F7_ORTHO_30_05",
+      "strip_rows": 128,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.4712906669999484,
+      "optimized_seconds": 0.3855655750001006,
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F7_ORTHO_30_05",
+      "strip_rows": 256,
+      "pixels": 1048576,
+      "differences": {
+        "valid_field": 0,
+        "glare": 0,
+        "shadow": 0,
+        "softening": 0,
+        "morphology": 0,
+        "harvest": 0,
+        "final_class_map": 0,
+        "final_harvest": 0
+      },
+      "reference_seconds": 1.4712906669999484,
+      "optimized_seconds": 0.3307263970000349,
+      "status": "PASS"
+    }
+  ]
+}

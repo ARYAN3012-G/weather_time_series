@@ -1,0 +1,90 @@
+{
+  "archive_metadata": [],
+  "pseudo_label_records": 2011,
+  "named_source_matches": {
+    "DJI_20260118084621_0281_D": [
+      {
+        "image": "DJI_20260118084621_0281_D.JPG",
+        "mask": "masks/DJI_20260118084621_0281_D.png",
+        "overlay": "overlays/DJI_20260118084621_0281_D.jpg",
+        "confidence": "confidence/DJI_20260118084621_0281_D.png",
+        "height": 4536,
+        "width": 8064,
+        "ignore_fraction": 0.0016,
+        "class_fractions": {
+          "background": 0.0,
+          "soil": 0.0,
+          "crop": 1.0,
+          "cotton_ball": 0.0,
+          "green_weed": 0.0,
+          "dry_weed": 0.0,
+          "drought": 0.0
+        },
+        "elapsed_s": 12.9
+      }
+    ],
+    "DJI_20260119081130_0808_D": [
+      {
+        "image": "DJI_20260119081130_0808_D.JPG",
+        "mask": "masks/DJI_20260119081130_0808_D.png",
+        "overlay": "overlays/DJI_20260119081130_0808_D.jpg",
+        "confidence": "confidence/DJI_20260119081130_0808_D.png",
+        "height": 4536,
+        "width": 8064,
+        "ignore_fraction": 0.0019,
+        "class_fractions": {
+          "background": 0.0,
+          "soil": 0.0008,
+          "crop": 0.0014,
+          "cotton_ball": 0.0,
+          "green_weed": 0.0077,
+          "dry_weed": 0.9889,
+          "drought": 0.0012
+        },
+        "elapsed_s": 14.0
+      }
+    ],
+    "dji_fly_20250321_102737_0_1742533057237_photo_low_quality": [
+      {
+        "image": "dji_fly_20250321_102737_0_1742533057237_photo_low_quality.jpg",
+        "mask": "masks/dji_fly_20250321_102737_0_1742533057237_photo_low_quality.png",
+        "overlay": "overlays/dji_fly_20250321_102737_0_1742533057237_photo_low_quality.jpg",
+        "confidence": "confidence/dji_fly_20250321_102737_0_1742533057237_photo_low_quality.png",
+        "height": 720,
+        "width": 1280,
+        "ignore_fraction": 0.0021,
+        "class_fractions": {
+          "background": 0.0,
+          "soil": 0.0,
+          "crop": 0.0,
+          "cotton_ball": 0.0,
+          "green_weed": 0.0,
+          "dry_weed": 0.4838,
+          "drought": 0.5162
+        },
+        "elapsed_s": 1.1
+      }
+    ],
+    "dji_fly_20250321_115953_0_1742538593177_photo_low_quality": [
+      {
+        "image": "dji_fly_20250321_115953_0_1742538593177_photo_low_quality.jpg",
+        "mask": "masks/dji_fly_20250321_115953_0_1742538593177_photo_low_quality.png",
+        "overlay": "overlays/dji_fly_20250321_115953_0_1742538593177_photo_low_quality.jpg",
+        "confidence": "confidence/dji_fly_20250321_115953_0_1742538593177_photo_low_quality.png",
+        "height": 720,
+        "width": 1280,
+        "ignore_fraction": 0.0,
+        "class_fractions": {
+          "background": 0.0,
+          "soil": 1.0,
+          "crop": 0.0,
+          "cotton_ball": 0.0,
+          "green_weed": 0.0,
+          "dry_weed": 0.0,
+          "drought": 0.0
+        },
+        "elapsed_s": 1.0
+      }
+    ]
+  }
+}

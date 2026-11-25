@@ -1,0 +1,14 @@
+{
+  "total_tiles": 127,
+  "total_fields": 13,
+  "valid_images": 127,
+  "invalid_images": [],
+  "duplicate_groups": [],
+  "spatial_overlaps": [],
+  "archive_missing": [],
+  "archive_extra": [],
+  "archive_corruption": null,
+  "existing_mask_files": 0,
+  "integrity_passed": true,
+  "independence_verified": false
+}

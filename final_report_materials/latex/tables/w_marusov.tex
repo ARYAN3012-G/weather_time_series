@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Weather module under the Marusov et al.\ protocol (binary drought SPEI $< -1$; median ROC-AUC over sites).}
+\label{tab:w_marusov}
+\footnotesize
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Model and input} & \textbf{7 days} & \textbf{15 days} & \textbf{30 days} \\
+\midrule
+Persistence & 0.778 & 0.687 & 0.598 \\
+Logistic regression on last SPEI & 0.918 & 0.806 & 0.701 \\
+XGBoost, SPEI history & 0.919 & 0.777 & 0.587 \\
+LSTM, SPEI history & 0.939 & 0.809 & 0.682 \\
+\textbf{XGBoost, weather + SPEI} & \textbf{0.960} & \textbf{0.886} & \textbf{0.706} \\
+LSTM, weather + SPEI & 0.949 & 0.873 & 0.575 \\
+\bottomrule
+\end{tabular}
+\end{table}

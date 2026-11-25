@@ -1,0 +1,82 @@
+[
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "train_loss",
+    "first_epoch": 1,
+    "first_value": 1.473112858772278,
+    "last_epoch": 10,
+    "last_value": 1.5881060967445373,
+    "minimum": 1.4627336196899414,
+    "maximum": 1.6222374725341797
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_miou",
+    "first_epoch": 1,
+    "first_value": 0.6088409911778477,
+    "last_epoch": 10,
+    "last_value": 0.6054894004422259,
+    "minimum": 0.602379900455929,
+    "maximum": 0.6146073555301135
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.soil",
+    "first_epoch": 1,
+    "first_value": 0.68652495800916,
+    "last_epoch": 10,
+    "last_value": 0.6798594716172643,
+    "minimum": 0.6725467581020671,
+    "maximum": 0.6950961018315099
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.crop",
+    "first_epoch": 1,
+    "first_value": 0.7240233417604826,
+    "last_epoch": 10,
+    "last_value": 0.718924671451752,
+    "minimum": 0.7060070395082769,
+    "maximum": 0.7335062683414395
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.cotton_ball",
+    "first_epoch": 1,
+    "first_value": 0.5253260464538566,
+    "last_epoch": 10,
+    "last_value": 0.5257210823669343,
+    "minimum": 0.5141496894560043,
+    "maximum": 0.5424508682541334
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.green_weed",
+    "first_epoch": 1,
+    "first_value": 0.674410783889527,
+    "last_epoch": 10,
+    "last_value": 0.6772810999842607,
+    "minimum": 0.6710364044288792,
+    "maximum": 0.681006004446199
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.dry_weed",
+    "first_epoch": 1,
+    "first_value": 0.5225388324577056,
+    "last_epoch": 10,
+    "last_value": 0.5124052375575172,
+    "minimum": 0.5124052375575172,
+    "maximum": 0.5275994492604011
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json:history",
+    "metric": "val_iou_per_class.drought",
+    "first_epoch": 1,
+    "first_value": 0.5202219844963546,
+    "last_epoch": 10,
+    "last_value": 0.5187448396756271,
+    "minimum": 0.5163103527232779,
+    "maximum": 0.530077615925424
+  }
+]

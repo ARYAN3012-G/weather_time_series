@@ -1,0 +1,79 @@
+{
+  "model": "SegFormer-B2 V11",
+  "gpu": "Tesla T4",
+  "test_cases": 5,
+  "total_pixels": 12960048,
+  "total_different_pixels": 0,
+  "agreement_percent": 100.0,
+  "reference_total_seconds": 18.144575380999413,
+  "optimized_total_seconds": 16.610203106999506,
+  "aggregate_speedup": 1.0923752866907044,
+  "pixel_exact_equivalence": true,
+  "results": [
+    {
+      "test": "F1_overlap",
+      "image": "PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "pixels": 2359296,
+      "different_pixels": 0,
+      "agreement_percent": 100.0,
+      "reference_seconds": 3.2754381659997307,
+      "optimized_seconds": 2.586891721000029,
+      "speedup": 1.2661674779080148,
+      "full_accumulator_bytes": 77529088,
+      "rolling_accumulator_bytes": 23855104,
+      "memory_reduction_percent": 69.23076923076923
+    },
+    {
+      "test": "F3_padding",
+      "image": "PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "pixels": 1950000,
+      "different_pixels": 0,
+      "agreement_percent": 100.0,
+      "reference_seconds": 3.126500309000221,
+      "optimized_seconds": 2.975514910000129,
+      "speedup": 1.050742612141737,
+      "full_accumulator_bytes": 77529088,
+      "rolling_accumulator_bytes": 23855104,
+      "memory_reduction_percent": 69.23076923076923
+    },
+    {
+      "test": "F4_dense_overlap",
+      "image": "PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "pixels": 2359296,
+      "different_pixels": 0,
+      "agreement_percent": 100.0,
+      "reference_seconds": 3.985410942999806,
+      "optimized_seconds": 3.951599076999628,
+      "speedup": 1.008556502150479,
+      "full_accumulator_bytes": 66060288,
+      "rolling_accumulator_bytes": 22020096,
+      "memory_reduction_percent": 66.66666666666667
+    },
+    {
+      "test": "F6_production_tile",
+      "image": "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+      "pixels": 3145728,
+      "different_pixels": 0,
+      "agreement_percent": 100.0,
+      "reference_seconds": 3.8254903460001515,
+      "optimized_seconds": 3.5643636730001163,
+      "speedup": 1.0732603900600988,
+      "full_accumulator_bytes": 128450560,
+      "rolling_accumulator_bytes": 51380224,
+      "memory_reduction_percent": 60.0
+    },
+    {
+      "test": "F7_production_tile",
+      "image": "PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "pixels": 3145728,
+      "different_pixels": 0,
+      "agreement_percent": 100.0,
+      "reference_seconds": 3.9317356169995037,
+      "optimized_seconds": 3.531833725999604,
+      "speedup": 1.1132278363095127,
+      "full_accumulator_bytes": 128450560,
+      "rolling_accumulator_bytes": 73400320,
+      "memory_reduction_percent": 42.85714285714286
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "thresholds": {
+    "tau_fraction": 0.15,
+    "tau_non_harvest": 0.1,
+    "tau_cc_share": 0.25
+  },
+  "tests": [
+    {
+      "test": "No stress",
+      "passed": true,
+      "decision": {
+        "drought": false,
+        "confidence": 0.0,
+        "stress_score": 0.0,
+        "score_is_calibrated_probability": false,
+        "decision_type": "visual_stress_heuristic",
+        "field_confirmation_required": true,
+        "drought_fraction": 0.0,
+        "non_harvest_drought_fraction": 0.0,
+        "largest_cc_share": 0.0,
+        "signal_1_fraction": false,
+        "signal_2_non_harvest": false,
+        "signal_3_coherent": false,
+        "tau_fraction": 0.15,
+        "tau_non_harvest": 0.1,
+        "tau_cc_share": 0.25
+      }
+    },
+    {
+      "test": "Very small stress",
+      "passed": true,
+      "decision": {
+        "drought": false,
+        "confidence": 0.201,
+        "stress_score": 0.201,
+        "score_is_calibrated_probability": false,
+        "decision_type": "visual_stress_heuristic",
+        "field_confirmation_required": true,
+        "drought_fraction": 0.0001,
+        "non_harvest_drought_fraction": 0.0001,
+        "largest_cc_share": 1.0,
+        "signal_1_fraction": false,
+        "signal_2_non_harvest": false,
+        "signal_3_coherent": true,
+        "tau_fraction": 0.15,
+        "tau_non_harvest": 0.1,
+        "tau_cc_share": 0.25
+      }
+    },
+    {
+      "test": "Below thresholds",
+      "passed": true,
+      "decision": {
+        "drought": false,
+        "confidence": 0.517,
+        "stress_score": 0.517,
+        "score_is_calibrated_probability": false,
+        "decision_type": "visual_stress_heuristic",
+        "field_confirmation_required": true,
+        "drought_fraction": 0.05,
+        "non_harvest_drought_fraction": 0.05,
+        "largest_cc_share": 1.0,
+        "signal_1_fraction": false,
+        "signal_2_non_harvest": false,
+        "signal_3_coherent": true,
+        "tau_fraction": 0.15,
+        "tau_non_harvest": 0.1,
+        "tau_cc_share": 0.25
+      }
+    },
+    {
+      "test": "Coherent stress",
+      "passed": true,
+      "decision": {
+        "drought": true,
+        "confidence": 0.96,
+        "stress_score": 0.96,
+        "score_is_calibrated_probability": false,
+        "decision_type": "visual_stress_heuristic",
+        "field_confirmation_required": true,
+        "drought_fraction": 0.12,
+        "non_harvest_drought_fraction": 0.12,
+        "largest_cc_share": 1.0,
+        "signal_1_fraction": false,
+        "signal_2_non_harvest": true,
+        "signal_3_coherent": true,
+        "tau_fraction": 0.15,
+        "tau_non_harvest": 0.1,
+        "tau_cc_share": 0.25
+      }
+    },
+    {
+      "test": "Widespread stress",
+      "passed": true,
+      "decision": {
+        "drought": true,
+        "confidence": 1.0,
+        "stress_score": 1.0,
+        "score_is_calibrated_probability": false,
+        "decision_type": "visual_stress_heuristic",
+        "field_confirmation_required": true,
+        "drought_fraction": 0.2,
+        "non_harvest_drought_fraction": 0.2,
+        "largest_cc_share": 1.0,
+        "signal_1_fraction": true,
+        "signal_2_non_harvest": true,
+        "signal_3_coherent": true,
+        "tau_fraction": 0.15,
+        "tau_non_harvest": 0.1,
+        "tau_cc_share": 0.25
+      }
+    }
+  ],
+  "harvest_exclusion_passed": true,
+  "precision_test_passed": true,
+  "all_tests_passed": true
+}

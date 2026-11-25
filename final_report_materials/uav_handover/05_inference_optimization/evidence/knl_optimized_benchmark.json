@@ -1,0 +1,17 @@
+{
+  "image": "KNL_DDP_ORTHO.jpg",
+  "width": 22189,
+  "height": 49690,
+  "total_pixels": 1102571410,
+  "model": "SegFormer-B2 V11",
+  "gpu": "Tesla T4",
+  "previous_runtime_seconds": 5875.6,
+  "optimized_runtime_seconds": 1472.0818026649995,
+  "observed_speedup": 3.9913542775700668,
+  "runtime_reduction_percent": 74.945847187266,
+  "peak_process_ram_gb": 26.708606976,
+  "minimum_available_ram_gb": 20.626432,
+  "peak_allocated_gpu_memory_gb": 15.175591936,
+  "comparison_note": "Previous run used different GPU and runtime resources",
+  "model_weights_modified": false
+}

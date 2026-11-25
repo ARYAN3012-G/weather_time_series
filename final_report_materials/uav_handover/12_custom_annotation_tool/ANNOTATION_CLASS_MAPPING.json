@@ -1,0 +1,80 @@
+{
+  "model_num_classes": 7,
+  "ignore_index": 255,
+  "map_pseudo_background_to_ignore": true,
+  "classes": [
+    {
+      "id": 0,
+      "name": "background",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "annotation_label": 255
+    },
+    {
+      "id": 1,
+      "name": "soil",
+      "rgb": [
+        139,
+        90,
+        43
+      ]
+    },
+    {
+      "id": 2,
+      "name": "crop",
+      "rgb": [
+        0,
+        180,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "name": "cotton_ball",
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": 4,
+      "name": "green_weed",
+      "rgb": [
+        140,
+        255,
+        140
+      ]
+    },
+    {
+      "id": 5,
+      "name": "dry_weed",
+      "rgb": [
+        210,
+        170,
+        90
+      ]
+    },
+    {
+      "id": 6,
+      "name": "drought",
+      "rgb": [
+        220,
+        30,
+        30
+      ]
+    },
+    {
+      "id": 255,
+      "name": "ignore",
+      "rgb": [
+        80,
+        80,
+        80
+      ]
+    }
+  ]
+}

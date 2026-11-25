@@ -1,0 +1,1759 @@
+{
+  "best_val_macro_f1": 0.5658,
+  "test_metrics": {
+    "accuracy": 0.5875,
+    "macro_f1": 0.5029,
+    "per_class": {
+      "background": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "soil": {
+        "precision": 0.6667,
+        "recall": 0.5333,
+        "f1": 0.5926
+      },
+      "crop": {
+        "precision": 0.6176,
+        "recall": 0.75,
+        "f1": 0.6774
+      },
+      "cotton_ball": {
+        "precision": 0.8333,
+        "recall": 0.7407,
+        "f1": 0.7843
+      },
+      "green_weed": {
+        "precision": 0.8,
+        "recall": 0.4138,
+        "f1": 0.5455
+      },
+      "dry_weed": {
+        "precision": 0.3514,
+        "recall": 0.5909,
+        "f1": 0.4407
+      },
+      "drought": {
+        "precision": 0.4615,
+        "recall": 0.5,
+        "f1": 0.48
+      }
+    },
+    "confusion_pair_errors": {
+      "drought\u2194dry_weed": 0.2174,
+      "drought\u2194soil": 0.0556,
+      "drought\u2194crop": 0.0577,
+      "soil\u2194cotton_ball": 0.0,
+      "crop\u2194green_weed": 0.193
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.360987674248846,
+      "val_loss": 0.1349332183599472,
+      "accuracy": 0.1728,
+      "macro_f1": 0.0421,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.1728,
+          "recall": 1.0,
+          "f1": 0.2947
+        },
+        "cotton_ball": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "green_weed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "dry_weed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "drought": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.0,
+        "drought\u2194soil": 0.0,
+        "drought\u2194crop": 0.4684,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.5116
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.36042488405579015,
+      "val_loss": 0.1351474318653345,
+      "accuracy": 0.1523,
+      "macro_f1": 0.0378,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "cotton_ball": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "green_weed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "dry_weed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "drought": {
+          "precision": 0.1523,
+          "recall": 1.0,
+          "f1": 0.2643
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.4789,
+        "drought\u2194soil": 0.5542,
+        "drought\u2194crop": 0.5316,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.0
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3581358994308271,
+      "val_loss": 0.13135280832648277,
+      "accuracy": 0.1646,
+      "macro_f1": 0.0596,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "cotton_ball": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "green_weed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "dry_weed": {
+          "precision": 0.4286,
+          "recall": 0.0882,
+          "f1": 0.1463
+        },
+        "drought": {
+          "precision": 0.1568,
+          "recall": 1.0,
+          "f1": 0.2711
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.4366,
+        "drought\u2194soil": 0.5301,
+        "drought\u2194crop": 0.519,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.0
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.34037885069847107,
+      "val_loss": 0.11073706485331059,
+      "accuracy": 0.321,
+      "macro_f1": 0.2008,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.5957,
+          "recall": 0.6667,
+          "f1": 0.6292
+        },
+        "cotton_ball": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "green_weed": {
+          "precision": 0.5517,
+          "recall": 0.3636,
+          "f1": 0.4384
+        },
+        "dry_weed": {
+          "precision": 0.2036,
+          "recall": 1.0,
+          "f1": 0.3383
+        },
+        "drought": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.493,
+        "drought\u2194soil": 0.0,
+        "drought\u2194crop": 0.0,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.2791
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.29463051181090505,
+      "val_loss": 0.07829031348228455,
+      "accuracy": 0.3704,
+      "macro_f1": 0.2648,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.4545,
+          "recall": 0.8333,
+          "f1": 0.5882
+        },
+        "cotton_ball": {
+          "precision": 0.4615,
+          "recall": 0.3,
+          "f1": 0.3636
+        },
+        "green_weed": {
+          "precision": 0.4286,
+          "recall": 0.0682,
+          "f1": 0.1176
+        },
+        "dry_weed": {
+          "precision": 0.2794,
+          "recall": 0.5588,
+          "f1": 0.3725
+        },
+        "drought": {
+          "precision": 0.3231,
+          "recall": 0.5676,
+          "f1": 0.4118
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.3099,
+        "drought\u2194soil": 0.241,
+        "drought\u2194crop": 0.0506,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.3488
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.2601469802229028,
+      "val_loss": 0.07682275585830212,
+      "accuracy": 0.4444,
+      "macro_f1": 0.3486,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.5,
+          "recall": 0.2391,
+          "f1": 0.3235
+        },
+        "crop": {
+          "precision": 0.4915,
+          "recall": 0.6905,
+          "f1": 0.5743
+        },
+        "cotton_ball": {
+          "precision": 0.619,
+          "recall": 0.65,
+          "f1": 0.6341
+        },
+        "green_weed": {
+          "precision": 1.0,
+          "recall": 0.0227,
+          "f1": 0.0444
+        },
+        "dry_weed": {
+          "precision": 0.3175,
+          "recall": 0.5882,
+          "f1": 0.4124
+        },
+        "drought": {
+          "precision": 0.375,
+          "recall": 0.5676,
+          "f1": 0.4516
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1972,
+        "drought\u2194soil": 0.1807,
+        "drought\u2194crop": 0.0633,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2209
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.2662887926164426,
+      "val_loss": 0.06874294672161341,
+      "accuracy": 0.4115,
+      "macro_f1": 0.2944,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "crop": {
+          "precision": 0.551,
+          "recall": 0.6429,
+          "f1": 0.5934
+        },
+        "cotton_ball": {
+          "precision": 0.6667,
+          "recall": 0.85,
+          "f1": 0.7473
+        },
+        "green_weed": {
+          "precision": 0.1429,
+          "recall": 0.0455,
+          "f1": 0.069
+        },
+        "dry_weed": {
+          "precision": 0.3529,
+          "recall": 0.1765,
+          "f1": 0.2353
+        },
+        "drought": {
+          "precision": 0.2768,
+          "recall": 0.8378,
+          "f1": 0.4161
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.3662,
+        "drought\u2194soil": 0.3855,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.314
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.23666773265913912,
+      "val_loss": 0.05703680496662855,
+      "accuracy": 0.465,
+      "macro_f1": 0.3414,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 1.0,
+          "recall": 0.0435,
+          "f1": 0.0833
+        },
+        "crop": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "cotton_ball": {
+          "precision": 0.9091,
+          "recall": 0.75,
+          "f1": 0.8219
+        },
+        "green_weed": {
+          "precision": 0.4583,
+          "recall": 0.75,
+          "f1": 0.569
+        },
+        "dry_weed": {
+          "precision": 0.2903,
+          "recall": 0.5294,
+          "f1": 0.375
+        },
+        "drought": {
+          "precision": 0.4054,
+          "recall": 0.8108,
+          "f1": 0.5405
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2958,
+        "drought\u2194soil": 0.1325,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.3953
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.24499643633240148,
+      "val_loss": 0.054124568589031696,
+      "accuracy": 0.5226,
+      "macro_f1": 0.4229,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.4792,
+          "recall": 0.5,
+          "f1": 0.4894
+        },
+        "crop": {
+          "precision": 0.5312,
+          "recall": 0.8095,
+          "f1": 0.6415
+        },
+        "cotton_ball": {
+          "precision": 0.8857,
+          "recall": 0.775,
+          "f1": 0.8267
+        },
+        "green_weed": {
+          "precision": 0.8182,
+          "recall": 0.2045,
+          "f1": 0.3273
+        },
+        "dry_weed": {
+          "precision": 0.25,
+          "recall": 0.1471,
+          "f1": 0.1852
+        },
+        "drought": {
+          "precision": 0.3846,
+          "recall": 0.6757,
+          "f1": 0.4902
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1831,
+        "drought\u2194soil": 0.2289,
+        "drought\u2194crop": 0.0759,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.3023
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.2248836316560444,
+      "val_loss": 0.05224417336285114,
+      "accuracy": 0.5802,
+      "macro_f1": 0.4945,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7857,
+          "recall": 0.2391,
+          "f1": 0.3667
+        },
+        "crop": {
+          "precision": 0.5614,
+          "recall": 0.7619,
+          "f1": 0.6465
+        },
+        "cotton_ball": {
+          "precision": 0.9697,
+          "recall": 0.8,
+          "f1": 0.8767
+        },
+        "green_weed": {
+          "precision": 0.7083,
+          "recall": 0.3864,
+          "f1": 0.5
+        },
+        "dry_weed": {
+          "precision": 0.3537,
+          "recall": 0.8529,
+          "f1": 0.5
+        },
+        "drought": {
+          "precision": 0.6061,
+          "recall": 0.5405,
+          "f1": 0.5714
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2113,
+        "drought\u2194soil": 0.0602,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0,
+        "crop\u2194green_weed": 0.2674
+      }
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.2326004136549799,
+      "val_loss": 0.04699529567733407,
+      "accuracy": 0.5597,
+      "macro_f1": 0.4617,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6429,
+          "recall": 0.3913,
+          "f1": 0.4865
+        },
+        "crop": {
+          "precision": 0.6444,
+          "recall": 0.6905,
+          "f1": 0.6667
+        },
+        "cotton_ball": {
+          "precision": 0.8043,
+          "recall": 0.925,
+          "f1": 0.8605
+        },
+        "green_weed": {
+          "precision": 0.7143,
+          "recall": 0.2273,
+          "f1": 0.3448
+        },
+        "dry_weed": {
+          "precision": 0.2973,
+          "recall": 0.3235,
+          "f1": 0.3099
+        },
+        "drought": {
+          "precision": 0.4247,
+          "recall": 0.8378,
+          "f1": 0.5636
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2254,
+        "drought\u2194soil": 0.1205,
+        "drought\u2194crop": 0.0633,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2209
+      }
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.21457909596593758,
+      "val_loss": 0.039068144746124744,
+      "accuracy": 0.5885,
+      "macro_f1": 0.4824,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6,
+          "recall": 0.0652,
+          "f1": 0.1176
+        },
+        "crop": {
+          "precision": 0.6512,
+          "recall": 0.6667,
+          "f1": 0.6588
+        },
+        "cotton_ball": {
+          "precision": 0.8605,
+          "recall": 0.925,
+          "f1": 0.8916
+        },
+        "green_weed": {
+          "precision": 0.7917,
+          "recall": 0.4318,
+          "f1": 0.5588
+        },
+        "dry_weed": {
+          "precision": 0.35,
+          "recall": 0.8235,
+          "f1": 0.4912
+        },
+        "drought": {
+          "precision": 0.5833,
+          "recall": 0.7568,
+          "f1": 0.6588
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1831,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.0506,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2209
+      }
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.23251584250676005,
+      "val_loss": 0.03733989130705595,
+      "accuracy": 0.5967,
+      "macro_f1": 0.4701,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6154,
+          "recall": 0.6957,
+          "f1": 0.6531
+        },
+        "crop": {
+          "precision": 0.85,
+          "recall": 0.4048,
+          "f1": 0.5484
+        },
+        "cotton_ball": {
+          "precision": 0.6379,
+          "recall": 0.925,
+          "f1": 0.7551
+        },
+        "green_weed": {
+          "precision": 0.6957,
+          "recall": 0.7273,
+          "f1": 0.7111
+        },
+        "dry_weed": {
+          "precision": 0.2,
+          "recall": 0.0588,
+          "f1": 0.0909
+        },
+        "drought": {
+          "precision": 0.4386,
+          "recall": 0.6757,
+          "f1": 0.5319
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2676,
+        "drought\u2194soil": 0.1084,
+        "drought\u2194crop": 0.0127,
+        "soil\u2194cotton_ball": 0.0349,
+        "crop\u2194green_weed": 0.1977
+      }
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.2289043664932251,
+      "val_loss": 0.0665338896214962,
+      "accuracy": 0.5761,
+      "macro_f1": 0.4939,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.4583,
+          "recall": 0.4783,
+          "f1": 0.4681
+        },
+        "crop": {
+          "precision": 0.617,
+          "recall": 0.6905,
+          "f1": 0.6517
+        },
+        "cotton_ball": {
+          "precision": 0.85,
+          "recall": 0.85,
+          "f1": 0.85
+        },
+        "green_weed": {
+          "precision": 0.7391,
+          "recall": 0.3864,
+          "f1": 0.5075
+        },
+        "dry_weed": {
+          "precision": 0.3617,
+          "recall": 0.5,
+          "f1": 0.4198
+        },
+        "drought": {
+          "precision": 0.5526,
+          "recall": 0.5676,
+          "f1": 0.56
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1268,
+        "drought\u2194soil": 0.1566,
+        "drought\u2194crop": 0.0253,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2674
+      }
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.2241709961702949,
+      "val_loss": 0.0530258696526289,
+      "accuracy": 0.6008,
+      "macro_f1": 0.5155,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7895,
+          "recall": 0.3261,
+          "f1": 0.4615
+        },
+        "crop": {
+          "precision": 0.6444,
+          "recall": 0.6905,
+          "f1": 0.6667
+        },
+        "cotton_ball": {
+          "precision": 0.8889,
+          "recall": 0.8,
+          "f1": 0.8421
+        },
+        "green_weed": {
+          "precision": 0.7407,
+          "recall": 0.4545,
+          "f1": 0.5634
+        },
+        "dry_weed": {
+          "precision": 0.3788,
+          "recall": 0.7353,
+          "f1": 0.5
+        },
+        "drought": {
+          "precision": 0.5,
+          "recall": 0.6757,
+          "f1": 0.5747
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2394,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.0506,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2442
+      }
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.21971005828757034,
+      "val_loss": 0.04210203094407916,
+      "accuracy": 0.6502,
+      "macro_f1": 0.5465,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7391,
+          "recall": 0.3696,
+          "f1": 0.4928
+        },
+        "crop": {
+          "precision": 0.6226,
+          "recall": 0.7857,
+          "f1": 0.6947
+        },
+        "cotton_ball": {
+          "precision": 0.9048,
+          "recall": 0.95,
+          "f1": 0.9268
+        },
+        "green_weed": {
+          "precision": 0.8333,
+          "recall": 0.3409,
+          "f1": 0.4839
+        },
+        "dry_weed": {
+          "precision": 0.4038,
+          "recall": 0.6176,
+          "f1": 0.4884
+        },
+        "drought": {
+          "precision": 0.6182,
+          "recall": 0.9189,
+          "f1": 0.7391
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2558
+      }
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.21900874454724162,
+      "val_loss": 0.041741933673620224,
+      "accuracy": 0.5844,
+      "macro_f1": 0.5062,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.5833,
+          "recall": 0.3043,
+          "f1": 0.4
+        },
+        "crop": {
+          "precision": 0.62,
+          "recall": 0.7381,
+          "f1": 0.6739
+        },
+        "cotton_ball": {
+          "precision": 0.963,
+          "recall": 0.65,
+          "f1": 0.7761
+        },
+        "green_weed": {
+          "precision": 0.7037,
+          "recall": 0.4318,
+          "f1": 0.5352
+        },
+        "dry_weed": {
+          "precision": 0.35,
+          "recall": 0.8235,
+          "f1": 0.4912
+        },
+        "drought": {
+          "precision": 0.6857,
+          "recall": 0.6486,
+          "f1": 0.6667
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2254,
+        "drought\u2194soil": 0.012,
+        "drought\u2194crop": 0.0127,
+        "soil\u2194cotton_ball": 0.0698,
+        "crop\u2194green_weed": 0.2674
+      }
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.20497173619897743,
+      "val_loss": 0.04065632214769721,
+      "accuracy": 0.6132,
+      "macro_f1": 0.5158,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6786,
+          "recall": 0.413,
+          "f1": 0.5135
+        },
+        "crop": {
+          "precision": 0.7097,
+          "recall": 0.5238,
+          "f1": 0.6027
+        },
+        "cotton_ball": {
+          "precision": 0.8085,
+          "recall": 0.95,
+          "f1": 0.8736
+        },
+        "green_weed": {
+          "precision": 0.6857,
+          "recall": 0.5455,
+          "f1": 0.6076
+        },
+        "dry_weed": {
+          "precision": 0.3514,
+          "recall": 0.3824,
+          "f1": 0.3662
+        },
+        "drought": {
+          "precision": 0.5077,
+          "recall": 0.8919,
+          "f1": 0.6471
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.2254,
+        "drought\u2194soil": 0.0602,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2326
+      }
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.21034584704198336,
+      "val_loss": 0.040493239648640156,
+      "accuracy": 0.642,
+      "macro_f1": 0.5411,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6944,
+          "recall": 0.5435,
+          "f1": 0.6098
+        },
+        "crop": {
+          "precision": 0.5962,
+          "recall": 0.7381,
+          "f1": 0.6596
+        },
+        "cotton_ball": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875
+        },
+        "green_weed": {
+          "precision": 0.7143,
+          "recall": 0.3409,
+          "f1": 0.4615
+        },
+        "dry_weed": {
+          "precision": 0.4474,
+          "recall": 0.5,
+          "f1": 0.4722
+        },
+        "drought": {
+          "precision": 0.5893,
+          "recall": 0.8919,
+          "f1": 0.7097
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0602,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2907
+      }
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.21145947434400258,
+      "val_loss": 0.03434166591614485,
+      "accuracy": 0.6255,
+      "macro_f1": 0.5219,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7391,
+          "recall": 0.3696,
+          "f1": 0.4928
+        },
+        "crop": {
+          "precision": 0.58,
+          "recall": 0.6905,
+          "f1": 0.6304
+        },
+        "cotton_ball": {
+          "precision": 0.8261,
+          "recall": 0.95,
+          "f1": 0.8837
+        },
+        "green_weed": {
+          "precision": 0.75,
+          "recall": 0.2727,
+          "f1": 0.4
+        },
+        "dry_weed": {
+          "precision": 0.434,
+          "recall": 0.6765,
+          "f1": 0.5287
+        },
+        "drought": {
+          "precision": 0.6,
+          "recall": 0.8919,
+          "f1": 0.7174
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2907
+      }
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.19877755485082926,
+      "val_loss": 0.04141905624419451,
+      "accuracy": 0.6255,
+      "macro_f1": 0.5305,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.625,
+          "recall": 0.5435,
+          "f1": 0.5814
+        },
+        "crop": {
+          "precision": 0.6122,
+          "recall": 0.7143,
+          "f1": 0.6593
+        },
+        "cotton_ball": {
+          "precision": 0.881,
+          "recall": 0.925,
+          "f1": 0.9024
+        },
+        "green_weed": {
+          "precision": 0.7368,
+          "recall": 0.3182,
+          "f1": 0.4444
+        },
+        "dry_weed": {
+          "precision": 0.4,
+          "recall": 0.5882,
+          "f1": 0.4762
+        },
+        "drought": {
+          "precision": 0.6047,
+          "recall": 0.7027,
+          "f1": 0.65
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.169,
+        "drought\u2194soil": 0.0723,
+        "drought\u2194crop": 0.0253,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2791
+      }
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.20371187831226148,
+      "val_loss": 0.03763655200600624,
+      "accuracy": 0.6296,
+      "macro_f1": 0.5317,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.8235,
+          "recall": 0.3043,
+          "f1": 0.4444
+        },
+        "crop": {
+          "precision": 0.6667,
+          "recall": 0.619,
+          "f1": 0.642
+        },
+        "cotton_ball": {
+          "precision": 0.8261,
+          "recall": 0.95,
+          "f1": 0.8837
+        },
+        "green_weed": {
+          "precision": 0.7308,
+          "recall": 0.4318,
+          "f1": 0.5429
+        },
+        "dry_weed": {
+          "precision": 0.3934,
+          "recall": 0.7059,
+          "f1": 0.5053
+        },
+        "drought": {
+          "precision": 0.5926,
+          "recall": 0.8649,
+          "f1": 0.7033
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.169,
+        "drought\u2194soil": 0.0241,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2326
+      }
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.20011511758754127,
+      "val_loss": 0.03742579882964492,
+      "accuracy": 0.642,
+      "macro_f1": 0.5513,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7059,
+          "recall": 0.5217,
+          "f1": 0.6
+        },
+        "crop": {
+          "precision": 0.6512,
+          "recall": 0.6667,
+          "f1": 0.6588
+        },
+        "cotton_ball": {
+          "precision": 0.9211,
+          "recall": 0.875,
+          "f1": 0.8974
+        },
+        "green_weed": {
+          "precision": 0.7037,
+          "recall": 0.4318,
+          "f1": 0.5352
+        },
+        "dry_weed": {
+          "precision": 0.4182,
+          "recall": 0.6765,
+          "f1": 0.5169
+        },
+        "drought": {
+          "precision": 0.587,
+          "recall": 0.7297,
+          "f1": 0.6506
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1831,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0116,
+        "crop\u2194green_weed": 0.2558
+      }
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.20051343346896924,
+      "val_loss": 0.0362889114767313,
+      "accuracy": 0.642,
+      "macro_f1": 0.5471,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6786,
+          "recall": 0.413,
+          "f1": 0.5135
+        },
+        "crop": {
+          "precision": 0.6364,
+          "recall": 0.6667,
+          "f1": 0.6512
+        },
+        "cotton_ball": {
+          "precision": 0.8605,
+          "recall": 0.925,
+          "f1": 0.8916
+        },
+        "green_weed": {
+          "precision": 0.7826,
+          "recall": 0.4091,
+          "f1": 0.5373
+        },
+        "dry_weed": {
+          "precision": 0.4333,
+          "recall": 0.7647,
+          "f1": 0.5532
+        },
+        "drought": {
+          "precision": 0.6222,
+          "recall": 0.7568,
+          "f1": 0.6829
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1549,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0349,
+        "crop\u2194green_weed": 0.2442
+      }
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.19796240957159744,
+      "val_loss": 0.03347047371789813,
+      "accuracy": 0.6626,
+      "macro_f1": 0.5658,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7105,
+          "recall": 0.587,
+          "f1": 0.6429
+        },
+        "crop": {
+          "precision": 0.6154,
+          "recall": 0.7619,
+          "f1": 0.6809
+        },
+        "cotton_ball": {
+          "precision": 0.9459,
+          "recall": 0.875,
+          "f1": 0.9091
+        },
+        "green_weed": {
+          "precision": 0.7895,
+          "recall": 0.3409,
+          "f1": 0.4762
+        },
+        "dry_weed": {
+          "precision": 0.4286,
+          "recall": 0.7059,
+          "f1": 0.5333
+        },
+        "drought": {
+          "precision": 0.6829,
+          "recall": 0.7568,
+          "f1": 0.7179
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0361,
+        "drought\u2194crop": 0.0127,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2674
+      }
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.20939589958441884,
+      "val_loss": 0.036519208922982216,
+      "accuracy": 0.642,
+      "macro_f1": 0.5443,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.75,
+          "recall": 0.3913,
+          "f1": 0.5143
+        },
+        "crop": {
+          "precision": 0.6222,
+          "recall": 0.6667,
+          "f1": 0.6437
+        },
+        "cotton_ball": {
+          "precision": 0.8571,
+          "recall": 0.9,
+          "f1": 0.878
+        },
+        "green_weed": {
+          "precision": 0.7727,
+          "recall": 0.3864,
+          "f1": 0.5152
+        },
+        "dry_weed": {
+          "precision": 0.4464,
+          "recall": 0.7353,
+          "f1": 0.5556
+        },
+        "drought": {
+          "precision": 0.5926,
+          "recall": 0.8649,
+          "f1": 0.7033
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0361,
+        "drought\u2194crop": 0.0506,
+        "soil\u2194cotton_ball": 0.0349,
+        "crop\u2194green_weed": 0.2442
+      }
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.21088584786967227,
+      "val_loss": 0.03874707315117121,
+      "accuracy": 0.6379,
+      "macro_f1": 0.5388,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7619,
+          "recall": 0.3478,
+          "f1": 0.4776
+        },
+        "crop": {
+          "precision": 0.6222,
+          "recall": 0.6667,
+          "f1": 0.6437
+        },
+        "cotton_ball": {
+          "precision": 0.8605,
+          "recall": 0.925,
+          "f1": 0.8916
+        },
+        "green_weed": {
+          "precision": 0.7391,
+          "recall": 0.3864,
+          "f1": 0.5075
+        },
+        "dry_weed": {
+          "precision": 0.4464,
+          "recall": 0.7353,
+          "f1": 0.5556
+        },
+        "drought": {
+          "precision": 0.5818,
+          "recall": 0.8649,
+          "f1": 0.6957
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1268,
+        "drought\u2194soil": 0.0602,
+        "drought\u2194crop": 0.0506,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2558
+      }
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.20507516359028063,
+      "val_loss": 0.036703537218272686,
+      "accuracy": 0.642,
+      "macro_f1": 0.5457,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7037,
+          "recall": 0.413,
+          "f1": 0.5205
+        },
+        "crop": {
+          "precision": 0.6279,
+          "recall": 0.6429,
+          "f1": 0.6353
+        },
+        "cotton_ball": {
+          "precision": 0.8571,
+          "recall": 0.9,
+          "f1": 0.878
+        },
+        "green_weed": {
+          "precision": 0.72,
+          "recall": 0.4091,
+          "f1": 0.5217
+        },
+        "dry_weed": {
+          "precision": 0.4444,
+          "recall": 0.7059,
+          "f1": 0.5455
+        },
+        "drought": {
+          "precision": 0.6154,
+          "recall": 0.8649,
+          "f1": 0.7191
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1268,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0349,
+        "crop\u2194green_weed": 0.2674
+      }
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.19591585429091202,
+      "val_loss": 0.03638888243585825,
+      "accuracy": 0.642,
+      "macro_f1": 0.5475,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.6562,
+          "recall": 0.4565,
+          "f1": 0.5385
+        },
+        "crop": {
+          "precision": 0.6364,
+          "recall": 0.6667,
+          "f1": 0.6512
+        },
+        "cotton_ball": {
+          "precision": 0.878,
+          "recall": 0.9,
+          "f1": 0.8889
+        },
+        "green_weed": {
+          "precision": 0.75,
+          "recall": 0.4091,
+          "f1": 0.5294
+        },
+        "dry_weed": {
+          "precision": 0.4231,
+          "recall": 0.6471,
+          "f1": 0.5116
+        },
+        "drought": {
+          "precision": 0.62,
+          "recall": 0.8378,
+          "f1": 0.7126
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1268,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2558
+      }
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.20296279458623184,
+      "val_loss": 0.03363043162971735,
+      "accuracy": 0.6543,
+      "macro_f1": 0.5583,
+      "per_class": {
+        "background": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "soil": {
+          "precision": 0.7059,
+          "recall": 0.5217,
+          "f1": 0.6
+        },
+        "crop": {
+          "precision": 0.6364,
+          "recall": 0.6667,
+          "f1": 0.6512
+        },
+        "cotton_ball": {
+          "precision": 0.878,
+          "recall": 0.9,
+          "f1": 0.8889
+        },
+        "green_weed": {
+          "precision": 0.75,
+          "recall": 0.4091,
+          "f1": 0.5294
+        },
+        "dry_weed": {
+          "precision": 0.451,
+          "recall": 0.6765,
+          "f1": 0.5412
+        },
+        "drought": {
+          "precision": 0.6122,
+          "recall": 0.8108,
+          "f1": 0.6977
+        }
+      },
+      "confusion_pair_errors": {
+        "drought\u2194dry_weed": 0.1408,
+        "drought\u2194soil": 0.0482,
+        "drought\u2194crop": 0.038,
+        "soil\u2194cotton_ball": 0.0233,
+        "crop\u2194green_weed": 0.2558
+      }
+    }
+  ],
+  "config": {
+    "paths": {
+      "data_root": "data/",
+      "patches_dir": "data/patches/",
+      "unlabeled_dir": "data/unlabeled/",
+      "orthomosaic_dir": "data/orthomosaic/",
+      "runs_dir": "runs/",
+      "barren_manifest": "configs/barren_manifest.yaml",
+      "orthomosaics_meta": "configs/orthomosaics_meta.yaml"
+    },
+    "camera": {
+      "pixel_size_um": 1.31,
+      "focal_length_mm": 6.72,
+      "native_width_px": 8064,
+      "native_height_px": 4536,
+      "default_altitude_m": 13.8
+    },
+    "classes": {
+      "names": [
+        "background",
+        "soil",
+        "crop",
+        "cotton_ball",
+        "green_weed",
+        "dry_weed",
+        "drought"
+      ],
+      "palette": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          139,
+          90,
+          43
+        ],
+        [
+          0,
+          180,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          140,
+          255,
+          140
+        ],
+        [
+          210,
+          170,
+          90
+        ],
+        [
+          220,
+          30,
+          30
+        ]
+      ],
+      "confusion_pairs": [
+        [
+          "drought",
+          "dry_weed"
+        ],
+        [
+          "drought",
+          "soil"
+        ],
+        [
+          "drought",
+          "crop"
+        ],
+        [
+          "soil",
+          "cotton_ball"
+        ],
+        [
+          "crop",
+          "green_weed"
+        ]
+      ]
+    },
+    "preprocessing": {
+      "glare_v_threshold": 0.95,
+      "glare_s_threshold": 0.1,
+      "shadow_v_threshold": 0.15,
+      "shadow_s_threshold": 0.2,
+      "field_dark_threshold": 10,
+      "field_saturation_threshold": 15,
+      "field_min_component_area": 500
+    },
+    "classifier": {
+      "backbone": "dinov2_vitb14",
+      "pretrained_weights_path": "/home/deepdroughtuav/implementation/dinov2_models/dinov2_vitb14.pth",
+      "input_size": 224,
+      "num_channels": 9,
+      "scales": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "batch_size": 64,
+      "epochs": 30,
+      "lr_head": 0.0003,
+      "lr_backbone": 3e-05,
+      "weight_decay": 0.05,
+      "warmup_epochs": 2,
+      "margin_loss_weight": 0.6,
+      "margin_loss_alpha": 0.5,
+      "oversample_barren": 8,
+      "val_split": 0.15,
+      "test_split": 0.1,
+      "seed": 42
+    },
+    "pseudo_label": {
+      "window_sizes": [
+        256,
+        128
+      ],
+      "window_strides": [
+        64,
+        32
+      ],
+      "scale_weights": [
+        0.6,
+        0.4
+      ],
+      "confidence_threshold": 0.55,
+      "crf_iterations": 5,
+      "ignore_index": 255
+    },
+    "segmentation": {
+      "model": "segformer_b2",
+      "input_size": 512,
+      "num_channels": 9,
+      "num_classes": 7,
+      "batch_size": 16,
+      "epochs": 80,
+      "lr": 6e-05,
+      "weight_decay": 0.01,
+      "ce_weight": 1.0,
+      "dice_weight": 1.0,
+      "boundary_weight": 0.5,
+      "batch_composites": 8,
+      "batch_pseudo": 4,
+      "batch_manual": 4,
+      "manual_oversample": 16,
+      "ignore_index": 255
+    },
+    "inference": {
+      "tile_size": 1024,
+      "tile_overlap": 256,
+      "batch_size": 16,
+      "use_tta": false,
+      "drought_decision": {
+        "tau1_drought_fraction": 0.15,
+        "tau2_largest_cc_share": 0.25,
+        "tau3_nonharvest_fraction": 0.1
+      },
+      "morph_open_kernel": 3,
+      "min_component_size": {
+        "drought": 200,
+        "barren": 500,
+        "cotton_ball": 20,
+        "green_weed": 50,
+        "dry_weed": 50
+      },
+      "harvest_zone_cotton_ball_density": 0.05
+    }
+  }
+}

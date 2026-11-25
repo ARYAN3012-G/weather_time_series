@@ -1,0 +1,23 @@
+# 02 segformer b2
+
+```mermaid
+flowchart TD
+    A[RGB Input] --> B[Nine-channel Feature Tensor]
+    B --> C[Modified Input Patch Embedding]
+    C --> D[MiT Stage 1: 64 Channels, Depth 3]
+    D --> E[MiT Stage 2: 128 Channels, Depth 4]
+    E --> F[MiT Stage 3: 320 Channels, Depth 6]
+    F --> G[MiT Stage 4: 512 Channels, Depth 3]
+    D --> H[MLP Projection]
+    E --> I[MLP Projection]
+    F --> J[MLP Projection]
+    G --> K[MLP Projection]
+    H --> L[Multiscale Feature Fusion]
+    I --> L
+    J --> L
+    K --> L
+    L --> M[Decoder Dimension 768]
+    M --> N[Seven-class Segmentation Head]
+    N --> O[Bilinear Upsampling]
+    O --> P[Full-resolution Logits]
+```

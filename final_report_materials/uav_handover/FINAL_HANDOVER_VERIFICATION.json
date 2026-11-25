@@ -1,0 +1,13 @@
+{
+  "required_files": 21,
+  "missing_files": [],
+  "missing_topics": [],
+  "annotation_source_present": true,
+  "complete_field_reports": 14,
+  "research_figures": 8,
+  "field_overlays": 14,
+  "architecture_diagrams": 6,
+  "total_files_before_final_verification": 312,
+  "total_size_mb": 21.51,
+  "verification": "PASS"
+}

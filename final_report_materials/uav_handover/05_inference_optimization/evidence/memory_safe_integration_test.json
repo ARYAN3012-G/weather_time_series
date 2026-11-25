@@ -1,0 +1,38 @@
+{
+  "image": "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+  "gpu": "NVIDIA L4",
+  "runtime_seconds": 12.447376108000071,
+  "total_pixels": 3830784,
+  "different_pixels": 14,
+  "pixel_agreement_percent": 99.99963453956161,
+  "report_differences": [
+    [
+      "area_stats.agricultural_pixels.",
+      38988,
+      38974
+    ],
+    [
+      "area_stats.per_class.dry_weed.pixels.",
+      38988,
+      38974
+    ],
+    [
+      "area_stats.per_class.green_weed.pixels.",
+      25154,
+      25155
+    ],
+    [
+      "area_stats.per_class.soil.area_m2.",
+      638.45,
+      638.46
+    ],
+    [
+      "area_stats.per_class.soil.pixels.",
+      1865459,
+      1865472
+    ]
+  ],
+  "all_output_files_present": true,
+  "original_results_preserved": true,
+  "model_weights_modified": false
+}

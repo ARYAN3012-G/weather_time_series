@@ -1,0 +1,7 @@
+version,architecture,raw_validation_miou_percent,evaluation_split,independent_test,source
+V8,SegFormer-B2,61.18,validation,False,Previously recorded experiment results
+V9,SegFormer-B3,44.25,validation,False,Previously recorded experiment results
+V9.1,SegFormer-B3,45.89,validation,False,Previously recorded experiment results
+V10,DeepLabV3+,44.79,validation,False,Previously recorded experiment results
+V11,SegFormer-B2,61.46,validation,False,Previously recorded experiment results
+V12,V12 experiment,61.39,validation,False,Previously recorded experiment results

@@ -1,0 +1,289 @@
+Agisoft Metashape
+Processing Report
+01 June 2026
+
+Survey Data
+1
+2
+3
+4
+5
+6
+7
+8
+9
+> 9
+20.0 m
+Fig. 1. Camera locations and image overlap.
+Number of images:
+114
+Flying altitude:
+10.7 m
+Ground resolution:
+2.08 mm/pix
+Coverage area:
+2966 m²
+Camera stations:
+114
+Tie points:
+256,513
+Projections:
+649,642
+Reprojection error:
+3.64 pix
+Camera Model
+Resolution
+Focal Length
+Pixel Size
+Precalibrated
+FC8482 (6.72mm)
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+No
+Table 1. Cameras.
+Page 2
+Camera Calibration
+1 pix
+Fig. 2. Image residuals for FC8482 (6.72mm).
+FC8482 (6.72mm)
+114 images
+Type
+Resolution
+Focal Length
+Pixel Size
+Frame
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+Value
+Error
+Cx
+Cy
+K1
+K2
+K3
+P1
+P2
+F
+5132.2
+Cx
+39.4795
+0.31
+1.00
+0.05
+-0.01
+0.01
+-0.00
+0.34
+-0.01
+Cy
+-40.9684
+0.23
+1.00
+-0.01
+0.00
+-0.00
+0.02
+0.41
+K1
+0.0856052
+0.00029
+1.00
+-0.57
+0.57
+-0.45
+0.21
+K2
+-0.0974647
+0.00051
+1.00
+-0.98
+0.03
+-0.01
+K3
+0.0515914
+0.00046
+1.00
+-0.04
+0.02
+P1
+-0.0011573
+1.5e-05
+1.00
+-0.14
+P2
+-0.000126203
+7.5e-06
+1.00
+Table 2. Calibration coefficients and correlation matrix.
+Page 3
+Camera Locations
+20.0 m
+-1.50 m
+-1.20 m
+-0.900 m
+-0.600 m
+-0.300 m
+0 m
+0.300 m
+0.600 m
+0.900 m
+1.20 m
+1.50 m
+x 5
+Fig. 3. Camera locations and error estimates.
+Z error is represented by ellipse color. X,Y errors are represented by ellipse shape.
+Estimated camera locations are marked with a black dot.
+X error (cm)
+Y error (cm)
+Z error (cm)
+XY error (cm)
+Total error (cm)
+27.8066
+20.3729
+56.6541
+34.4711
+66.317
+Table 3. Average camera location error.
+X - Longitude, Y - Latitude, Z - Altitude.
+Page 4
+Digital Elevation Model
+709 m
+714 m
+20.0 m
+Fig. 4. Reconstructed digital elevation model.
+Resolution:
+7.29 cm/pix
+Point density:
+188 points/m²
+Page 5
+Processing Parameters
+General
+Images
+114
+Aligned images
+114
+Coordinate system
+WGS 84 (EPSG::4326)
+Rotation angles
+Yaw, Pitch, Roll
+Tie Points
+Points
+256,513 of 526,996
+RMS reprojection error
+1.01765 (3.64412 pix)
+Max reprojection error
+3.84424 (113.461 pix)
+Mean key point size
+3.30974 pix
+Point colors
+3 bands, uint8
+Key points
+No
+Average tie point multiplicity
+2.2998
+Alignment parameters
+Accuracy
+High
+Generic preselection
+Yes
+Reference preselection
+Source
+Key point limit
+60,000
+Key point limit per Mpx
+40,000
+Tie point limit
+10,000
+Exclude stationary tie points
+Yes
+Guided image matching
+Yes
+Adaptive camera model fitting
+Yes
+Matching time
+6 minutes 49 seconds
+Matching memory usage
+5.75 GB
+Alignment time
+1 minutes 18 seconds
+Alignment memory usage
+2.51 GB
+Date created
+2026:06:01 06:47:02
+Software version
+2.2.2.21069
+File size
+72.11 MB
+DEM
+Size
+1,160 x 826
+Resolution
+7.29 cm/pix
+Coordinate system
+WGS 84 (EPSG::4326)
+Reconstruction parameters
+Source data
+Tie points
+Interpolation
+Enabled
+Processing time
+3 seconds
+Memory usage
+25.49 MB
+Date created
+2026:06:01 07:40:33
+Software version
+2.2.2.21069
+File size
+2.01 MB
+Orthomosaic
+Size
+40,692 x 27,842
+Resolution
+2.08 mm/pix
+Coordinate system
+WGS 84 (EPSG::4326)
+Colors
+3 bands, uint8
+Orthophotos
+1.92 GB
+Reconstruction parameters
+Blending mode
+Mosaic
+Page 6
+Surface
+DEM
+Enable hole filling
+Yes
+Enable ghosting filter
+No
+Processing time
+2 minutes 56 seconds
+Memory usage
+1.85 GB
+Date created
+2026:06:01 07:42:12
+Software version
+2.2.2.21069
+File size
+3.03 GB
+System
+Software name
+Agisoft Metashape Professional
+Software version
+2.2.2 build 21069
+OS
+Windows 64 bit
+RAM
+63.65 GB
+CPU
+Intel(R) Xeon(R) w5-2565X
+GPU(s)
+NVIDIA RTX 2000 Ada Generation
+Page 7

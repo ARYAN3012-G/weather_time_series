@@ -1,0 +1,323 @@
+{
+  "orthomosaics": [],
+  "metashape_reports": [
+    {
+      "report": "BALAJI_VILLAS_GCD_REPORT01_06.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         344                       Camera stations:          344\nFlying altitude:          9.47 m                    Tie points:               964,134\nGround resolution:        1.84 mm/pix               Projections:              2,514,591\nCoverage area:            8090 m\u00b2                   Reprojection error:       1.89 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 344 images\n\n Type                          Resolution                   Focal Length                  Pixel Size\n Frame                         8064 x 4536                  6.72 mm                       1.31 x 1.31 \u03bcm\n\n\n\n\n                          Value           Error     Cx    Cy     K1    K2      K3    P1     P2\n\n                     F    5132.2"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             5.77 cm/pix\nPoint density:          300 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                           344\n   Aligned images                                                   344\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Rotation angles                                                  Yaw, Pitch, Roll\nTie Points\n   Points                                                           964,134 of 1,492,417\n   RMS reprojection error                                           0.632412 (1.88926 pix)\n   Max reprojection error                                           2.00641 (139.009 pix)\n   Mean key point size                                              2.70763 pix\n   Point colors                                                     3 bands, uint8\n   Key points                                                       No\nDEM\n   Size                                                             1,792 x 1,782\n   Resolution                                                       5.77 cm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                   Tie points\n      Interpolation                                                 Enabled\n      Processing time                                               9 seconds\n      Memory usage                                                  106.73 MB\n   Date created                                                     2026:06:01 08:53:56\n   Software version                                                 2.2.2.21069\n   File size                                                        8.44 MB\nOrthomosaic\n   Size                                                             51,247 x 55,752\n   Resolution                                                       1.84 mm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Colors                                                           3 bands, uint8\n   Orthophotos                                                      5.64 GB\n   Reconstruction parameters\n      Blending mode                                                 Mosaic\n\n                                                               Page 6"
+        }
+      ]
+    },
+    {
+      "report": "KNL_DDP_GSD_REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         102                       Camera stations:          102\nFlying altitude:          34.1 m                    Tie points:               229,077\nGround resolution:        5.55 mm/pix               Projections:              506,473\nCoverage area:            0.0199 km\u00b2                Reprojection error:       3.25 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 102 images\n\n Type                          Resolution                     Focal Length                  Pixel Size\n Frame                         8064 x 4536                    6.72 mm                       1.31 x 1.31 \u03bcm\n\n\n\n\n                       Value           Error     F     Cx     Cy      K1     K2     K3     P1     P2\n\n                  F    6143.79         6.5       1.00  -0.89  -0.49   0.70   -0.58  0.44   -0.50  -0.35"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             22.9 cm/pix\nPoint density:          19.1 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                           102\n   Aligned images                                                   102\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Rotation angles                                                  Yaw, Pitch, Roll\nTie Points\n   Points                                                           229,077 of 308,277\n   RMS reprojection error                                           0.233836 (3.24922 pix)\n   Max reprojection error                                           0.752258 (94.482 pix)\n   Mean key point size                                              12.1686 pix\n   Point colors                                                     3 bands, uint8\n   Key points                                                       No\nDEM\n   Size                                                             549 x 1,207\n   Resolution                                                       22.9 cm/pix\n   Coordinate system                                                WGS 84 / UTM zone 43N (EPSG::32643)\n   Reconstruction parameters\n      Source data                                                   Tie points\n      Interpolation                                                 Enabled\n      Processing time                                               3 seconds\n      Memory usage                                                  23.40 MB\n   Date created                                                     2026:01:22 18:06:02\n   Software version                                                 2.2.2.21069\n   File size                                                        1.55 MB\nOrthomosaic\n   Size                                                             22,190 x 49,690\n   Resolution                                                       5.55 mm/pix\n   Coordinate system                                                WGS 84 / UTM zone 43N (EPSG::32643)\n   Colors                                                           3 bands, uint8\n   Orthophotos                                                      1.64 GB\n   Reconstruction parameters\n      Blending mode                                                 Mosaic\n\n                                                               Page 6"
+        }
+      ]
+    },
+    {
+      "report": "KNL_MAIZE_TOWERS_GSD REPORT_01.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         100                      Camera stations:          100\nFlying altitude:          9.62 m                   Tie points:               300,204\nGround resolution:        1.68 mm/pix              Projections:              648,487\nCoverage area:            2254 m\u00b2                  Reprojection error:       2.37 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 98 images\n\n Type                          Resolution                     Focal Length                  Pixel Size\n Frame                         8064 x 4536                    6.72 mm                       1.31 x 1.31 \u03bcm\n\n\n\n\n                       Value           Error     F     Cx      Cy     K1     K2     K3     P1     P2\n\n                  F    5713.33         3.1       1.00  -0.56   0.25   0.51   -0.41  0.37   -0.19  0.11"
+        },
+        {
+          "page": 4,
+          "text": "2 images\n\nType                        Resolution                 Focal Length               Pixel Size\nFrame                       8064 x 4536                6.72 mm                    1.31 x 1.31 \u03bcm\n\n\n\n\n                                     Value         Error    K1   P1     P2\n\n                                 F   5132.2"
+        },
+        {
+          "page": 6,
+          "text": "\n\nResolution:             6.36 cm/pix\nPoint density:          248 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 7,
+          "text": "   Images                                                           100\n   Aligned images                                                   100\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Rotation angles                                                  Yaw, Pitch, Roll\nTie Points\n   Points                                                           300,204 of 441,740\n   RMS reprojection error                                           0.65817 (2.36543 pix)\n   Max reprojection error                                           2.21314 (96.7459 pix)\n   Mean key point size                                              3.9423 pix\n   Point colors                                                     3 bands, uint8\n   Key points                                                       No\nDEM\n   Size                                                             955 x 868\n   Resolution                                                       6.36 cm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                   Tie points\n      Interpolation                                                 Enabled\n      Processing time                                               3 seconds\n      Memory usage                                                  33.92 MB\n   Date created                                                     2026:06:01 05:14:06\n   Software version                                                 2.2.2.21069\n   File size                                                        2.07 MB\nOrthomosaic\n   Size                                                             35,826 x 32,768\n   Resolution                                                       1.68 mm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Colors                                                           3 bands, uint8\n   Orthophotos                                                      1.44 GB\n   Reconstruction parameters\n      Blending mode                                                 Mosaic\n\n                                                               Page 7"
+        }
+      ]
+    },
+    {
+      "report": "KNL_puddur_GSD_REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         163                      Camera stations:          163\nFlying altitude:          8.86 m                   Tie points:               153,920\nGround resolution:        1.96 cm/pix              Projections:              324,962\nCoverage area:            3859 m\u00b2                  Reprojection error:       5.02 pix\n\n\n\n\n     Camera Model           Resolution     Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536    6.72 mm           1.31 x 1.31 \u03bcm     No\n     FC8482 (6.72mm)        8064 x 4536    6.72 mm           1.31 x 1.31 \u03bcm     No\n     FC8482 (6.72mm)        8064 x 4536    6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n                                                Page 2"
+        },
+        {
+          "page": 3,
+          "text": " 131 images\n\n Type                        Resolution                  Focal Length                Pixel Size\n Frame                       8064 x 4536                 6.72 mm                     1.31 x 1.31 \u03bcm\n\n\n\n\n                                   Value         Error    K1    K2    P1     P2\n\n                              F    5132.2"
+        },
+        {
+          "page": 4,
+          "text": "26 images\n\nType                       Resolution               Focal Length              Pixel Size\nFrame                      8064 x 4536              6.72 mm                   1.31 x 1.31 \u03bcm\n\n\n\n\n                                          Value      Error    K1\n\n                                      F   5132.2"
+        },
+        {
+          "page": 5,
+          "text": "6 images\n\nType                       Resolution               Focal Length              Pixel Size\nFrame                      8064 x 4536              6.72 mm                   1.31 x 1.31 \u03bcm\n\n\n\n\n                                          Value       Error  K1\n\n                                      F   5132.2"
+        },
+        {
+          "page": 7,
+          "text": "\n\nResolution:             10.6 cm/pix\nPoint density:          88.2 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 8,
+          "text": "   Images                                                            163\n   Aligned images                                                    163\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            153,920 of 216,763\n   RMS reprojection error                                            0.733478 (5.0201 pix)\n   Max reprojection error                                            244.86 (1147.83 pix)\n   Mean key point size                                               10.2728 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No\nDEM\n   Size                                                              563 x 1,015\n   Resolution                                                        10.6 cm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                    Tie points\n      Interpolation                                                  Enabled\n\n                                                               Page 8"
+        },
+        {
+          "page": 9,
+          "text": "   Software version                                                  2.2.2.21069\n   File size                                                         1.32 MB\nOrthomosaic\n   Size                                                              34,710 x 62,577\n   Resolution                                                        1.73 mm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Colors                                                            3 bands, uint8\n   Orthophotos                                                       2.43 GB\n   Reconstruction parameters\n      Blending mode                                                  Mosaic\n      Surface                                                        DEM\n      Enable hole filling                                            Yes\n      Enable ghosting filter                                         No\n      Processing time                                                4 minutes 50 seconds"
+        }
+      ]
+    },
+    {
+      "report": "PEDHAKABUR_F4_GCD_REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\n\n         Camera Model        Resolution     Focal Length      Pixel Size    Precalibrated\n         unknown             1280 x 720     unknown           unknown       No\n                                         Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": "15 images\n\nType                       Resolution                Focal Length              Pixel Size\nFrame                      1280 x 720                unknown                   unknown\n\n\n\n\n                                        Value       Error  F     K1\n\n                                    F   609.504     23     1.00  0.02"
+        },
+        {
+          "page": 5,
+          "text": "   Images                                                            15\n   Aligned images                                                    15\n   Coordinate system                                                 Local Coordinates (m)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            7,262 of 7,858\n   RMS reprojection error                                            0.151385 (0.620226 pix)\n   Max reprojection error                                            0.457001 (7.45526 pix)\n   Mean key point size                                               4.07245 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No"
+        },
+        {
+          "page": 6,
+          "text": "   Software version                                                   2.2.2.21069\n   File size                                                          2.30 MB\nOrthomosaic\n   Size                                                               2,410 x 2,411\n   Resolution                                                         9.15 mm/pix\n   Coordinate system                                                  Local Coordinates (m)\n   Colors                                                             3 bands, uint8\n   Orthophotos                                                        3.84 MB\n   Reconstruction parameters\n      Blending mode                                                   Mosaic\n      Surface                                                         Tiled model\n      Enable hole filling                                             Yes\n      Enable ghosting filter                                          No\n"
+        }
+      ]
+    },
+    {
+      "report": "PEDHAKADBUR_F1_GCD_REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\n\n         Camera Model        Resolution     Focal Length     Pixel Size     Precalibrated\n         unknown             1280 x 720     unknown          unknown        No\n                                         Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": "13 images\n\nType                       Resolution                Focal Length              Pixel Size\nFrame                      1280 x 720                unknown                   unknown\n\n\n\n\n                                       Value        Error    F    K1\n\n                                  F    290.869      13       1.00 0.08"
+        },
+        {
+          "page": 5,
+          "text": "   Images                                                            13\n   Aligned images                                                    13\n   Coordinate system                                                 Local Coordinates (m)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            52,040 of 55,914\n   RMS reprojection error                                            0.46709 (0.729371 pix)\n   Max reprojection error                                            1.40115 (12.2241 pix)\n   Mean key point size                                               1.94885 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No"
+        },
+        {
+          "page": 6,
+          "text": "   Software version                                                   2.2.2.21069\n   File size                                                          5.10 MB\nOrthomosaic\n   Size                                                               3,072 x 2,560\n   Resolution                                                         3.62 mm/pix\n   Coordinate system                                                  Local Coordinates (m)\n   Colors                                                             3 bands, uint8\n   Orthophotos                                                        5.02 MB\n\n                                                                Page 6"
+        }
+      ]
+    },
+    {
+      "report": "PEDHAKADBUR_F6_GCD REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\n\n         Camera Model        Resolution     Focal Length      Pixel Size    Precalibrated\n         unknown             1280 x 720     unknown           unknown       No\n                                         Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": "8 images\n\nType                       Resolution                Focal Length               Pixel Size\nFrame                      1280 x 720                unknown                    unknown\n\n\n\n\n                                       Value        Error    F    K1\n\n                                   F   923.144      1.1      1.00 0.54"
+        },
+        {
+          "page": 5,
+          "text": "   Images                                                            8\n   Aligned images                                                    8\n   Coordinate system                                                 Local Coordinates (m)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            4,996 of 5,326\n   RMS reprojection error                                            0.120539 (0.426686 pix)\n   Max reprojection error                                            0.361666 (4.55927 pix)\n   Mean key point size                                               3.4758 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No"
+        },
+        {
+          "page": 6,
+          "text": "   Software version                                                   2.2.2.21069\n   File size                                                          1.55 MB\nOrthomosaic\n   Size                                                               1,536 x 2,494\n   Resolution                                                         1.85 cm/pix\n   Coordinate system                                                  Local Coordinates (m)\n   Colors                                                             3 bands, uint8\n   Orthophotos                                                        2.10 MB\n   Reconstruction parameters\n      Blending mode                                                   Mosaic\n      Surface                                                         Tiled model\n      Enable hole filling                                             Yes\n      Enable ghosting filter                                          No\n      Processing time                                                 0 seconds"
+        }
+      ]
+    },
+    {
+      "report": "PEDHAKADBUR_F7_GCD_REPORT.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\n\n         Camera Model        Resolution     Focal Length      Pixel Size    Precalibrated\n         unknown             1280 x 720     unknown           unknown       No\n                                         Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": "15 images\n\nType                       Resolution                Focal Length              Pixel Size\nFrame                      1280 x 720                unknown                   unknown\n\n\n\n\n                                        Value       Error  F    K1\n\n                                    F   971.437     17     1.00 0.20"
+        },
+        {
+          "page": 5,
+          "text": "   Images                                                            15\n   Aligned images                                                    15\n   Coordinate system                                                 Local Coordinates (m)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            8,146 of 8,816\n   RMS reprojection error                                            0.135838 (0.544469 pix)\n   Max reprojection error                                            0.410134 (8.42986 pix)\n   Mean key point size                                               3.8131 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No"
+        },
+        {
+          "page": 6,
+          "text": "   Software version                                                   2.2.2.21069\n   File size                                                          3.31 MB\nOrthomosaic\n   Size                                                               2,569 x 2,082\n   Resolution                                                         1.04 cm/pix\n   Coordinate system                                                  Local Coordinates (m)\n   Colors                                                             3 bands, uint8\n   Orthophotos                                                        5.04 MB\n   Reconstruction parameters\n      Blending mode                                                   Mosaic\n      Surface                                                         Model\n      Enable hole filling                                             Yes\n      Enable ghosting filter                                          No\n      Processing time                                                 1 seconds"
+        }
+      ]
+    },
+    {
+      "report": "PEDHAKADUBUR_F3_GCD REPORT31.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\n\n         Camera Model        Resolution     Focal Length      Pixel Size    Precalibrated\n         unknown             1280 x 720     unknown           unknown       No\n                                         Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": "13 images\n\nType                       Resolution                Focal Length               Pixel Size\nFrame                      1280 x 720                unknown                    unknown\n\n\n\n\n                                       Value        Error    F    K1\n\n                                   F   974.885      3.8      1.00 0.17"
+        },
+        {
+          "page": 5,
+          "text": "   Images                                                            13\n   Aligned images                                                    13\n   Coordinate system                                                 Local Coordinates (m)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            21,683 of 24,994\n   RMS reprojection error                                            0.247855 (0.474158 pix)\n   Max reprojection error                                            0.747305 (7.48553 pix)\n   Mean key point size                                               1.98159 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No"
+        },
+        {
+          "page": 6,
+          "text": "   Software version                                                   2.2.2.21069\n   File size                                                          4.55 MB\nOrthomosaic\n   Size                                                               2,263 x 2,075\n   Resolution                                                         4.34 mm/pix\n   Coordinate system                                                  Local Coordinates (m)\n   Colors                                                             3 bands, uint8\n   Orthophotos                                                        5.36 MB\n   Reconstruction parameters\n      Blending mode                                                   Mosaic\n      Surface                                                         Model\n      Enable hole filling                                             Yes\n      Enable ghosting filter                                          No\n      Processing time                                                 1 seconds"
+        }
+      ]
+    },
+    {
+      "report": "PULLIAH_GSD Report.pdf1.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         98                        Camera stations:          98\nFlying altitude:          13.8 m                    Tie points:               259,132\nGround resolution:        2.69 mm/pix               Projections:              678,732\nCoverage area:            2888 m\u00b2                   Reprojection error:       2.49 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 98 images\n\n Type                          Resolution                    Focal Length                 Pixel Size\n Frame                         8064 x 4536                   6.72 mm                      1.31 x 1.31 \u03bcm\n\n\n\n\n                          Value           Error     Cx    Cy     K1     K2     K3     P1     P2\n\n                     F    5132.2"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             6.98 cm/pix\nPoint density:          205 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                            98\n   Aligned images                                                    98\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            259,132 of 374,428\n   RMS reprojection error                                            0.276137 (2.48717 pix)\n   Max reprojection error                                            0.854245 (159.535 pix)\n   Mean key point size                                               8.41431 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No\nDEM\n   Size                                                              1,043 x 889\n   Resolution                                                        6.98 cm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                    Tie points\n      Interpolation                                                  Enabled\n      Processing time                                                3 seconds\n\n                                                               Page 6"
+        },
+        {
+          "page": 7,
+          "text": "   Software version                                                  2.2.2.21069\n   File size                                                         2.16 MB\nOrthomosaic\n   Size                                                              25,046 x 22,500\n   Resolution                                                        2.69 mm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Colors                                                            3 bands, uint8\n   Orthophotos                                                       1.51 GB\n   Reconstruction parameters\n      Blending mode                                                  Mosaic\n      Surface                                                        DEM\n      Enable hole filling                                            Yes\n      Enable ghosting filter                                         No\n      Processing time                                                1 minutes 55 seconds"
+        }
+      ]
+    },
+    {
+      "report": "SHILPA_GSD_DATA.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         280                       Camera stations:          280\nFlying altitude:          9.97 m                    Tie points:               285,155\nGround resolution:        1.94 mm/pix               Projections:              624,755\nCoverage area:            6425 m\u00b2                   Reprojection error:       1.04 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 280 images\n\n Type                          Resolution                   Focal Length                  Pixel Size\n Frame                         8064 x 4536                  6.72 mm                       1.31 x 1.31 \u03bcm\n\n\n\n\n                          Value           Error     Cx    Cy     K1    K2      K3    P1     P2\n\n                     F    5132.2"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             9.18 cm/pix\nPoint density:          119 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                            280\n   Aligned images                                                    280\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            285,155 of 321,049\n   RMS reprojection error                                            0.31791 (1.03655 pix)\n   Max reprojection error                                            0.982339 (57.5759 pix)\n   Mean key point size                                               3.28738 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No\nDEM\n   Size                                                              1,132 x 849\n   Resolution                                                        9.18 cm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                    Tie points\n      Interpolation                                                  Enabled\n      Processing time                                                4 seconds\n\n                                                                Page 6"
+        },
+        {
+          "page": 7,
+          "text": "   Software version                                                  2.2.2.21069\n   File size                                                         2.61 MB\nOrthomosaic\n   Size                                                              53,442 x 40,082\n   Resolution                                                        1.94 mm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Colors                                                            3 bands, uint8\n   Orthophotos                                                       4.57 GB\n   Reconstruction parameters\n      Blending mode                                                  Mosaic\n      Surface                                                        DEM\n      Enable hole filling                                            Yes\n      Enable ghosting filter                                         No\n      Processing time                                                10 minutes 42 seconds"
+        }
+      ]
+    },
+    {
+      "report": "SIRA_GSD_REPORT_01.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         156                       Camera stations:          156\nFlying altitude:          11.0 m                    Tie points:               355,119\nGround resolution:        2.14 mm/pix               Projections:              1,071,134\nCoverage area:            4365 m\u00b2                   Reprojection error:       1.6 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 156 images\n\n Type                          Resolution                    Focal Length                 Pixel Size\n Frame                         8064 x 4536                   6.72 mm                      1.31 x 1.31 \u03bcm\n\n\n\n\n                          Value           Error     Cx    Cy     K1     K2     K3     P1     P2\n\n                     F    5132.2"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             7.79 cm/pix\nPoint density:          165 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                           156\n   Aligned images                                                   156\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Rotation angles                                                  Yaw, Pitch, Roll\nTie Points\n   Points                                                           355,119 of 608,186\n   RMS reprojection error                                           1.18159 (1.60059 pix)\n   Max reprojection error                                           3.71497 (43.0023 pix)\n   Mean key point size                                              1.3454 pix\n   Point colors                                                     3 bands, uint8\n   Key points                                                       No\nDEM\n   Size                                                             693 x 1,903\n   Resolution                                                       7.79 cm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                   Tie points\n      Interpolation                                                 Enabled\n      Processing time                                               4 seconds\n      Memory usage                                                  39.34 MB\n   Date created                                                     2026:06:01 10:13:01\n   Software version                                                 2.2.2.21069\n   File size                                                        2.51 MB\nOrthomosaic\n   Size                                                             25,067 x 60,125\n   Resolution                                                       2.14 mm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Colors                                                           3 bands, uint8\n   Orthophotos                                                      2.52 GB\n   Reconstruction parameters\n      Blending mode                                                 Mosaic\n\n                                                               Page 6"
+        }
+      ]
+    },
+    {
+      "report": "SOMANDHAPALLE_GCD_01.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         111                       Camera stations:          110\nFlying altitude:          12.4 m                    Tie points:               311,066\nGround resolution:        2.35 mm/pix               Projections:              649,802\nCoverage area:            3947 m\u00b2                   Reprojection error:       11.4 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 111 images\n\n Type                          Resolution                    Focal Length                   Pixel Size\n Frame                         8064 x 4536                   6.72 mm                        1.31 x 1.31 \u03bcm\n\n\n\n\n                       Value           Error     F     Cx     Cy      K1     K2     K3     P1     P2\n\n                  F    5284.23         61        1.00  -0.92  0.74    0.72   -0.72  0.56   -0.38  0.17"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             10.8 cm/pix\nPoint density:          85.7 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                           111\n   Aligned images                                                   110\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Rotation angles                                                  Yaw, Pitch, Roll\nTie Points\n   Points                                                           311,066 of 540,008\n   RMS reprojection error                                           4.4249 (11.4005 pix)\n   Max reprojection error                                           12.6 (157.72 pix)\n   Mean key point size                                              3.48963 pix\n   Point colors                                                     3 bands, uint8\n   Key points                                                       No\nDEM\n   Size                                                             433 x 987\n   Resolution                                                       10.8 cm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                   Tie points\n      Interpolation                                                 Enabled\n      Processing time                                               3 seconds\n      Memory usage                                                  34.46 MB\n   Date created                                                     2026:06:01 05:26:15\n   Software version                                                 2.2.2.21069\n   File size                                                        1.17 MB\nOrthomosaic\n   Size                                                             19,070 x 45,262\n   Resolution                                                       2.35 mm/pix\n   Coordinate system                                                WGS 84 (EPSG::4326)\n   Colors                                                           3 bands, uint8\n   Orthophotos                                                      1.73 GB\n   Reconstruction parameters\n      Blending mode                                                 Mosaic\n\n                                                               Page 6"
+        }
+      ]
+    },
+    {
+      "report": "lepakshi ortho_01_06.pdf",
+      "metadata_sections": [
+        {
+          "page": 2,
+          "text": "\nNumber of images:         114                       Camera stations:          114\nFlying altitude:          10.7 m                    Tie points:               256,513\nGround resolution:        2.08 mm/pix               Projections:              649,642\nCoverage area:            2966 m\u00b2                   Reprojection error:       3.64 pix\n\n\n\n\n     Camera Model           Resolution      Focal Length      Pixel Size         Precalibrated\n     FC8482 (6.72mm)        8064 x 4536     6.72 mm           1.31 x 1.31 \u03bcm     No\n                                          Table 1. Cameras.\n\n\n\n\n\n"
+        },
+        {
+          "page": 3,
+          "text": " 114 images\n\n Type                          Resolution                    Focal Length                 Pixel Size\n Frame                         8064 x 4536                   6.72 mm                      1.31 x 1.31 \u03bcm\n\n\n\n\n                          Value            Error    Cx    Cy     K1     K2     K3     P1     P2\n\n                     F    5132.2"
+        },
+        {
+          "page": 5,
+          "text": "\n\nResolution:             7.29 cm/pix\nPoint density:          188 points/m\u00b2\n\n\n\n\n\n\n"
+        },
+        {
+          "page": 6,
+          "text": "   Images                                                            114\n   Aligned images                                                    114\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Rotation angles                                                   Yaw, Pitch, Roll\nTie Points\n   Points                                                            256,513 of 526,996\n   RMS reprojection error                                            1.01765 (3.64412 pix)\n   Max reprojection error                                            3.84424 (113.461 pix)\n   Mean key point size                                               3.30974 pix\n   Point colors                                                      3 bands, uint8\n   Key points                                                        No\nDEM\n   Size                                                              1,160 x 826\n   Resolution                                                        7.29 cm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Reconstruction parameters\n      Source data                                                    Tie points\n      Interpolation                                                  Enabled\n      Processing time                                                3 seconds\n      Memory usage                                                   25.49 MB\n   Date created                                                      2026:06:01 07:40:33\n   Software version                                                  2.2.2.21069\n   File size                                                         2.01 MB\nOrthomosaic\n   Size                                                              40,692 x 27,842\n   Resolution                                                        2.08 mm/pix\n   Coordinate system                                                 WGS 84 (EPSG::4326)\n   Colors                                                            3 bands, uint8\n   Orthophotos                                                       1.92 GB\n   Reconstruction parameters\n      Blending mode                                                  Mosaic\n\n                                                               Page 6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{Weather module: \mf{} of every model with the hybrid inputs and of every baseline (test 2019--2026, all sites; mean $\pm$ s.d.\ over 5 seeds).}
+\label{tab:w_models}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Model} & \textbf{7 days} & \textbf{15 days} & \textbf{30 days} \\
+\midrule
+Persistence & 0.662 & 0.515 & 0.424 \\
+Markov transition & 0.493 & 0.424 & 0.377 \\
+Climatology & 0.309 & 0.310 & 0.310 \\
+Majority class & 0.261 & 0.261 & 0.261 \\
+Water-balance ensemble (physics) & 0.783 & 0.592 & 0.375 \\
+\midrule
+Random Forest & 0.775 $\pm$ 0.002 & 0.617 $\pm$ 0.004 & 0.383 $\pm$ 0.001 \\
+XGBoost & 0.814 $\pm$ 0.003 & 0.631 $\pm$ 0.002 & 0.418 $\pm$ 0.003 \\
+LSTM & 0.806 $\pm$ 0.006 & 0.642 $\pm$ 0.008 & 0.406 $\pm$ 0.014 \\
+Transformer & 0.809 $\pm$ 0.005 & 0.650 $\pm$ 0.016 & 0.407 $\pm$ 0.011 \\
+\textbf{Soft-voting ensemble} & \textbf{0.819 $\pm$ 0.003} & \textbf{0.651 $\pm$ 0.009} & \textbf{0.424 $\pm$ 0.012} \\
+\bottomrule
+\end{tabular}
+\end{table}

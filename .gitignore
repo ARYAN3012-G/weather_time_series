@@ -26,3 +26,7 @@ data/prepared/
 # AgERA5 update tool: originals backup and raw downloads
 data/processed/weather/backup_*/
 data/downloads/
+
+# Local report-build binaries and rendering intermediates
+tools/.runtime/
+tmp/pdfs/

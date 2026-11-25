@@ -1,0 +1,368 @@
+{
+  "total_tests": 24,
+  "passed": 24,
+  "results": [
+    {
+      "case": "empty",
+      "strip_rows": 128,
+      "components": 0,
+      "global_nodes": 0,
+      "metadata_reduction_percent": 0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.025746202999926027,
+      "status": "PASS"
+    },
+    {
+      "case": "empty",
+      "strip_rows": 256,
+      "components": 0,
+      "global_nodes": 0,
+      "metadata_reduction_percent": 0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.01631983099991885,
+      "status": "PASS"
+    },
+    {
+      "case": "empty",
+      "strip_rows": 512,
+      "components": 0,
+      "global_nodes": 0,
+      "metadata_reduction_percent": 0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.012188591999915843,
+      "status": "PASS"
+    },
+    {
+      "case": "full",
+      "strip_rows": 128,
+      "components": 1,
+      "global_nodes": 5,
+      "metadata_reduction_percent": -400.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.030668589000015345,
+      "status": "PASS"
+    },
+    {
+      "case": "full",
+      "strip_rows": 256,
+      "components": 1,
+      "global_nodes": 3,
+      "metadata_reduction_percent": -200.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.020603586999982326,
+      "status": "PASS"
+    },
+    {
+      "case": "full",
+      "strip_rows": 512,
+      "components": 1,
+      "global_nodes": 2,
+      "metadata_reduction_percent": -100.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.014637074999996003,
+      "status": "PASS"
+    },
+    {
+      "case": "sparse",
+      "strip_rows": 128,
+      "components": 63581,
+      "global_nodes": 1167,
+      "metadata_reduction_percent": 98.16454601217345,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.07688627099992118,
+      "status": "PASS"
+    },
+    {
+      "case": "sparse",
+      "strip_rows": 256,
+      "components": 63581,
+      "global_nodes": 595,
+      "metadata_reduction_percent": 99.06418584168226,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.05684078500007672,
+      "status": "PASS"
+    },
+    {
+      "case": "sparse",
+      "strip_rows": 512,
+      "components": 63581,
+      "global_nodes": 289,
+      "metadata_reduction_percent": 99.54546169453138,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.05068376300005184,
+      "status": "PASS"
+    },
+    {
+      "case": "dense",
+      "strip_rows": 128,
+      "components": 105,
+      "global_nodes": 374,
+      "metadata_reduction_percent": -256.19047619047615,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.08335682800009181,
+      "status": "PASS"
+    },
+    {
+      "case": "dense",
+      "strip_rows": 256,
+      "components": 105,
+      "global_nodes": 345,
+      "metadata_reduction_percent": -228.57142857142856,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.05901787699997385,
+      "status": "PASS"
+    },
+    {
+      "case": "dense",
+      "strip_rows": 512,
+      "components": 105,
+      "global_nodes": 332,
+      "metadata_reduction_percent": -216.19047619047618,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.04427797799996824,
+      "status": "PASS"
+    },
+    {
+      "case": "diagonal",
+      "strip_rows": 128,
+      "components": 1,
+      "global_nodes": 9,
+      "metadata_reduction_percent": -800.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.050763743999937105,
+      "status": "PASS"
+    },
+    {
+      "case": "diagonal",
+      "strip_rows": 256,
+      "components": 1,
+      "global_nodes": 5,
+      "metadata_reduction_percent": -400.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.033623907999981384,
+      "status": "PASS"
+    },
+    {
+      "case": "diagonal",
+      "strip_rows": 512,
+      "components": 1,
+      "global_nodes": 3,
+      "metadata_reduction_percent": -200.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.027051721999896472,
+      "status": "PASS"
+    },
+    {
+      "case": "crossing",
+      "strip_rows": 128,
+      "components": 2,
+      "global_nodes": 16,
+      "metadata_reduction_percent": -700.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.07767647900004704,
+      "status": "PASS"
+    },
+    {
+      "case": "crossing",
+      "strip_rows": 256,
+      "components": 2,
+      "global_nodes": 9,
+      "metadata_reduction_percent": -350.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.05338917999995374,
+      "status": "PASS"
+    },
+    {
+      "case": "crossing",
+      "strip_rows": 512,
+      "components": 2,
+      "global_nodes": 6,
+      "metadata_reduction_percent": -200.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.04198048000000654,
+      "status": "PASS"
+    },
+    {
+      "case": "isolated",
+      "strip_rows": 128,
+      "components": 1048576,
+      "global_nodes": 15360,
+      "metadata_reduction_percent": 98.53515625,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.33925736300000153,
+      "status": "PASS"
+    },
+    {
+      "case": "isolated",
+      "strip_rows": 256,
+      "components": 1048576,
+      "global_nodes": 7168,
+      "metadata_reduction_percent": 99.31640625,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.3013170809999792,
+      "status": "PASS"
+    },
+    {
+      "case": "isolated",
+      "strip_rows": 512,
+      "components": 1048576,
+      "global_nodes": 3072,
+      "metadata_reduction_percent": 99.70703125,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.35140737100005026,
+      "status": "PASS"
+    },
+    {
+      "case": "border",
+      "strip_rows": 128,
+      "components": 2,
+      "global_nodes": 12,
+      "metadata_reduction_percent": -500.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.06442580899999939,
+      "status": "PASS"
+    },
+    {
+      "case": "border",
+      "strip_rows": 256,
+      "components": 2,
+      "global_nodes": 7,
+      "metadata_reduction_percent": -250.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.04713198599995394,
+      "status": "PASS"
+    },
+    {
+      "case": "border",
+      "strip_rows": 512,
+      "components": 2,
+      "global_nodes": 3,
+      "metadata_reduction_percent": -50.0,
+      "differences": {
+        "small": 0,
+        "border": 0,
+        "large": 0,
+        "largest": 0
+      },
+      "runtime_seconds": 0.03895812999996906,
+      "status": "PASS"
+    }
+  ],
+  "production_pipeline_modified": false,
+  "model_weights_modified": false
+}

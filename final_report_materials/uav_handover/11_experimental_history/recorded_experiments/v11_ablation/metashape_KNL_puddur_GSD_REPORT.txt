@@ -1,0 +1,345 @@
+Agisoft Metashape
+Processing Report
+30 May 2026
+
+Survey Data
+1
+2
+3
+4
+5
+6
+7
+8
+9
+> 9
+20.0 m
+Fig. 1. Camera locations and image overlap.
+Number of images:
+163
+Flying altitude:
+8.86 m
+Ground resolution:
+1.96 cm/pix
+Coverage area:
+3859 m²
+Camera stations:
+163
+Tie points:
+153,920
+Projections:
+324,962
+Reprojection error:
+5.02 pix
+Camera Model
+Resolution
+Focal Length
+Pixel Size
+Precalibrated
+FC8482 (6.72mm)
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+No
+FC8482 (6.72mm)
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+No
+FC8482 (6.72mm)
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+No
+Table 1. Cameras.
+Page 2
+Camera Calibration
+1 pix
+Fig. 2. Image residuals for FC8482 (6.72mm).
+FC8482 (6.72mm)
+131 images
+Type
+Resolution
+Focal Length
+Pixel Size
+Frame
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+Value
+Error
+K1
+K2
+P1
+P2
+F
+5132.2
+K1
+0.0709225
+0.00064
+1.00
+-0.13
+-0.73
+0.41
+K2
+-0.0466899
+0.00017
+1.00
+0.04
+0.01
+P1
+-0.00148249
+2.8e-05
+1.00
+-0.31
+P2
+0.000230438
+1.3e-05
+1.00
+Table 2. Calibration coefficients and correlation matrix.
+Page 3
+Camera Calibration
+2 pix
+Fig. 3. Image residuals for FC8482 (6.72mm).
+FC8482 (6.72mm)
+26 images
+Type
+Resolution
+Focal Length
+Pixel Size
+Frame
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+Value
+Error
+K1
+F
+5132.2
+K1
+0.0523059
+0.00083
+1.00
+Table 3. Calibration coefficients and correlation matrix.
+Page 4
+Camera Calibration
+4 pix
+Fig. 4. Image residuals for FC8482 (6.72mm).
+FC8482 (6.72mm)
+6 images
+Type
+Resolution
+Focal Length
+Pixel Size
+Frame
+8064 x 4536
+6.72 mm
+1.31 x 1.31 
+μ
+m
+Value
+Error
+K1
+F
+5132.2
+K1
+-0.0804047
+0.0016
+1.00
+Table 4. Calibration coefficients and correlation matrix.
+Page 5
+Camera Locations
+20.0 m
+-2.50 m
+-2.00 m
+-1.50 m
+-1.00 m
+-0.500 m
+0 m
+0.500 m
+1.00 m
+1.50 m
+2.00 m
+2.50 m
+x 4
+Fig. 5. Camera locations and error estimates.
+Z error is represented by ellipse color. X,Y errors are represented by ellipse shape.
+Estimated camera locations are marked with a black dot.
+X error (cm)
+Y error (cm)
+Z error (cm)
+XY error (cm)
+Total error (cm)
+30.9908
+43.4779
+73.6544
+53.3925
+90.971
+Table 5. Average camera location error.
+X - Longitude, Y - Latitude, Z - Altitude.
+Page 6
+Digital Elevation Model
+260 m
+266 m
+20.0 m
+Fig. 6. Reconstructed digital elevation model.
+Resolution:
+10.6 cm/pix
+Point density:
+88.2 points/m²
+Page 7
+Processing Parameters
+General
+Images
+163
+Aligned images
+163
+Coordinate system
+WGS 84 (EPSG::4326)
+Rotation angles
+Yaw, Pitch, Roll
+Tie Points
+Points
+153,920 of 216,763
+RMS reprojection error
+0.733478 (5.0201 pix)
+Max reprojection error
+244.86 (1147.83 pix)
+Mean key point size
+10.2728 pix
+Point colors
+3 bands, uint8
+Key points
+No
+Average tie point multiplicity
+2.09952
+Date created
+2026:05:16 09:27:43
+Software version
+2.2.2.21069
+File size
+11.11 MB
+Point Cloud
+Points
+400,792
+Coordinate precision
+2.50 cm
+Point attributes
+Color
+3 bands, uint8
+Normal
+Point classes
+Created (never classified)
+400,792
+Point cloud generation parameters
+Source data
+Tiled model
+Processing time
+21 seconds
+Memory usage
+51.77 MB
+Date created
+2026:05:16 09:43:51
+Software version
+2.2.2.21069
+File size
+5.34 MB
+Tiled Model
+Texture
+3 bands, uint8
+Reconstruction parameters
+Source data
+Tie points
+Tile size
+512
+Face count
+High
+Enable ghosting filter
+Yes
+Processing time
+14 minutes 44 seconds
+Memory usage
+6.74 GB
+Date created
+2026:05:16 09:43:25
+Software version
+2.2.2.21069
+File size
+873.50 MB
+DEM
+Size
+563 x 1,015
+Resolution
+10.6 cm/pix
+Coordinate system
+WGS 84 (EPSG::4326)
+Reconstruction parameters
+Source data
+Tie points
+Interpolation
+Enabled
+Page 8
+Processing time
+2 seconds
+Memory usage
+16.49 MB
+Date created
+2026:05:16 09:44:46
+Software version
+2.2.2.21069
+File size
+1.32 MB
+Orthomosaic
+Size
+34,710 x 62,577
+Resolution
+1.73 mm/pix
+Coordinate system
+WGS 84 (EPSG::4326)
+Colors
+3 bands, uint8
+Orthophotos
+2.43 GB
+Reconstruction parameters
+Blending mode
+Mosaic
+Surface
+DEM
+Enable hole filling
+Yes
+Enable ghosting filter
+No
+Processing time
+4 minutes 50 seconds
+Memory usage
+2.76 GB
+Date created
+2026:05:16 09:46:38
+Software version
+2.2.2.21069
+File size
+4.10 GB
+System
+Software name
+Agisoft Metashape Professional
+Software version
+2.2.2 build 21069
+OS
+Windows 64 bit
+RAM
+63.65 GB
+CPU
+Intel(R) Xeon(R) w5-2565X
+GPU(s)
+NVIDIA RTX 2000 Ada Generation
+Page 9

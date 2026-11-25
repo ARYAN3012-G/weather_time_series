@@ -1,0 +1,177 @@
+{
+  "tests_passed": 12,
+  "total_differences": 0,
+  "pdf_generation_passed": true,
+  "full_resolution_rgb_mask_avoided": true,
+  "model_weights_modified": false,
+  "results": [
+    {
+      "input_shape": [
+        257,
+        301
+      ],
+      "thumbnail_shape": [
+        240,
+        320
+      ],
+      "differences": 0,
+      "reference_seconds": 0.006476794999912272,
+      "optimized_seconds": 0.003877007000028243,
+      "avoided_rgb_allocation_bytes": 232071
+    },
+    {
+      "input_shape": [
+        257,
+        301
+      ],
+      "thumbnail_shape": [
+        600,
+        800
+      ],
+      "differences": 0,
+      "reference_seconds": 0.005554887000016606,
+      "optimized_seconds": 0.022145272000102523,
+      "avoided_rgb_allocation_bytes": 232071
+    },
+    {
+      "input_shape": [
+        257,
+        301
+      ],
+      "thumbnail_shape": [
+        768,
+        1024
+      ],
+      "differences": 0,
+      "reference_seconds": 0.004161855999996078,
+      "optimized_seconds": 0.03474695800002792,
+      "avoided_rgb_allocation_bytes": 232071
+    },
+    {
+      "input_shape": [
+        1024,
+        1024
+      ],
+      "thumbnail_shape": [
+        240,
+        320
+      ],
+      "differences": 0,
+      "reference_seconds": 0.05203180599994539,
+      "optimized_seconds": 0.0038265040000169392,
+      "avoided_rgb_allocation_bytes": 3145728
+    },
+    {
+      "input_shape": [
+        1024,
+        1024
+      ],
+      "thumbnail_shape": [
+        600,
+        800
+      ],
+      "differences": 0,
+      "reference_seconds": 0.05067306000000826,
+      "optimized_seconds": 0.02321809900001881,
+      "avoided_rgb_allocation_bytes": 3145728
+    },
+    {
+      "input_shape": [
+        1024,
+        1024
+      ],
+      "thumbnail_shape": [
+        768,
+        1024
+      ],
+      "differences": 0,
+      "reference_seconds": 0.05059966099997837,
+      "optimized_seconds": 0.037835708999978124,
+      "avoided_rgb_allocation_bytes": 3145728
+    },
+    {
+      "input_shape": [
+        2048,
+        3072
+      ],
+      "thumbnail_shape": [
+        240,
+        320
+      ],
+      "differences": 0,
+      "reference_seconds": 0.35560393999992357,
+      "optimized_seconds": 0.0038844450000397046,
+      "avoided_rgb_allocation_bytes": 18874368
+    },
+    {
+      "input_shape": [
+        2048,
+        3072
+      ],
+      "thumbnail_shape": [
+        600,
+        800
+      ],
+      "differences": 0,
+      "reference_seconds": 0.3160208369999964,
+      "optimized_seconds": 0.023288062999995418,
+      "avoided_rgb_allocation_bytes": 18874368
+    },
+    {
+      "input_shape": [
+        2048,
+        3072
+      ],
+      "thumbnail_shape": [
+        768,
+        1024
+      ],
+      "differences": 0,
+      "reference_seconds": 0.31202563200008626,
+      "optimized_seconds": 0.03773952899996402,
+      "avoided_rgb_allocation_bytes": 18874368
+    },
+    {
+      "input_shape": [
+        4096,
+        4096
+      ],
+      "thumbnail_shape": [
+        240,
+        320
+      ],
+      "differences": 0,
+      "reference_seconds": 0.9032925009998962,
+      "optimized_seconds": 0.00396393200003331,
+      "avoided_rgb_allocation_bytes": 50331648
+    },
+    {
+      "input_shape": [
+        4096,
+        4096
+      ],
+      "thumbnail_shape": [
+        600,
+        800
+      ],
+      "differences": 0,
+      "reference_seconds": 0.8895482589999801,
+      "optimized_seconds": 0.02347684100004699,
+      "avoided_rgb_allocation_bytes": 50331648
+    },
+    {
+      "input_shape": [
+        4096,
+        4096
+      ],
+      "thumbnail_shape": [
+        768,
+        1024
+      ],
+      "differences": 0,
+      "reference_seconds": 0.9195601129999886,
+      "optimized_seconds": 0.038099526999985756,
+      "avoided_rgb_allocation_bytes": 50331648
+    }
+  ]
+}

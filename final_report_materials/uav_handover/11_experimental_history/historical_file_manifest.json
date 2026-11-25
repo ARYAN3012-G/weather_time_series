@@ -1,0 +1,562 @@
+[
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/barren_manifest.yaml",
+    "destination": "11_experimental_history/configurations/barren_manifest.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config.yaml",
+    "destination": "11_experimental_history/configurations/config.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v10.yaml",
+    "destination": "11_experimental_history/configurations/config_v10.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v11.yaml",
+    "destination": "11_experimental_history/configurations/config_v11.yaml",
+    "role": "Final V11 configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v12.yaml",
+    "destination": "11_experimental_history/configurations/config_v12.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v5.yaml",
+    "destination": "11_experimental_history/configurations/config_v5.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v5_before_local.yaml",
+    "destination": "11_experimental_history/configurations/config_v5_before_local.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v6.yaml",
+    "destination": "11_experimental_history/configurations/config_v6.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v7.yaml",
+    "destination": "11_experimental_history/configurations/config_v7.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v8.yaml",
+    "destination": "11_experimental_history/configurations/config_v8.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v9.yaml",
+    "destination": "11_experimental_history/configurations/config_v9.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v9_1.yaml",
+    "destination": "11_experimental_history/configurations/config_v9_1.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/field_gsd_registry.json",
+    "destination": "11_experimental_history/configurations/field_gsd_registry.json",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/orthomosaics_meta.yaml",
+    "destination": "11_experimental_history/configurations/orthomosaics_meta.yaml",
+    "role": "Historical or supporting configuration"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/classifier/training_report_30.json",
+    "destination": "11_experimental_history/recorded_experiments/classifier/training_report_30.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/classifier/training_report_30_3.json",
+    "destination": "11_experimental_history/recorded_experiments/classifier/training_report_30_3.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/knl_optimized_inference.log",
+    "destination": "11_experimental_history/recorded_experiments/knl_optimized_inference.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11/KNL_DDP_ORTHO/inference.log",
+    "destination": "11_experimental_history/recorded_experiments/results_v11/KNL_DDP_ORTHO/inference.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11/KNL_DDP_ORTHO/report.json",
+    "destination": "11_experimental_history/recorded_experiments/results_v11/KNL_DDP_ORTHO/report.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/calibration_v11.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/calibration_v11.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v10.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report_v10.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v11.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report_v11.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v12.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report_v12.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v9.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report_v9.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/segmentation/training_report_v9_1.json",
+    "destination": "11_experimental_history/recorded_experiments/segmentation/training_report_v9_1.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/KNL_puddur_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/KNL_puddur_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/KNL_puddur_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/KNL_puddur_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/accuracy_comparison.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/accuracy_comparison.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/auxiliary_mask_optimization.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/auxiliary_mask_optimization.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/balaji_optimized_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/balaji_optimized_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/balaji_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/balaji_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/boundary_components_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/boundary_components_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/boundary_integration_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/boundary_integration_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/dataset_provenance_audit.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/dataset_provenance_audit.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/disk_components_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/disk_components_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/drought_decision_tests.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/drought_decision_tests.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/extended_calibration.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/extended_calibration.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/field_provenance_audit.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/field_provenance_audit.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/final_memory_safety_audit.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/final_memory_safety_audit.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/final_output_verification.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/final_output_verification.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/independent_test_candidates.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/independent_test_candidates.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/knl_optimized_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/knl_optimized_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/large_morphology_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/large_morphology_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/KNL_MAIZE_TOWER_TILE_POINTS_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/KNL_MAIZE_TOWER_TILE_POINTS_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/KNL_puddur_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/KNL_puddur_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/LEPAKSHI_TIE_POINTS_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/LEPAKSHI_TIE_POINTS_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/SIRA_TIE_POINTS_01_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/SIRA_TIE_POINTS_01_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/SOMANDHAPALLE_TIE_POINTS_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/SOMANDHAPALLE_TIE_POINTS_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/balaji_inference.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/balaji_inference.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/remaining_batch_master.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/remaining_batch_master.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/shilpa half part orthomosaic3_batch.log",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/logs/shilpa half part orthomosaic3_batch.log",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/memory_safe_decision_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_decision_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/memory_safe_integration_test.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_integration_test.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/memory_safe_integration_test/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_integration_test/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/memory_safe_postprocess_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/memory_safe_postprocess_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_BALAJI_VILLAS_GCD_REPORT01_06.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_BALAJI_VILLAS_GCD_REPORT01_06.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_KNL_DDP_GSD_REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_DDP_GSD_REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_KNL_MAIZE_TOWERS_GSD REPORT_01.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_MAIZE_TOWERS_GSD REPORT_01.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_KNL_puddur_GSD_REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_KNL_puddur_GSD_REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PEDHAKABUR_F4_GCD_REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKABUR_F4_GCD_REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PEDHAKADBUR_F1_GCD_REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F1_GCD_REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PEDHAKADBUR_F6_GCD REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F6_GCD REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PEDHAKADBUR_F7_GCD_REPORT.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADBUR_F7_GCD_REPORT.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PEDHAKADUBUR_F3_GCD REPORT31.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PEDHAKADUBUR_F3_GCD REPORT31.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_PULLIAH_GSD Report.pdf1.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_PULLIAH_GSD Report.pdf1.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_SHILPA_GSD_DATA.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SHILPA_GSD_DATA.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_SIRA_GSD_REPORT_01.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SIRA_GSD_REPORT_01.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_SOMANDHAPALLE_GCD_01.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_SOMANDHAPALLE_GCD_01.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_lepakshi ortho_01_06.txt",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_lepakshi ortho_01_06.txt",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_provenance_verified.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/metashape_provenance_verified.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/morphological_optimization_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/morphological_optimization_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/orthomosaic_gsd_metadata.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/orthomosaic_gsd_metadata.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/pdf_thumbnail_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/pdf_thumbnail_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/provenance_step50.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/provenance_step50.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/pulliah_optimized_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/pulliah_optimized_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/remaining_batch_summary.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/remaining_batch_summary.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/rolling_stitching_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/rolling_stitching_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/same_gpu_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/same_gpu_equivalence/memory_safe/report.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence/memory_safe/report.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/same_gpu_equivalence/reference/report.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/same_gpu_equivalence/reference/report.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/shilpa half part orthomosaic3_batch_benchmark.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/shilpa half part orthomosaic3_batch_benchmark.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/shilpa half part orthomosaic3_resource_monitor.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/shilpa half part orthomosaic3_resource_monitor.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/small_orthomosaic_results.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/small_orthomosaic_results.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/source_disjoint_evaluation.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/source_disjoint_evaluation.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/source_overlap.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/source_overlap.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/strip_components_equivalence.json",
+    "destination": "11_experimental_history/recorded_experiments/v11_ablation/strip_components_equivalence.json",
+    "role": "Historical experiment evidence"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/barren_manifest.yaml",
+    "destination": "11_experimental_history/dataset_provenance/drought_detection/configs/barren_manifest.yaml",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/pseudo_labels/manifest.yaml",
+    "destination": "11_experimental_history/dataset_provenance/runs/pseudo_labels/manifest.yaml",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/source_overlap.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/source_overlap.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/dataset_provenance_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/dataset_provenance_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/provenance_step50.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/provenance_step50.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/field_provenance_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/field_provenance_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/metashape_provenance_verified.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/metashape_provenance_verified.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/final_memory_safety_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/v11_ablation/final_memory_safety_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/test_manifest.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/test_manifest.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/final_dataset_integrity.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/final_dataset_integrity.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/dataset_provenance_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/dataset_provenance_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/field_provenance_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/field_provenance_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/final_memory_safety_audit.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/final_memory_safety_audit.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/metashape_provenance_verified.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/metashape_provenance_verified.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/provenance_step50.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/provenance_step50.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/source_overlap.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/final_research_results/experimental_evidence/source_overlap.json",
+    "role": "Dataset and experiment provenance"
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/additional_field_previews/preview_manifest.json",
+    "destination": "11_experimental_history/dataset_provenance/runs/candidate_test_dataset/additional_field_previews/preview_manifest.json",
+    "role": "Dataset and experiment provenance"
+  }
+]

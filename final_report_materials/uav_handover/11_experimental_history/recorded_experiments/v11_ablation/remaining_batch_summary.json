@@ -1,0 +1,48 @@
+[
+  {
+    "image": "KNL_puddur.jpg",
+    "status": "SKIPPED_VERIFIED",
+    "runtime_seconds": 0
+  },
+  {
+    "image": "shilpa half part orthomosaic3.jpg",
+    "status": "SKIPPED_VERIFIED",
+    "runtime_seconds": 0
+  },
+  {
+    "image": "SIRA_TIE_POINTS_01.jpg",
+    "status": "FAIL",
+    "returncode": 1,
+    "runtime_seconds": 1875.272538495,
+    "runtime_minutes": 31.25454230825,
+    "output_verified": false,
+    "log": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/SIRA_TIE_POINTS_01_batch.log"
+  },
+  {
+    "image": "KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+    "status": "FAIL",
+    "returncode": 1,
+    "runtime_seconds": 1459.986396415,
+    "runtime_minutes": 24.333106606916665,
+    "output_verified": false,
+    "log": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/KNL_MAIZE_TOWER_TILE_POINTS_batch.log"
+  },
+  {
+    "image": "LEPAKSHI_TIE_POINTS.jpg",
+    "status": "FAIL",
+    "returncode": 1,
+    "runtime_seconds": 1390.203864361,
+    "runtime_minutes": 23.170064406016664,
+    "output_verified": false,
+    "log": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/LEPAKSHI_TIE_POINTS_batch.log"
+  },
+  {
+    "image": "SOMANDHAPALLE_TIE_POINTS.jpg",
+    "status": "FAIL",
+    "returncode": 1,
+    "runtime_seconds": 1101.960471454,
+    "runtime_minutes": 18.366007857566668,
+    "output_verified": false,
+    "log": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/logs/SOMANDHAPALLE_TIE_POINTS_batch.log"
+  }
+]

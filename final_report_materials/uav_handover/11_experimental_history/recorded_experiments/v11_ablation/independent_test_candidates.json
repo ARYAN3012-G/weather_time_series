@@ -1,0 +1,355 @@
+{
+  "orthomosaics": [
+    {
+      "name": "BALAJI_VILLAS_TIE_POINTS.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/BALAJI_VILLAS_TIE_POINTS.jpg",
+      "width": 51246,
+      "height": 55752,
+      "megapixels": 2857.07,
+      "size_mb": 896.46,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "KNL_DDP_ORTHO.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/KNL_DDP_ORTHO.jpg",
+      "width": 22189,
+      "height": 49690,
+      "megapixels": 1102.57,
+      "size_mb": 264.03,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+      "width": 35826,
+      "height": 32768,
+      "megapixels": 1173.95,
+      "size_mb": 256.5,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "KNL_puddur.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/KNL_puddur.jpg",
+      "width": 34709,
+      "height": 62577,
+      "megapixels": 2171.99,
+      "size_mb": 480.36,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "LEPAKSHI_TIE_POINTS.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/LEPAKSHI_TIE_POINTS.jpg",
+      "width": 40691,
+      "height": 27842,
+      "megapixels": 1132.92,
+      "size_mb": 386.89,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "width": 3072,
+      "height": 2560,
+      "megapixels": 7.86,
+      "size_mb": 1.15,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "width": 2263,
+      "height": 2075,
+      "megapixels": 4.7,
+      "size_mb": 1.19,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "width": 2410,
+      "height": 2411,
+      "megapixels": 5.81,
+      "size_mb": 0.77,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+      "width": 1536,
+      "height": 2494,
+      "megapixels": 3.83,
+      "size_mb": 0.55,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "width": 2569,
+      "height": 2082,
+      "megapixels": 5.35,
+      "size_mb": 1.13,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PULLIAH_1_ORTHOMOSAIC.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PULLIAH_1_ORTHOMOSAIC.jpg",
+      "width": 25707,
+      "height": 22849,
+      "megapixels": 587.38,
+      "size_mb": 157.87,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "SIRA_TIE_POINTS_01.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/SIRA_TIE_POINTS_01.jpg",
+      "width": 25067,
+      "height": 60125,
+      "megapixels": 1507.15,
+      "size_mb": 395.19,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "SOMANDHAPALLE_TIE_POINTS.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/SOMANDHAPALLE_TIE_POINTS.jpg",
+      "width": 19069,
+      "height": 45261,
+      "megapixels": 863.08,
+      "size_mb": 259.0,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "shilpa half part orthomosaic3.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/shilpa half part orthomosaic3.jpg",
+      "width": 53442,
+      "height": 40081,
+      "megapixels": 2142.01,
+      "size_mb": 681.18,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    }
+  ],
+  "metadata": {
+    "orthomosaics": {
+      "BALAJI_VILLAS_GCD_REPORT01_06": {
+        "altitude_m": 9.47,
+        "coverage_area_m2": 8090.0,
+        "ground_resolution_mm_per_px": 1.84,
+        "num_source_images": 344,
+        "orthomosaic_height_px": 55752,
+        "orthomosaic_resolution_mm_per_px": 1.84,
+        "orthomosaic_width_px": 51247,
+        "source_report": "BALAJI_VILLAS_GCD_REPORT01_06.pdf"
+      },
+      "KNL_DDP_GSD_REPORT": {
+        "altitude_m": 34.1,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": 5.55,
+        "num_source_images": 102,
+        "orthomosaic_height_px": 49690,
+        "orthomosaic_resolution_mm_per_px": 5.55,
+        "orthomosaic_width_px": 22190,
+        "source_report": "KNL_DDP_GSD_REPORT.pdf"
+      },
+      "KNL_MAIZE_TOWERS_GSD REPORT_01": {
+        "altitude_m": 9.62,
+        "coverage_area_m2": 2254.0,
+        "ground_resolution_mm_per_px": 1.68,
+        "num_source_images": 100,
+        "orthomosaic_height_px": 32768,
+        "orthomosaic_resolution_mm_per_px": 1.68,
+        "orthomosaic_width_px": 35826,
+        "source_report": "KNL_MAIZE_TOWERS_GSD REPORT_01.pdf"
+      },
+      "KNL_puddur_GSD_REPORT": {
+        "altitude_m": 8.86,
+        "coverage_area_m2": 3859.0,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 163,
+        "orthomosaic_height_px": 62577,
+        "orthomosaic_resolution_mm_per_px": 1.73,
+        "orthomosaic_width_px": 34710,
+        "source_report": "KNL_puddur_GSD_REPORT.pdf"
+      },
+      "PEDHAKABUR_F4_GCD_REPORT": {
+        "altitude_m": null,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 15,
+        "orthomosaic_height_px": 2411,
+        "orthomosaic_resolution_mm_per_px": 9.15,
+        "orthomosaic_width_px": 2410,
+        "source_report": "PEDHAKABUR_F4_GCD_REPORT.pdf"
+      },
+      "PEDHAKADBUR_F1_GCD_REPORT": {
+        "altitude_m": null,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 13,
+        "orthomosaic_height_px": 2560,
+        "orthomosaic_resolution_mm_per_px": 3.62,
+        "orthomosaic_width_px": 3072,
+        "source_report": "PEDHAKADBUR_F1_GCD_REPORT.pdf"
+      },
+      "PEDHAKADBUR_F6_GCD REPORT": {
+        "altitude_m": null,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 8,
+        "orthomosaic_height_px": 2494,
+        "orthomosaic_width_px": 1536,
+        "source_report": "PEDHAKADBUR_F6_GCD REPORT.pdf"
+      },
+      "PEDHAKADBUR_F7_GCD_REPORT": {
+        "altitude_m": null,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 15,
+        "orthomosaic_height_px": 2082,
+        "orthomosaic_width_px": 2569,
+        "source_report": "PEDHAKADBUR_F7_GCD_REPORT.pdf"
+      },
+      "PEDHAKADUBUR_F3_GCD REPORT31": {
+        "altitude_m": null,
+        "coverage_area_m2": null,
+        "ground_resolution_mm_per_px": null,
+        "num_source_images": 13,
+        "orthomosaic_height_px": 2075,
+        "orthomosaic_resolution_mm_per_px": 4.34,
+        "orthomosaic_width_px": 2263,
+        "source_report": "PEDHAKADUBUR_F3_GCD REPORT31.pdf"
+      },
+      "PULLIAH_GSD Report.pdf1": {
+        "altitude_m": 13.8,
+        "coverage_area_m2": 2888.0,
+        "ground_resolution_mm_per_px": 2.69,
+        "num_source_images": 98,
+        "orthomosaic_height_px": 22500,
+        "orthomosaic_resolution_mm_per_px": 2.69,
+        "orthomosaic_width_px": 25046,
+        "source_report": "PULLIAH_GSD Report.pdf1.pdf"
+      },
+      "SHILPA_GSD_DATA": {
+        "altitude_m": 9.97,
+        "coverage_area_m2": 6425.0,
+        "ground_resolution_mm_per_px": 1.94,
+        "num_source_images": 280,
+        "orthomosaic_height_px": 40082,
+        "orthomosaic_resolution_mm_per_px": 1.94,
+        "orthomosaic_width_px": 53442,
+        "source_report": "SHILPA_GSD_DATA.pdf"
+      },
+      "SIRA_GSD_REPORT_01": {
+        "altitude_m": 11.0,
+        "coverage_area_m2": 4365.0,
+        "ground_resolution_mm_per_px": 2.14,
+        "num_source_images": 156,
+        "orthomosaic_height_px": 60125,
+        "orthomosaic_resolution_mm_per_px": 2.14,
+        "orthomosaic_width_px": 25067,
+        "source_report": "SIRA_GSD_REPORT_01.pdf"
+      },
+      "SOMANDHAPALLE_GCD_01": {
+        "altitude_m": 12.4,
+        "coverage_area_m2": 3947.0,
+        "ground_resolution_mm_per_px": 2.35,
+        "num_source_images": 111,
+        "orthomosaic_height_px": 45262,
+        "orthomosaic_resolution_mm_per_px": 2.35,
+        "orthomosaic_width_px": 19070,
+        "source_report": "SOMANDHAPALLE_GCD_01.pdf"
+      },
+      "lepakshi ortho_01_06": {
+        "altitude_m": 10.7,
+        "coverage_area_m2": 2966.0,
+        "ground_resolution_mm_per_px": 2.08,
+        "num_source_images": 114,
+        "orthomosaic_height_px": 27842,
+        "orthomosaic_resolution_mm_per_px": 2.08,
+        "orthomosaic_width_px": 40692,
+        "source_report": "lepakshi ortho_01_06.pdf"
+      }
+    }
+  },
+  "annotation_folders": {
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/clean_masks": {
+      "count": 280,
+      "samples": [
+        "DJI_20251024170232_0625_D.png",
+        "DJI_20251024170947_0712_D_r0000_c0000.png",
+        "DJI_20251024170947_0712_D_r0001_c0005.png",
+        "DJI_20251024170947_0712_D_r0003_c0004.png",
+        "DJI_20251024171002_0715_D_r0000_c0000.png"
+      ]
+    },
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/pseudo_labels/masks": {
+      "count": 1791,
+      "samples": [
+        "DJI_20251024171107_0728_D.png",
+        "DJI_20251024171112_0729_D.png",
+        "DJI_20251110160511_0913_D.png",
+        "DJI_20251110160534_0914_D.png",
+        "DJI_20251110160544_0915_D.png"
+      ]
+    }
+  },
+  "clean_source_ids": 201,
+  "pseudo_source_ids": 2011,
+  "synthetic_patch_files": 1630,
+  "unverified_test_candidates": [
+    "BALAJI_VILLAS_TIE_POINTS.jpg",
+    "KNL_DDP_ORTHO.jpg",
+    "KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+    "KNL_puddur.jpg",
+    "LEPAKSHI_TIE_POINTS.jpg",
+    "PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+    "PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+    "PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+    "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+    "PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+    "PULLIAH_1_ORTHOMOSAIC.jpg",
+    "SIRA_TIE_POINTS_01.jpg",
+    "SOMANDHAPALLE_TIE_POINTS.jpg",
+    "shilpa half part orthomosaic3.jpg"
+  ]
+}

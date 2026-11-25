@@ -1,0 +1,66 @@
+{
+  "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/shilpa half part orthomosaic3.jpg",
+  "area_stats": {
+    "gsd_mm_per_pixel": 1.94,
+    "pixel_area_m2": 3.7635999999999994e-06,
+    "altitude_m": 9.97,
+    "valid_field_pixels": 1699066625,
+    "valid_field_area_m2": 6394.6,
+    "agricultural_pixels": 641546145,
+    "agricultural_area_m2": 2414.5,
+    "drought_fraction": 6.627738367908048e-06,
+    "non_harvest_drought_fraction": 7.285705810855175e-06,
+    "per_class": {
+      "background": {
+        "pixels": 442942177,
+        "area_m2": 1667.06
+      },
+      "soil": {
+        "pixels": 1053777401,
+        "area_m2": 3966.0
+      },
+      "crop": {
+        "pixels": 591468474,
+        "area_m2": 2226.05
+      },
+      "cotton_ball": {
+        "pixels": 21669410,
+        "area_m2": 81.55
+      },
+      "green_weed": {
+        "pixels": 3743079,
+        "area_m2": 14.09
+      },
+      "dry_weed": {
+        "pixels": 28404009,
+        "area_m2": 106.9
+      },
+      "drought": {
+        "pixels": 4252,
+        "area_m2": 0.02
+      }
+    },
+    "gsd_source": "Metashape orthomosaic resolution",
+    "gsd_dimensions_match": true,
+    "physical_scale_verified": false,
+    "area_is_estimate": true,
+    "area_requires_review": false
+  },
+  "drought_decision": {
+    "drought": false,
+    "confidence": 0.2,
+    "stress_score": 0.2,
+    "score_is_calibrated_probability": false,
+    "decision_type": "visual_stress_heuristic",
+    "field_confirmation_required": true,
+    "drought_fraction": 6.627738367908048e-06,
+    "non_harvest_drought_fraction": 7.285705810855175e-06,
+    "largest_cc_share": 0.6809,
+    "signal_1_fraction": false,
+    "signal_2_non_harvest": false,
+    "signal_3_coherent": true,
+    "tau_fraction": 0.15,
+    "tau_non_harvest": 0.1,
+    "tau_cc_share": 0.25
+  }
+}

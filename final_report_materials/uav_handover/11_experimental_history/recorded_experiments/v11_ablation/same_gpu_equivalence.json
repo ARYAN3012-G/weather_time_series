@@ -1,0 +1,27 @@
+{
+  "gpu": "NVIDIA L4",
+  "image": "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+  "tile_size": 1024,
+  "tile_stride": 768,
+  "batch_size": 4,
+  "total_pixels": 3830784,
+  "same_gpu_pixel_differences": 0,
+  "pixel_agreement_percent": 100.0,
+  "class_transitions": [],
+  "json_differences": [],
+  "t4_vs_l4_reference_differences": 14,
+  "t4_vs_l4_optimized_differences": 14,
+  "runs": {
+    "reference": {
+      "runtime_seconds": 6.384176532999959,
+      "peak_gpu_memory_gb": 7.64686592,
+      "output_directory": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/same_gpu_equivalence/reference"
+    },
+    "memory_safe": {
+      "runtime_seconds": 4.6994403439999815,
+      "peak_gpu_memory_gb": 7.647783424,
+      "output_directory": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/same_gpu_equivalence/memory_safe"
+    }
+  },
+  "model_weights_modified": false
+}

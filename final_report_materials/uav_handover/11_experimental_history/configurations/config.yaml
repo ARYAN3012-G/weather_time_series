@@ -1,0 +1,172 @@
+# =============================================================================
+# Drought Detection — Master Config
+# All hyperparameters and paths in one place.
+# =============================================================================
+
+paths:
+  data_root: data/
+  patches_dir: data/patches/
+  unlabeled_dir: data/unlabeled/
+  orthomosaic_dir: data/orthomosaic/
+  clean_images_dir: data/clean_images/
+  clean_masks_dir:  data/clean_masks/
+  runs_dir: runs/
+  barren_manifest: configs/barren_manifest.yaml
+  orthomosaics_meta: configs/orthomosaics_meta.yaml
+
+# -----------------------------------------------------------------------------
+# Camera intrinsics (from your Metashape report — DJI FC8482 6.72mm)
+# -----------------------------------------------------------------------------
+camera:
+  pixel_size_um: 1.31
+  focal_length_mm: 6.72
+  native_width_px: 8064
+  native_height_px: 4536
+  # Default altitude if not in orthomosaic metadata
+  default_altitude_m: 13.8
+
+# -----------------------------------------------------------------------------
+# Classes
+# -----------------------------------------------------------------------------
+classes:
+  names: [background, soil, crop, cotton_ball, green_weed, dry_weed, drought]
+  # RGB palette for visualization (matches names above)
+  palette:
+    - [0, 0, 0]           # background — black
+    - [139, 90, 43]       # soil — brown (barren merged here)
+    - [0, 180, 0]         # crop — green
+    - [255, 255, 255]     # cotton_ball — white
+    - [140, 255, 140]     # green_weed — light green
+    - [210, 170, 90]      # dry_weed — tan
+    - [220, 30, 30]       # drought — red
+  # Pairs the model frequently confuses; margin loss applied
+  confusion_pairs:
+    - [drought, dry_weed]
+    - [drought, soil]
+    - [drought, crop]
+    - [soil, cotton_ball]
+    - [crop, green_weed]
+
+# -----------------------------------------------------------------------------
+# Preprocessing
+# -----------------------------------------------------------------------------
+preprocessing:
+  # Auxiliary masks
+  glare_v_threshold: 0.95
+  glare_s_threshold: 0.10
+  shadow_v_threshold: 0.15
+  shadow_s_threshold: 0.20
+  # Valid field mask (background subtraction)
+  field_dark_threshold: 10        # pixels with max(R,G,B) <= this are candidate background
+  field_saturation_threshold: 15  # AND saturation <= this
+  field_min_component_area: 500   # min pixels for a background component touching border
+
+# -----------------------------------------------------------------------------
+# Patch classifier (Phase 1)
+# -----------------------------------------------------------------------------
+classifier:
+  backbone: dinov2_vitb14
+  # Path to your local DINOv2-B/14 .pt/.pth weights file.
+  # Set to null to download from HuggingFace automatically.
+  pretrained_weights_path: /path/to/your/dinov2_vitb14_pretrain.pth
+  input_size: 224
+  num_channels: 9                  # RGB + 5 indices + V
+  scales: [64, 128, 256, 512]      # multiscale crop sizes; smaller upsampled to 224
+  batch_size: 64
+  epochs: 60
+  lr_head: 3.0e-4
+  lr_backbone: 3.0e-5
+  weight_decay: 0.05
+  warmup_epochs: 5                 # backbone frozen during warmup
+  margin_loss_weight: 0.3
+  margin_loss_alpha: 0.3           # margin
+  oversample_barren: 8
+  val_split: 0.15
+  test_split: 0.10
+  seed: 42
+
+# -----------------------------------------------------------------------------
+# Pseudo-labeling (Phase 2)
+# -----------------------------------------------------------------------------
+pseudo_label:
+  # Single-pass 512x512 stride 256: 480 tiles/image, ~3-5s on H200.
+  # Larger window gives better spatial context than old 256x256 approach.
+  window_size: 512
+  stride: 256
+  # Legacy keys kept for backward compatibility (ignored by new engine):
+  window_sizes: [512]
+  window_strides: [256]
+  scale_weights: [1.0]
+  confidence_threshold: 0.55
+  crf_iterations: 5
+  ignore_index: 255
+
+# -----------------------------------------------------------------------------
+# Segmentation (Phase 4)
+# -----------------------------------------------------------------------------
+segmentation:
+  model: segformer_b2
+  input_size: 512
+  num_channels: 9
+  num_classes: 7
+  batch_size: 16
+  epochs: 25                       # 100 masks: peak expected at epoch 8-15
+  lr: 6.0e-5
+  weight_decay: 0.01
+  num_workers: 4
+  seed: 42
+
+  # Loss weights (v2 — batch 4.1)
+  ce_weight: 1.0
+  dice_weight: 2.5                 # increased from 1.5 — Dice rescues rare classes
+  boundary_weight: 1.0             # increased from 0.5 — sharper drought edges
+
+  # Focal loss (replaces plain CE)
+  focal_gamma: 2.0                 # focusing exponent; 2.0 is standard
+
+  # Drought class weight override
+  drought_override_weight: 20.0    # ~130x soil weight — forces model to learn drought
+
+  # Cotton_ball weight override
+  # Auto-computed weight (~32) caused 15.3% FP on Balaji in v4.
+  # Reduced to 12 — still ~50x soil weight, learns the rare class
+  # without over-sensitising on bright soil or glare pixels.
+  cotton_override_weight: 12.0
+
+  # Run name — model saved as runs/segmentation/<run_name>.pt
+  run_name: best_v4_1
+
+  # Per-source ratio inside each batch
+  batch_manual: 4                  # clean hand-corrected (loss×8 internally)
+  batch_pseudo: 4                  # pseudo-labels (noisy, ×0.5)
+  batch_composites: 8              # synthetic composites (exact masks, ×1.0)
+
+  composite_per_epoch: 1000
+  ignore_index: 255
+
+  # Pretrained encoder
+  pretrained_id: nvidia/mit-b2
+  pretrained_local_path: null
+
+# -----------------------------------------------------------------------------
+# Inference (Phase 5)
+# -----------------------------------------------------------------------------
+inference:
+  tile_size: 1024
+  tile_overlap: 256
+  batch_size: 16
+  use_tta: false                   # Phase 1 off; turn on in upgrade
+  # Drought decision rule (calibrated later on your binary-tagged orthomosaics)
+  drought_decision:
+    tau1_drought_fraction: 0.15
+    tau2_largest_cc_share: 0.25
+    tau3_nonharvest_fraction: 0.10
+  # Post-processing
+  morph_open_kernel: 3
+  min_component_size:
+    drought: 200
+    barren: 500
+    cotton_ball: 20
+    green_weed: 50
+    dry_weed: 50
+  harvest_zone_cotton_ball_density: 0.05

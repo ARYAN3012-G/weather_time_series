@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Weather module: effect of the input feature set (\mf{} of the soft-voting ensemble, test 2019--2026).}
+\label{tab:w_features}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Inputs} & \textbf{7 days} & \textbf{15 days} & \textbf{30 days} \\
+\midrule
+Weather only (9 AgERA5 variables) & 0.668 & 0.565 & 0.356 \\
+SPEI history only & 0.694 & 0.530 & 0.377 \\
+Weather + SPEI history & 0.743 & 0.594 & 0.405 \\
++ day of year & 0.756 & 0.612 & 0.406 \\
+\textbf{+ water-balance probabilities (hybrid)} & \textbf{0.819} & \textbf{0.651} & \textbf{0.424} \\
+Persistence (reference) & 0.662 & 0.515 & 0.424 \\
+\bottomrule
+\end{tabular}
+\end{table}

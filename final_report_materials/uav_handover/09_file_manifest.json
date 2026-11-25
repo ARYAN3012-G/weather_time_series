@@ -1,0 +1,998 @@
+[
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/predict_v11.py",
+    "handover_path": "02_final_source_code/src/inference/predict_v11.py",
+    "role": "Final implementation reference",
+    "size_bytes": 14502
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11.py",
+    "handover_path": "02_final_source_code/src/inference/tile_v11.py",
+    "role": "Final implementation reference",
+    "size_bytes": 15787
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/postprocess.py",
+    "handover_path": "02_final_source_code/src/inference/postprocess.py",
+    "role": "Final implementation reference",
+    "size_bytes": 7531
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/report.py",
+    "handover_path": "02_final_source_code/src/inference/report.py",
+    "role": "Final implementation reference",
+    "size_bytes": 25288
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/memory_safe_postprocess.py",
+    "handover_path": "02_final_source_code/src/inference/memory_safe_postprocess.py",
+    "role": "Final implementation reference",
+    "size_bytes": 6970
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/memory_safe_report.py",
+    "handover_path": "02_final_source_code/src/inference/memory_safe_report.py",
+    "role": "Final implementation reference",
+    "size_bytes": 3615
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model.py",
+    "handover_path": "02_final_source_code/src/segmentation/model.py",
+    "role": "Final implementation reference",
+    "size_bytes": 7104
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/utils/constants.py",
+    "handover_path": "02_final_source_code/src/utils/constants.py",
+    "role": "Final implementation reference",
+    "size_bytes": 2201
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/config_v11.yaml",
+    "handover_path": "02_final_source_code/configs/config_v11.yaml",
+    "role": "Final implementation reference",
+    "size_bytes": 2763
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/field_gsd_registry.json",
+    "handover_path": "02_final_source_code/configs/field_gsd_registry.json",
+    "role": "Final implementation reference",
+    "size_bytes": 5943
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/classifier/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 357
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/dataset.py",
+    "handover_path": "02_final_source_code/supporting_source/src/classifier/dataset.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 15202
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/losses.py",
+    "handover_path": "02_final_source_code/supporting_source/src/classifier/losses.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 7604
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/model.py",
+    "handover_path": "02_final_source_code/supporting_source/src/classifier/model.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 9132
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/train.py",
+    "handover_path": "02_final_source_code/supporting_source/src/classifier/train.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 16094
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 289
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/predict.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/predict.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 11188
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/report_before_indexed_png.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/report_before_indexed_png.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 24263
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/tile.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 10667
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11_before_fp32.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/tile_v11_before_fp32.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 10755
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11_before_weight_removal.py",
+    "handover_path": "02_final_source_code/supporting_source/src/inference/tile_v11_before_weight_removal.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 10764
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 1018
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/boundary_components.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/boundary_components.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 6523
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/disk_components.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/disk_components.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 4349
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/gsd.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/gsd.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 2451
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/indices.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/indices.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 3159
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/masks.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/masks.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 5004
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/strip_components.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/strip_components.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 3921
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/tensor_builder.py",
+    "handover_path": "02_final_source_code/supporting_source/src/preprocessing/tensor_builder.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 6090
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/pseudo_label/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 310
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/label.py",
+    "handover_path": "02_final_source_code/supporting_source/src/pseudo_label/label.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 10718
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/postprocess.py",
+    "handover_path": "02_final_source_code/supporting_source/src/pseudo_label/postprocess.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 8541
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/sliding_window.py",
+    "handover_path": "02_final_source_code/supporting_source/src/pseudo_label/sliding_window.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 7678
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/viz.py",
+    "handover_path": "02_final_source_code/supporting_source/src/pseudo_label/viz.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 7079
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 548
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/compositor.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/compositor.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 12388
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/dataset.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/dataset.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 11786
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/eval_calibration_v11.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/eval_calibration_v11.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 16312
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/eval_confusion_v11.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/eval_confusion_v11.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 17372
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/eval_dryweed_v11.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/eval_dryweed_v11.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 16399
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/eval_source_independent_v11.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/eval_source_independent_v11.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 17490
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/losses.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/losses.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 10933
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model_b3.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/model_b3.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 7105
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model_b3_v91.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/model_b3_v91.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 7099
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model_deeplab.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/model_deeplab.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 581
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20676
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_b3.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_b3.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20561
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_b3_v91.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_b3_v91.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20808
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_before_local_pseudo_fix.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_before_local_pseudo_fix.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20467
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_before_v5_fix.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_before_v5_fix.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20228
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_deeplab_v10.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_deeplab_v10.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20819
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_v11.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_v11.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20688
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/train_v12.py",
+    "handover_path": "02_final_source_code/supporting_source/src/segmentation/train_v12.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 20688
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/utils/__init__.py",
+    "handover_path": "02_final_source_code/supporting_source/src/utils/__init__.py",
+    "role": "Supporting source; verify V11 usage",
+    "size_bytes": 408
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/v11_training_history_1.csv",
+    "handover_path": "03_dataset_and_training/v11_training_history_1.csv",
+    "role": "Recorded training evidence",
+    "size_bytes": 1712
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/v11_training_metrics_summary.json",
+    "handover_path": "03_dataset_and_training/v11_training_metrics_summary.json",
+    "role": "Recorded training evidence",
+    "size_bytes": 3148
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/v11_checkpoint_metadata.json",
+    "handover_path": "03_dataset_and_training/v11_checkpoint_metadata.json",
+    "role": "Recorded training evidence",
+    "size_bytes": 50
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/training_metrics_summary.csv",
+    "handover_path": "03_dataset_and_training/training_metrics_summary.csv",
+    "role": "Recorded training evidence",
+    "size_bytes": 2006
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/test_manifest.json",
+    "handover_path": "03_dataset_and_training/pending_independent_test/test_manifest.json",
+    "role": "Candidate independent test; annotation pending",
+    "size_bytes": 65580
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/class_mapping.json",
+    "handover_path": "03_dataset_and_training/pending_independent_test/class_mapping.json",
+    "role": "Candidate independent test; annotation pending",
+    "size_bytes": 136
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/cvat_labels.json",
+    "handover_path": "03_dataset_and_training/pending_independent_test/cvat_labels.json",
+    "role": "Candidate independent test; annotation pending",
+    "size_bytes": 679
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/candidate_test_dataset/field_confirmation.csv",
+    "handover_path": "03_dataset_and_training/pending_independent_test/field_confirmation.csv",
+    "role": "Candidate independent test; annotation pending",
+    "size_bytes": 830
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/model_comparison.csv",
+    "handover_path": "04_evaluation_results/model_comparison.csv",
+    "role": "Recorded evaluation summary",
+    "size_bytes": 563
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/calibration_comparison.csv",
+    "handover_path": "04_evaluation_results/calibration_comparison.csv",
+    "role": "Recorded evaluation summary",
+    "size_bytes": 639
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/evaluation_artifact_index.json",
+    "handover_path": "04_evaluation_results/evaluation_artifact_index.json",
+    "role": "Recorded evaluation summary",
+    "size_bytes": 1404
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/final_project_summary.json",
+    "handover_path": "04_evaluation_results/final_project_summary.json",
+    "role": "Recorded evaluation summary",
+    "size_bytes": 1210
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/research_limitations.json",
+    "handover_path": "04_evaluation_results/research_limitations.json",
+    "role": "Recorded evaluation summary",
+    "size_bytes": 495
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/KNL_MAIZE_TOWER_TILE_POINTS_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 172424
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/KNL_MAIZE_TOWER_TILE_POINTS_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 160372
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/KNL_puddur_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/KNL_puddur_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 245262
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/KNL_puddur_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/KNL_puddur_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 226591
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/LEPAKSHI_TIE_POINTS_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 164189
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/LEPAKSHI_TIE_POINTS_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 152700
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/SIRA_TIE_POINTS_01_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 218614
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/SIRA_TIE_POINTS_01_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 203465
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/SOMANDHAPALLE_TIE_POINTS_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 128673
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/SOMANDHAPALLE_TIE_POINTS_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 119499
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/accuracy_comparison.json",
+    "handover_path": "04_evaluation_results/historical_evidence/accuracy_comparison.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 11360
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/auxiliary_mask_optimization.json",
+    "handover_path": "05_inference_optimization/evidence/auxiliary_mask_optimization.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 990
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/balaji_optimized_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/balaji_optimized_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 325075
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/balaji_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/balaji_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 301010
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/boundary_components_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/boundary_components_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 8367
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/boundary_integration_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/boundary_integration_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 6120
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/dataset_provenance_audit.json",
+    "handover_path": "04_evaluation_results/historical_evidence/dataset_provenance_audit.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 19979
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/disk_components_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/disk_components_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 7927
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/drought_decision_tests.json",
+    "handover_path": "04_evaluation_results/historical_evidence/drought_decision_tests.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3418
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/extended_calibration.json",
+    "handover_path": "04_evaluation_results/historical_evidence/extended_calibration.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 14210
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/field_provenance_audit.json",
+    "handover_path": "04_evaluation_results/historical_evidence/field_provenance_audit.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 2469
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/final_memory_safety_audit.json",
+    "handover_path": "05_inference_optimization/evidence/final_memory_safety_audit.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3990
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/final_output_verification.json",
+    "handover_path": "04_evaluation_results/historical_evidence/final_output_verification.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3905
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/independent_test_candidates.json",
+    "handover_path": "04_evaluation_results/historical_evidence/independent_test_candidates.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 12732
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/knl_optimized_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/knl_optimized_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 573
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/large_morphology_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/large_morphology_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 1050
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/memory_safe_decision_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/memory_safe_decision_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3223
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/memory_safe_integration_test.json",
+    "handover_path": "05_inference_optimization/evidence/memory_safe_integration_test.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 771
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/memory_safe_postprocess_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/memory_safe_postprocess_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 8204
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/metashape_provenance_verified.json",
+    "handover_path": "04_evaluation_results/historical_evidence/metashape_provenance_verified.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 44213
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/morphological_optimization_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/morphological_optimization_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3037
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/orthomosaic_gsd_metadata.json",
+    "handover_path": "04_evaluation_results/historical_evidence/orthomosaic_gsd_metadata.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 49488
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/pdf_thumbnail_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/pdf_thumbnail_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 3778
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/provenance_step50.json",
+    "handover_path": "04_evaluation_results/historical_evidence/provenance_step50.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 2922
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/pulliah_optimized_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/pulliah_optimized_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 68374
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/remaining_batch_summary.json",
+    "handover_path": "05_inference_optimization/evidence/remaining_batch_summary.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 1671
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/rolling_stitching_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/rolling_stitching_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 2607
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/same_gpu_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/same_gpu_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 970
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/shilpa half part orthomosaic3_batch_benchmark.json",
+    "handover_path": "05_inference_optimization/evidence/shilpa half part orthomosaic3_batch_benchmark.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 253871
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/shilpa half part orthomosaic3_resource_monitor.json",
+    "handover_path": "05_inference_optimization/evidence/shilpa half part orthomosaic3_resource_monitor.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 234606
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/small_orthomosaic_results.json",
+    "handover_path": "04_evaluation_results/historical_evidence/small_orthomosaic_results.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 9536
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/source_disjoint_evaluation.json",
+    "handover_path": "04_evaluation_results/historical_evidence/source_disjoint_evaluation.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 4646
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/source_overlap.json",
+    "handover_path": "04_evaluation_results/historical_evidence/source_overlap.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 2558
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/experimental_evidence/strip_components_equivalence.json",
+    "handover_path": "05_inference_optimization/evidence/strip_components_equivalence.json",
+    "role": "Experimental evidence; inspect experiment context",
+    "size_bytes": 5378
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/inference_benchmarks.csv",
+    "handover_path": "05_inference_optimization/inference_benchmarks.csv",
+    "role": "Inference benchmark summary",
+    "size_bytes": 3313
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/knl_inference_comparison.csv",
+    "handover_path": "05_inference_optimization/knl_inference_comparison.csv",
+    "role": "Inference benchmark summary",
+    "size_bytes": 124
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/field_wise_results.csv",
+    "handover_path": "06_field_results/field_wise_results.csv",
+    "role": "Final field-wise predictions",
+    "size_bytes": 3601
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/field_wise_results.json",
+    "handover_path": "06_field_results/field_wise_results.json",
+    "role": "Final field-wise predictions",
+    "size_bytes": 12825
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/class_wise_results.csv",
+    "handover_path": "06_field_results/class_wise_results.csv",
+    "role": "Final field-wise predictions",
+    "size_bytes": 4584
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/BALAJI_VILLAS_TIE_POINTS/report.json",
+    "handover_path": "06_field_results/individual_fields/BALAJI_VILLAS_TIE_POINTS/report.json",
+    "role": "Final field report",
+    "size_bytes": 1894
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/BALAJI_VILLAS_TIE_POINTS/report.pdf",
+    "handover_path": "06_field_results/individual_fields/BALAJI_VILLAS_TIE_POINTS/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 96491
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_DDP_ORTHO/report.json",
+    "handover_path": "06_field_results/individual_fields/KNL_DDP_ORTHO/report.json",
+    "role": "Final field report",
+    "size_bytes": 1865
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_DDP_ORTHO/report.pdf",
+    "handover_path": "06_field_results/individual_fields/KNL_DDP_ORTHO/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 43274
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_MAIZE_TOWER_TILE_POINTS/report.json",
+    "handover_path": "06_field_results/individual_fields/KNL_MAIZE_TOWER_TILE_POINTS/report.json",
+    "role": "Final field report",
+    "size_bytes": 1889
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_MAIZE_TOWER_TILE_POINTS/report.pdf",
+    "handover_path": "06_field_results/individual_fields/KNL_MAIZE_TOWER_TILE_POINTS/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 79122
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_puddur/report.json",
+    "handover_path": "06_field_results/individual_fields/KNL_puddur/report.json",
+    "role": "Final field report",
+    "size_bytes": 1874
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_puddur/report.pdf",
+    "handover_path": "06_field_results/individual_fields/KNL_puddur/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 38003
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/LEPAKSHI_TIE_POINTS/report.json",
+    "handover_path": "06_field_results/individual_fields/LEPAKSHI_TIE_POINTS/report.json",
+    "role": "Final field report",
+    "size_bytes": 1862
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/LEPAKSHI_TIE_POINTS/report.pdf",
+    "handover_path": "06_field_results/individual_fields/LEPAKSHI_TIE_POINTS/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 59059
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F1_ORTHO_30_05/report.json",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F1_ORTHO_30_05/report.json",
+    "role": "Final field report",
+    "size_bytes": 1752
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F1_ORTHO_30_05/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F1_ORTHO_30_05/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 35578
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.json",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.json",
+    "role": "Final field report",
+    "size_bytes": 1831
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F3_OTHOMOSAIC 31/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 63468
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F4_ORTHO_30_05/report.json",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F4_ORTHO_30_05/report.json",
+    "role": "Final field report",
+    "size_bytes": 1751
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F4_ORTHO_30_05/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F4_ORTHO_30_05/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 39438
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F6_ORTHO_30_05/report.json",
+    "role": "Final field report",
+    "size_bytes": 1765
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F6_ORTHO_30_05/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F6_ORTHO_30_05/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 29858
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F7_ORTHO_30_05/report.json",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F7_ORTHO_30_05/report.json",
+    "role": "Final field report",
+    "size_bytes": 1755
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F7_ORTHO_30_05/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PEDHAKADUBUR_F7_ORTHO_30_05/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 50596
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PULLIAH_1_ORTHOMOSAIC/report.json",
+    "handover_path": "06_field_results/individual_fields/PULLIAH_1_ORTHOMOSAIC/report.json",
+    "role": "Final field report",
+    "size_bytes": 1884
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PULLIAH_1_ORTHOMOSAIC/report.pdf",
+    "handover_path": "06_field_results/individual_fields/PULLIAH_1_ORTHOMOSAIC/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 81280
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SIRA_TIE_POINTS_01/report.json",
+    "handover_path": "06_field_results/individual_fields/SIRA_TIE_POINTS_01/report.json",
+    "role": "Final field report",
+    "size_bytes": 1849
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SIRA_TIE_POINTS_01/report.pdf",
+    "handover_path": "06_field_results/individual_fields/SIRA_TIE_POINTS_01/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 42419
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SOMANDHAPALLE_TIE_POINTS/report.json",
+    "handover_path": "06_field_results/individual_fields/SOMANDHAPALLE_TIE_POINTS/report.json",
+    "role": "Final field report",
+    "size_bytes": 1865
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SOMANDHAPALLE_TIE_POINTS/report.pdf",
+    "handover_path": "06_field_results/individual_fields/SOMANDHAPALLE_TIE_POINTS/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 50586
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/shilpa half part orthomosaic3/report.json",
+    "handover_path": "06_field_results/individual_fields/shilpa half part orthomosaic3/report.json",
+    "role": "Final field report",
+    "size_bytes": 1889
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/shilpa half part orthomosaic3/report.pdf",
+    "handover_path": "06_field_results/individual_fields/shilpa half part orthomosaic3/report.pdf",
+    "role": "Final field report",
+    "size_bytes": 72886
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/calibration_comparison.png",
+    "handover_path": "07_figures/calibration_comparison.png",
+    "role": "Research figure",
+    "size_bytes": 210786
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/field_class_composition.png",
+    "handover_path": "07_figures/field_class_composition.png",
+    "role": "Research figure",
+    "size_bytes": 281873
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/field_drought_percentage.png",
+    "handover_path": "07_figures/field_drought_percentage.png",
+    "role": "Research figure",
+    "size_bytes": 253193
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/field_stress_score.png",
+    "handover_path": "07_figures/field_stress_score.png",
+    "role": "Research figure",
+    "size_bytes": 231397
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/inference_optimization.png",
+    "handover_path": "07_figures/inference_optimization.png",
+    "role": "Research figure",
+    "size_bytes": 95452
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/model_comparison.png",
+    "handover_path": "07_figures/model_comparison.png",
+    "role": "Research figure",
+    "size_bytes": 105163
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/v11_history_1_loss.png",
+    "handover_path": "07_figures/v11_history_1_loss.png",
+    "role": "Research figure",
+    "size_bytes": 150323
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/final_research_results/graphs/v11_history_1_miou.png",
+    "handover_path": "07_figures/v11_history_1_miou.png",
+    "role": "Research figure",
+    "size_bytes": 142913
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/BALAJI_VILLAS_TIE_POINTS/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/BALAJI_VILLAS_TIE_POINTS.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 1224445
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_DDP_ORTHO/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/KNL_DDP_ORTHO.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 477581
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_MAIZE_TOWER_TILE_POINTS/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 965337
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/KNL_puddur/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/KNL_puddur.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 453127
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/LEPAKSHI_TIE_POINTS/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/LEPAKSHI_TIE_POINTS.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 679168
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F1_ORTHO_30_05/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 302221
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F3_OTHOMOSAIC 31/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 529288
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F4_ORTHO_30_05/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 283378
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F6_ORTHO_30_05/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 229730
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PEDHAKADUBUR_F7_ORTHO_30_05/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 404759
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/PULLIAH_1_ORTHOMOSAIC/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/PULLIAH_1_ORTHOMOSAIC.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 961712
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SIRA_TIE_POINTS_01/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/SIRA_TIE_POINTS_01.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 424756
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/SOMANDHAPALLE_TIE_POINTS/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/SOMANDHAPALLE_TIE_POINTS.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 570271
+  },
+  {
+    "source": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results_v11_optimized/shilpa half part orthomosaic3/overlay.jpg",
+    "handover_path": "07_figures/field_overlays/shilpa half part orthomosaic3.jpg",
+    "role": "Downsampled final prediction visualization",
+    "size_bytes": 942085
+  }
+]

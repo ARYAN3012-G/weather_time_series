@@ -1,0 +1,300 @@
+{
+  "total_images": 4,
+  "passed": 4,
+  "failed": 0,
+  "total_runtime_seconds": 44.68947727599971,
+  "results": [
+    {
+      "image": "PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "status": "PASS",
+      "width": 3072,
+      "height": 2560,
+      "runtime_seconds": 12.910636001999592,
+      "report": {
+        "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+        "area_stats": {
+          "gsd_mm_per_pixel": 3.62,
+          "pixel_area_m2": 1.31044e-05,
+          "altitude_m": null,
+          "valid_field_pixels": 3215737,
+          "valid_field_area_m2": 42.1,
+          "agricultural_pixels": 40218,
+          "agricultural_area_m2": 0.5,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "per_class": {
+            "background": {
+              "pixels": 4648583,
+              "area_m2": 60.92
+            },
+            "soil": {
+              "pixels": 3106074,
+              "area_m2": 40.7
+            },
+            "crop": {
+              "pixels": 5426,
+              "area_m2": 0.07
+            },
+            "cotton_ball": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "green_weed": {
+              "pixels": 69445,
+              "area_m2": 0.91
+            },
+            "dry_weed": {
+              "pixels": 34792,
+              "area_m2": 0.46
+            },
+            "drought": {
+              "pixels": 0,
+              "area_m2": 0.0
+            }
+          },
+          "gsd_source": "Metashape orthomosaic resolution",
+          "gsd_dimensions_match": true,
+          "physical_scale_verified": false,
+          "area_is_estimate": true,
+          "area_requires_review": true
+        },
+        "drought_decision": {
+          "drought": false,
+          "confidence": 0.0,
+          "stress_score": 0.0,
+          "score_is_calibrated_probability": false,
+          "decision_type": "visual_stress_heuristic",
+          "field_confirmation_required": true,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "largest_cc_share": 0.0,
+          "signal_1_fraction": false,
+          "signal_2_non_harvest": false,
+          "signal_3_coherent": false,
+          "tau_fraction": 0.15,
+          "tau_non_harvest": 0.1,
+          "tau_cc_share": 0.25
+        }
+      }
+    },
+    {
+      "image": "PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "status": "PASS",
+      "width": 2263,
+      "height": 2075,
+      "runtime_seconds": 9.659819821999918,
+      "report": {
+        "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+        "area_stats": {
+          "gsd_mm_per_pixel": 4.34,
+          "pixel_area_m2": 1.88356e-05,
+          "altitude_m": null,
+          "valid_field_pixels": 3260896,
+          "valid_field_area_m2": 61.4,
+          "agricultural_pixels": 956159,
+          "agricultural_area_m2": 18.0,
+          "drought_fraction": 0.008861496884932318,
+          "non_harvest_drought_fraction": 0.008861496884932318,
+          "per_class": {
+            "background": {
+              "pixels": 1434829,
+              "area_m2": 27.03
+            },
+            "soil": {
+              "pixels": 2240876,
+              "area_m2": 42.21
+            },
+            "crop": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "cotton_ball": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "green_weed": {
+              "pixels": 63861,
+              "area_m2": 1.2
+            },
+            "dry_weed": {
+              "pixels": 947686,
+              "area_m2": 17.85
+            },
+            "drought": {
+              "pixels": 8473,
+              "area_m2": 0.16
+            }
+          },
+          "gsd_source": "Metashape orthomosaic resolution",
+          "gsd_dimensions_match": true,
+          "physical_scale_verified": false,
+          "area_is_estimate": true,
+          "area_requires_review": true
+        },
+        "drought_decision": {
+          "drought": false,
+          "confidence": 0.256,
+          "stress_score": 0.256,
+          "score_is_calibrated_probability": false,
+          "decision_type": "visual_stress_heuristic",
+          "field_confirmation_required": true,
+          "drought_fraction": 0.008861496884932318,
+          "non_harvest_drought_fraction": 0.008861496884932318,
+          "largest_cc_share": 0.338,
+          "signal_1_fraction": false,
+          "signal_2_non_harvest": false,
+          "signal_3_coherent": true,
+          "tau_fraction": 0.15,
+          "tau_non_harvest": 0.1,
+          "tau_cc_share": 0.25
+        }
+      }
+    },
+    {
+      "image": "PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "status": "PASS",
+      "width": 2410,
+      "height": 2411,
+      "runtime_seconds": 10.127535478999562,
+      "report": {
+        "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+        "area_stats": {
+          "gsd_mm_per_pixel": 9.15,
+          "pixel_area_m2": 8.37225e-05,
+          "altitude_m": null,
+          "valid_field_pixels": 3292926,
+          "valid_field_area_m2": 275.7,
+          "agricultural_pixels": 36903,
+          "agricultural_area_m2": 3.1,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "per_class": {
+            "background": {
+              "pixels": 2517584,
+              "area_m2": 210.78
+            },
+            "soil": {
+              "pixels": 3254407,
+              "area_m2": 272.47
+            },
+            "crop": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "cotton_ball": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "green_weed": {
+              "pixels": 1616,
+              "area_m2": 0.14
+            },
+            "dry_weed": {
+              "pixels": 36903,
+              "area_m2": 3.09
+            },
+            "drought": {
+              "pixels": 0,
+              "area_m2": 0.0
+            }
+          },
+          "gsd_source": "Metashape orthomosaic resolution",
+          "gsd_dimensions_match": true,
+          "physical_scale_verified": false,
+          "area_is_estimate": true,
+          "area_requires_review": true
+        },
+        "drought_decision": {
+          "drought": false,
+          "confidence": 0.0,
+          "stress_score": 0.0,
+          "score_is_calibrated_probability": false,
+          "decision_type": "visual_stress_heuristic",
+          "field_confirmation_required": true,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "largest_cc_share": 0.0,
+          "signal_1_fraction": false,
+          "signal_2_non_harvest": false,
+          "signal_3_coherent": false,
+          "tau_fraction": 0.15,
+          "tau_non_harvest": 0.1,
+          "tau_cc_share": 0.25
+        }
+      }
+    },
+    {
+      "image": "PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "status": "PASS",
+      "width": 2569,
+      "height": 2082,
+      "runtime_seconds": 11.006438850999984,
+      "report": {
+        "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+        "area_stats": {
+          "gsd_mm_per_pixel": 10.4,
+          "pixel_area_m2": 0.00010816,
+          "altitude_m": null,
+          "valid_field_pixels": 3988706,
+          "valid_field_area_m2": 431.4,
+          "agricultural_pixels": 725650,
+          "agricultural_area_m2": 78.5,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "per_class": {
+            "background": {
+              "pixels": 1359952,
+              "area_m2": 147.09
+            },
+            "soil": {
+              "pixels": 3235810,
+              "area_m2": 349.99
+            },
+            "crop": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "cotton_ball": {
+              "pixels": 0,
+              "area_m2": 0.0
+            },
+            "green_weed": {
+              "pixels": 27246,
+              "area_m2": 2.95
+            },
+            "dry_weed": {
+              "pixels": 725650,
+              "area_m2": 78.49
+            },
+            "drought": {
+              "pixels": 0,
+              "area_m2": 0.0
+            }
+          },
+          "gsd_source": "Metashape orthomosaic resolution",
+          "gsd_dimensions_match": true,
+          "physical_scale_verified": false,
+          "area_is_estimate": true,
+          "area_requires_review": true
+        },
+        "drought_decision": {
+          "drought": false,
+          "confidence": 0.0,
+          "stress_score": 0.0,
+          "score_is_calibrated_probability": false,
+          "decision_type": "visual_stress_heuristic",
+          "field_confirmation_required": true,
+          "drought_fraction": 0.0,
+          "non_harvest_drought_fraction": 0.0,
+          "largest_cc_share": 0.0,
+          "signal_1_fraction": false,
+          "signal_2_non_harvest": false,
+          "signal_3_coherent": false,
+          "tau_fraction": 0.15,
+          "tau_non_harvest": 0.1,
+          "tau_cc_share": 0.25
+        }
+      }
+    }
+  ]
+}

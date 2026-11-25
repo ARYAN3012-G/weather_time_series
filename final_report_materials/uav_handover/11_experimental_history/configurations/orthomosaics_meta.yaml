@@ -1,0 +1,125 @@
+orthomosaics:
+  BALAJI_VILLAS_GCD_REPORT01_06:
+    altitude_m: 9.47
+    coverage_area_m2: 8090.0
+    ground_resolution_mm_per_px: 1.84
+    num_source_images: 344
+    orthomosaic_height_px: 55752
+    orthomosaic_resolution_mm_per_px: 1.84
+    orthomosaic_width_px: 51247
+    source_report: BALAJI_VILLAS_GCD_REPORT01_06.pdf
+  KNL_DDP_GSD_REPORT:
+    altitude_m: 34.1
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: 5.55
+    num_source_images: 102
+    orthomosaic_height_px: 49690
+    orthomosaic_resolution_mm_per_px: 5.55
+    orthomosaic_width_px: 22190
+    source_report: KNL_DDP_GSD_REPORT.pdf
+  KNL_MAIZE_TOWERS_GSD REPORT_01:
+    altitude_m: 9.62
+    coverage_area_m2: 2254.0
+    ground_resolution_mm_per_px: 1.68
+    num_source_images: 100
+    orthomosaic_height_px: 32768
+    orthomosaic_resolution_mm_per_px: 1.68
+    orthomosaic_width_px: 35826
+    source_report: KNL_MAIZE_TOWERS_GSD REPORT_01.pdf
+  KNL_puddur_GSD_REPORT:
+    altitude_m: 8.86
+    coverage_area_m2: 3859.0
+    ground_resolution_mm_per_px: null
+    num_source_images: 163
+    orthomosaic_height_px: 62577
+    orthomosaic_resolution_mm_per_px: 1.73
+    orthomosaic_width_px: 34710
+    source_report: KNL_puddur_GSD_REPORT.pdf
+  PEDHAKABUR_F4_GCD_REPORT:
+    altitude_m: null
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: null
+    num_source_images: 15
+    orthomosaic_height_px: 2411
+    orthomosaic_resolution_mm_per_px: 9.15
+    orthomosaic_width_px: 2410
+    source_report: PEDHAKABUR_F4_GCD_REPORT.pdf
+  PEDHAKADBUR_F1_GCD_REPORT:
+    altitude_m: null
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: null
+    num_source_images: 13
+    orthomosaic_height_px: 2560
+    orthomosaic_resolution_mm_per_px: 3.62
+    orthomosaic_width_px: 3072
+    source_report: PEDHAKADBUR_F1_GCD_REPORT.pdf
+  PEDHAKADBUR_F6_GCD REPORT:
+    altitude_m: null
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: null
+    num_source_images: 8
+    orthomosaic_height_px: 2494
+    orthomosaic_width_px: 1536
+    source_report: PEDHAKADBUR_F6_GCD REPORT.pdf
+  PEDHAKADBUR_F7_GCD_REPORT:
+    altitude_m: null
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: null
+    num_source_images: 15
+    orthomosaic_height_px: 2082
+    orthomosaic_width_px: 2569
+    source_report: PEDHAKADBUR_F7_GCD_REPORT.pdf
+  PEDHAKADUBUR_F3_GCD REPORT31:
+    altitude_m: null
+    coverage_area_m2: null
+    ground_resolution_mm_per_px: null
+    num_source_images: 13
+    orthomosaic_height_px: 2075
+    orthomosaic_resolution_mm_per_px: 4.34
+    orthomosaic_width_px: 2263
+    source_report: PEDHAKADUBUR_F3_GCD REPORT31.pdf
+  PULLIAH_GSD Report.pdf1:
+    altitude_m: 13.8
+    coverage_area_m2: 2888.0
+    ground_resolution_mm_per_px: 2.69
+    num_source_images: 98
+    orthomosaic_height_px: 22500
+    orthomosaic_resolution_mm_per_px: 2.69
+    orthomosaic_width_px: 25046
+    source_report: PULLIAH_GSD Report.pdf1.pdf
+  SHILPA_GSD_DATA:
+    altitude_m: 9.97
+    coverage_area_m2: 6425.0
+    ground_resolution_mm_per_px: 1.94
+    num_source_images: 280
+    orthomosaic_height_px: 40082
+    orthomosaic_resolution_mm_per_px: 1.94
+    orthomosaic_width_px: 53442
+    source_report: SHILPA_GSD_DATA.pdf
+  SIRA_GSD_REPORT_01:
+    altitude_m: 11.0
+    coverage_area_m2: 4365.0
+    ground_resolution_mm_per_px: 2.14
+    num_source_images: 156
+    orthomosaic_height_px: 60125
+    orthomosaic_resolution_mm_per_px: 2.14
+    orthomosaic_width_px: 25067
+    source_report: SIRA_GSD_REPORT_01.pdf
+  SOMANDHAPALLE_GCD_01:
+    altitude_m: 12.4
+    coverage_area_m2: 3947.0
+    ground_resolution_mm_per_px: 2.35
+    num_source_images: 111
+    orthomosaic_height_px: 45262
+    orthomosaic_resolution_mm_per_px: 2.35
+    orthomosaic_width_px: 19070
+    source_report: SOMANDHAPALLE_GCD_01.pdf
+  lepakshi ortho_01_06:
+    altitude_m: 10.7
+    coverage_area_m2: 2966.0
+    ground_resolution_mm_per_px: 2.08
+    num_source_images: 114
+    orthomosaic_height_px: 27842
+    orthomosaic_resolution_mm_per_px: 2.08
+    orthomosaic_width_px: 40692
+    source_report: lepakshi ortho_01_06.pdf

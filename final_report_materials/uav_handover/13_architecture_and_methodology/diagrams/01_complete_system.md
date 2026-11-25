@@ -1,0 +1,26 @@
+# 01 complete system
+
+```mermaid
+flowchart TD
+    A[UAV RGB Images] --> B[Patch Classification]
+    B --> C[Pseudo-label Generation]
+    C --> D[Custom Human Annotation]
+    D --> E[Clean Image-Mask Pairs]
+    C --> F[Pseudo-labeled Dataset]
+    E --> G[Synthetic Composites]
+    E --> H[Mixed Training Dataset]
+    F --> H
+    G --> H
+    H --> I[Nine-channel Feature Construction]
+    I --> J[SegFormer-B2 V11 Training]
+    J --> K[Best Validation Checkpoint]
+    K --> L[Logit Adjustment]
+    M[Large Orthomosaic] --> N[Sliding-window Tiling]
+    N --> O[Nine-channel Features]
+    O --> P[Tile Prediction]
+    L --> P
+    P --> Q[Rolling Weighted Stitching]
+    Q --> R[Memory-safe Postprocessing]
+    R --> S[Area Estimation and Visual Stress Decision]
+    S --> T[Mask, Overlay, JSON and PDF]
+```

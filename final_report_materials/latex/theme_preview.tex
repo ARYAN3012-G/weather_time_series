@@ -1,0 +1,81 @@
+% Theme preview: "clean card" (white, teal-green accent, light cards). One slide only.
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage{booktabs,graphicx}
+\usepackage[most]{tcolorbox}
+\graphicspath{{./}{figures/}}
+
+\definecolor{accent}{HTML}{0F766E}   % deep teal-green
+\definecolor{accent2}{HTML}{D97706}  % amber highlight
+\definecolor{ink}{HTML}{1F2937}      % text
+\definecolor{muted}{HTML}{6B7280}    % secondary text
+\definecolor{card}{HTML}{F5F8F7}     % card background
+\definecolor{rule}{HTML}{D1D5DB}
+
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{structure}{fg=accent}
+\setbeamercolor{alerted text}{fg=accent2}
+\setbeamercolor{footbar}{fg=muted,bg=white}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\scriptsize\color{accent}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{accent}--}
+
+% title: dark text, thin teal rule, small logo at right
+\setbeamertemplate{frametitle}{%
+  \vspace{3mm}%
+  \begin{minipage}[c]{0.88\textwidth}{\Large\bfseries\color{ink}\insertframetitle}\end{minipage}\hfill
+  \begin{minipage}[c]{0.09\textwidth}\raggedleft\includegraphics[height=7.5mm]{figures/logo.jpeg}\end{minipage}\par
+  \vspace{0.5mm}{\color{accent}\rule{\textwidth}{1.4pt}}}
+
+% footer: thin grey line, muted text, slide number
+\setbeamertemplate{footline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=4.4ex,dp=1.6ex,leftskip=0.45cm,rightskip=0.45cm]{footbar}%
+    \vbox{\hbox to \dimexpr\paperwidth-0.9cm\relax{\color{rule}\leaders\hrule height 0.6pt\hfill}\vskip 1.2ex
+    \hbox to \dimexpr\paperwidth-0.9cm\relax{\scriptsize IIITDM Kurnool \;\textbar\; Multimodal Agricultural Drought Monitoring and Prediction\hfill\insertframenumber\,/\,27}}%
+  \end{beamercolorbox}}
+
+% light card: grey background, teal stripe on the left, small teal heading
+\newtcolorbox{card}[1]{enhanced, colback=card, colframe=card, boxrule=0pt, arc=2pt,
+  borderline west={2.5pt}{0pt}{accent}, left=7pt, right=6pt, top=3pt, bottom=4pt,
+  title={#1}, coltitle=accent, fonttitle=\bfseries\small, attach title to upper={\par\vspace{1pt}},
+  before skip=3pt, after skip=5pt}
+
+\begin{document}
+\begin{frame}{1. Introduction: Agricultural Drought in Rayalaseema}
+\vspace{-2.5mm}
+\begin{columns}[T,onlytextwidth]
+\column{0.505\textwidth}
+\begin{card}{The regional problem}
+\footnotesize
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Rayalaseema (Kurnool, Anantapur, Sri Sathya Sai) and Tumakuru: low, erratic rainfall.
+\item \textbf{Kharif} (Jun--Nov) crops depend on the monsoon; \textbf{rabi} (Oct--Apr) crops on stored soil water.
+\item Drought is declared by Government Orders (G.O.s) \alert{\textbf{late in the season}}; detection is weakest in AP and Karnataka.
+\item Weather, satellite and drone studies are usually done \textbf{separately}.
+\end{itemize}
+\end{card}
+\hfill
+\column{0.475\textwidth}
+\begin{card}{8 study sites}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}lr@{}}
+\textbf{Somandepalle} & {\color{muted}Sri Sathya Sai} & 13.999N, 77.625E \\
+\textbf{Lepakshi} & {\color{muted}Sri Sathya Sai} & 13.800N, 77.619E \\
+\textbf{Cholasamudram} & {\color{muted}Sri Sathya Sai} & 13.812N, 77.569E \\
+\textbf{Sira} & {\color{muted}Tumakuru, KA} & 13.798N, 76.975E \\
+\textbf{Peddakadubur} & {\color{muted}Kurnool} & 15.783N, 77.253E \\
+\textbf{Dinnedevarapadu} & {\color{muted}Kurnool} & 15.772N, 78.047E \\
+\textbf{Balaji Villas} & {\color{muted}Kurnool} & 15.783N, 78.056E \\
+\textbf{Pullaiah College} & {\color{muted}Kurnool} & 15.798N, 78.081E \\
+\end{tabular*}\\[3pt]
+{\scriptsize\color{muted} Each site is a UAV survey field; 6 independent weather cells.}
+\end{card}
+\end{columns}
+\begin{card}{Our idea}
+\footnotesize \textbf{Weather predicts} where to look $\rightarrow$ \textbf{satellite confirms} which fields are stressed $\rightarrow$ \textbf{drone measures} the damage --- in \textbf{both seasons} (kharif and rabi).
+\end{card}
+\end{frame}
+\end{document}

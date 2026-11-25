@@ -1,0 +1,37 @@
+\begin{table}[H]
+\centering
+\caption{Rabi forecast by test season, field type and population (MAE of NDVI 15 days ahead).}
+\label{tab:r_breakdown}
+\scriptsize
+\begin{tabular}{@{}lllrcccr@{}}
+\toprule
+\textbf{Population} & \textbf{Season} & \textbf{Class} & \textbf{Forecasts} & \textbf{XGBoost} & \textbf{Best baseline} & \textbf{Which baseline} & \textbf{Lower error} \\
+\midrule
+All eligible points & 2023-24 & rainfed & 23,722 & 0.0371 & 0.0452 & Persistence & 18\,\% \\
+ &  & irrigated & 11,786 & 0.0639 & 0.0702 & Persistence & 9\,\% \\
+ &  & all & 35,508 & 0.0460 & 0.0535 & Persistence & 14\,\% \\
+ & 2024-25 & rainfed & 21,872 & 0.0407 & 0.0498 & Anomaly persistence & 18\,\% \\
+ &  & irrigated & 11,008 & 0.0722 & 0.0828 & Anomaly persistence & 13\,\% \\
+ &  & all & 32,880 & 0.0512 & 0.0608 & Anomaly persistence & 16\,\% \\
+ & 2025-26 & rainfed & 24,825 & 0.0464 & 0.0568 & Anomaly persistence & 18\,\% \\
+ &  & irrigated & 12,381 & 0.0750 & 0.0878 & Persistence & 15\,\% \\
+ &  & all & 37,206 & 0.0559 & 0.0675 & Anomaly persistence & 17\,\% \\
+ & pooled & rainfed & 70,419 & 0.0415 & 0.0512 & Anomaly persistence & 19\,\% \\
+ &  & irrigated & 35,175 & 0.0704 & 0.0814 & Persistence & 14\,\% \\
+ &  & all & 105,594 & 0.0511 & 0.0623 & Anomaly persistence & 18\,\% \\
+\midrule
+Established at issue & 2023-24 & rainfed & 17,544 & 0.0331 & 0.0424 & Persistence & 22\,\% \\
+ &  & irrigated & 9,940 & 0.0629 & 0.0697 & Persistence & 10\,\% \\
+ &  & all & 27,484 & 0.0439 & 0.0523 & Persistence & 16\,\% \\
+ & 2024-25 & rainfed & 18,303 & 0.0380 & 0.0463 & Anomaly persistence & 18\,\% \\
+ &  & irrigated & 9,446 & 0.0714 & 0.0822 & Anomaly persistence & 13\,\% \\
+ &  & all & 27,749 & 0.0494 & 0.0585 & Anomaly persistence & 16\,\% \\
+ & 2025-26 & rainfed & 20,524 & 0.0427 & 0.0520 & Anomaly persistence & 18\,\% \\
+ &  & irrigated & 10,699 & 0.0729 & 0.0846 & Persistence & 14\,\% \\
+ &  & all & 31,223 & 0.0531 & 0.0637 & Anomaly persistence & 17\,\% \\
+ & pooled & rainfed & 56,371 & 0.0382 & 0.0473 & Anomaly persistence & 19\,\% \\
+ &  & irrigated & 30,085 & 0.0691 & 0.0801 & Persistence & 14\,\% \\
+ &  & all & 86,456 & 0.0490 & 0.0597 & Anomaly persistence & 18\,\% \\
+\bottomrule
+\end{tabular}
+\end{table}

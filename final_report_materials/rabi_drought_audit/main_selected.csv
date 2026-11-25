@@ -1,0 +1,4 @@
+horizon,model,selected,threshold,group,scope,n,drought_cases,prevalence,macro_f1,drought_ap,drought_auc,brier,precision,recall,f1,warnings
+7,HGB leaves7 soil,True,0.5801470582383753,pooled,all,375,0,0.0,0.3333333333333333,,,0.0002352207841834,,,,0
+15,HGB leaves7 soil,True,0.8655766816515044,pooled,all,375,0,0.0,0.3333333333333333,,,0.0009741318764745,,,,0
+30,HGB leaves15 soil,True,0.4395935572708291,pooled,all,375,0,0.0,0.3333333333333333,,,0.0005647627092574,,,,0

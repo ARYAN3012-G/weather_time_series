@@ -1,0 +1,66 @@
+{
+  "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/LEPAKSHI_TIE_POINTS.jpg",
+  "area_stats": {
+    "gsd_mm_per_pixel": 2.08,
+    "pixel_area_m2": 4.326400000000001e-06,
+    "altitude_m": 10.7,
+    "valid_field_pixels": 687747768,
+    "valid_field_area_m2": 2975.5,
+    "agricultural_pixels": 85451160,
+    "agricultural_area_m2": 369.7,
+    "drought_fraction": 0.7153257486498721,
+    "non_harvest_drought_fraction": 0.7153257486498721,
+    "per_class": {
+      "background": {
+        "pixels": 445171054,
+        "area_m2": 1925.99
+      },
+      "soil": {
+        "pixels": 149828629,
+        "area_m2": 648.22
+      },
+      "crop": {
+        "pixels": 12152734,
+        "area_m2": 52.58
+      },
+      "cotton_ball": {
+        "pixels": 4419,
+        "area_m2": 0.02
+      },
+      "green_weed": {
+        "pixels": 452467979,
+        "area_m2": 1957.56
+      },
+      "dry_weed": {
+        "pixels": 12168592,
+        "area_m2": 52.65
+      },
+      "drought": {
+        "pixels": 61125415,
+        "area_m2": 264.45
+      }
+    },
+    "gsd_source": "Metashape orthomosaic resolution",
+    "gsd_dimensions_match": true,
+    "physical_scale_verified": false,
+    "area_is_estimate": true,
+    "area_requires_review": false
+  },
+  "drought_decision": {
+    "drought": true,
+    "confidence": 1.0,
+    "stress_score": 1.0,
+    "score_is_calibrated_probability": false,
+    "decision_type": "visual_stress_heuristic",
+    "field_confirmation_required": true,
+    "drought_fraction": 0.7153257486498721,
+    "non_harvest_drought_fraction": 0.7153257486498721,
+    "largest_cc_share": 0.0389,
+    "signal_1_fraction": true,
+    "signal_2_non_harvest": true,
+    "signal_3_coherent": false,
+    "tau_fraction": 0.15,
+    "tau_non_harvest": 0.1,
+    "tau_cc_share": 0.25
+  }
+}

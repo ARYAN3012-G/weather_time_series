@@ -1,0 +1,13 @@
+flowchart TD
+    A[Final Segmentation] --> B[Drought Fraction]
+    A --> C[Non-harvest Drought Fraction]
+    A --> D[Largest Drought Component Share]
+    B --> E[Signal 1: D greater than 0.15]
+    C --> F[Signal 2: N greater than 0.10]
+    D --> G[Signal 3: C greater than 0.25]
+    F --> H[Signal 2 AND Signal 3]
+    G --> H
+    E --> I[Signal 1 OR Combined Signal]
+    H --> I
+    I --> J[Visual Stress Flag]
+    J --> K[External Field Confirmation Required]

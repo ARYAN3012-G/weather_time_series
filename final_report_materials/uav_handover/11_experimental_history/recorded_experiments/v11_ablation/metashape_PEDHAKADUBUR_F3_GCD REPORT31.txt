@@ -1,0 +1,271 @@
+Agisoft Metashape
+Processing Report
+01 June 2026
+
+Survey Data
+1
+2
+3
+4
+5
+6
+7
+8
+9
+> 9
+Fig. 1. Camera locations and image overlap.
+Number of images:
+13
+Camera stations:
+13
+Tie points:
+21,683
+Projections:
+49,281
+Reprojection error:
+0.474 pix
+Camera Model
+Resolution
+Focal Length
+Pixel Size
+Precalibrated
+unknown
+1280 x 720
+unknown
+unknown
+No
+Table 1. Cameras.
+Page 2
+Camera Calibration
+1 pix
+Fig. 2. Image residuals for unknown.
+unknown
+13 images
+Type
+Resolution
+Focal Length
+Pixel Size
+Frame
+1280 x 720
+unknown
+unknown
+Value
+Error
+F
+K1
+F
+974.885
+3.8
+1.00
+0.17
+K1
+-0.00380637
+0.00079
+1.00
+Table 2. Calibration coefficients and correlation matrix.
+Page 3
+Digital Elevation Model
+Fig. 3. Reconstructed digital elevation model.
+Page 4
+Processing Parameters
+General
+Images
+13
+Aligned images
+13
+Coordinate system
+Local Coordinates (m)
+Rotation angles
+Yaw, Pitch, Roll
+Tie Points
+Points
+21,683 of 24,994
+RMS reprojection error
+0.247855 (0.474158 pix)
+Max reprojection error
+0.747305 (7.48553 pix)
+Mean key point size
+1.98159 pix
+Point colors
+3 bands, uint8
+Key points
+No
+Average tie point multiplicity
+2.29895
+Alignment parameters
+Accuracy
+Highest
+Generic preselection
+Yes
+Reference preselection
+No
+Key point limit
+60,000
+Key point limit per Mpx
+40,000
+Tie point limit
+10,000
+Exclude stationary tie points
+Yes
+Guided image matching
+Yes
+Adaptive camera model fitting
+Yes
+Matching time
+3 seconds
+Matching memory usage
+242.68 MB
+Alignment time
+3 seconds
+Alignment memory usage
+10.26 MB
+Date created
+2026:06:01 04:10:28
+Software version
+2.2.2.21069
+File size
+3.64 MB
+Point Cloud
+Points
+9,663
+Coordinate precision
+2.50 cm
+Point attributes
+Color
+3 bands, uint8
+Normal
+Point classes
+Created (never classified)
+9,663
+Point cloud generation parameters
+Source data
+Tiled model
+Processing time
+0 seconds
+Memory usage
+22.03 MB
+Date created
+2026:06:01 04:19:45
+Software version
+2.2.2.21069
+File size
+122.63 KB
+Model
+Faces
+23,473
+Vertices
+11,889
+Vertex colors
+3 bands, uint8
+Texture
+8,192 x 8,192, 3 bands, uint8
+Page 5
+Reconstruction parameters
+Surface type
+Arbitrary
+Source data
+Tie points
+Interpolation
+Enabled
+Strict volumetric masks
+No
+Processing time
+1 seconds
+Memory usage
+5.49 MB
+Texturing parameters
+Mapping mode
+Generic
+Blending mode
+Mosaic
+Texture size
+8,192
+Page count
+1
+Enable hole filling
+Yes
+Enable ghosting filter
+Yes
+UV mapping time
+17 seconds
+UV mapping memory usage
+89.30 MB
+Blending time
+8 seconds
+Blending memory usage
+2.09 GB
+Blending GPU memory usage
+1.54 GB
+Date created
+2026:06:01 04:16:58
+Software version
+2.2.2.21069
+File size
+45.70 MB
+Tiled Model
+Texture
+3 bands, uint8
+Reconstruction parameters
+Source data
+Tie points
+Tile size
+512
+Face count
+High
+Enable ghosting filter
+Yes
+Processing time
+12 seconds
+Memory usage
+427.88 MB
+Date created
+2026:06:01 04:18:01
+Software version
+2.2.2.21069
+File size
+4.55 MB
+Orthomosaic
+Size
+2,263 x 2,075
+Resolution
+4.34 mm/pix
+Coordinate system
+Local Coordinates (m)
+Colors
+3 bands, uint8
+Orthophotos
+5.36 MB
+Reconstruction parameters
+Blending mode
+Mosaic
+Surface
+Model
+Enable hole filling
+Yes
+Enable ghosting filter
+No
+Processing time
+1 seconds
+Memory usage
+192.47 MB
+Date created
+2026:06:01 04:20:06
+Software version
+2.2.2.21069
+File size
+10.18 MB
+System
+Software name
+Agisoft Metashape Professional
+Software version
+2.2.2 build 21069
+OS
+Windows 64 bit
+RAM
+63.65 GB
+CPU
+Intel(R) Xeon(R) w5-2565X
+Page 6
+GPU(s)
+NVIDIA RTX 2000 Ada Generation
+Page 7

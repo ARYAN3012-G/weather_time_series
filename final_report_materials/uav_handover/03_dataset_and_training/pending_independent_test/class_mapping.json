@@ -1,0 +1,10 @@
+{
+  "background": 0,
+  "soil": 1,
+  "crop": 2,
+  "cotton_ball": 3,
+  "green_weed": 4,
+  "dry_weed": 5,
+  "drought": 6,
+  "ignore": 255
+}

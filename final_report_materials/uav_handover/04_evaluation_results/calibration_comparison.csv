@@ -1,0 +1,8 @@
+metric,before_calibration_percent,after_calibration_percent,change_percentage_points,evaluation_split,source
+mIoU,61.46,65.11,3.65,validation,Previously recorded V11 evaluation
+Pixel accuracy,78.81,82.68,3.87,validation,Previously recorded V11 evaluation
+Macro F1,75.75,78.51,2.76,validation,Previously recorded V11 evaluation
+Drought precision,54.37,76.39,22.02,validation,Previously recorded V11 evaluation
+Drought recall,95.49,82.12,-13.37,validation,Previously recorded V11 evaluation
+Drought F1,69.29,79.15,9.86,validation,Previously recorded V11 evaluation
+Drought IoU,53.01,65.49,12.48,validation,Previously recorded V11 evaluation

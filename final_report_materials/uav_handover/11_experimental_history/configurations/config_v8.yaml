@@ -1,0 +1,142 @@
+paths:
+  data_root: /content/drive/MyDrive/implementation/drought_detection/data
+  patches_dir: /content/v5_data/patches
+  unlabeled_dir: /content/v5_data/background_cache
+  orthomosaic_dir: data/orthomosaic/
+  clean_images_dir: /content/v5_data/clean_images
+  clean_masks_dir: /content/v5_data/clean_masks
+  runs_dir: /content/drive/MyDrive/implementation/runs
+  barren_manifest: configs/barren_manifest.yaml
+  orthomosaics_meta: configs/orthomosaics_meta.yaml
+camera:
+  pixel_size_um: 1.31
+  focal_length_mm: 6.72
+  native_width_px: 8064
+  native_height_px: 4536
+  default_altitude_m: 13.8
+classes:
+  names:
+  - background
+  - soil
+  - crop
+  - cotton_ball
+  - green_weed
+  - dry_weed
+  - drought
+  palette:
+  - - 0
+    - 0
+    - 0
+  - - 139
+    - 90
+    - 43
+  - - 0
+    - 180
+    - 0
+  - - 255
+    - 255
+    - 255
+  - - 140
+    - 255
+    - 140
+  - - 210
+    - 170
+    - 90
+  - - 220
+    - 30
+    - 30
+  confusion_pairs:
+  - - drought
+    - dry_weed
+  - - drought
+    - soil
+  - - drought
+    - crop
+  - - soil
+    - cotton_ball
+  - - crop
+    - green_weed
+preprocessing:
+  glare_v_threshold: 0.95
+  glare_s_threshold: 0.1
+  shadow_v_threshold: 0.15
+  shadow_s_threshold: 0.2
+  field_dark_threshold: 10
+  field_saturation_threshold: 15
+  field_min_component_area: 500
+classifier:
+  backbone: dinov2_vitb14
+  pretrained_weights_path: /path/to/your/dinov2_vitb14_pretrain.pth
+  input_size: 224
+  num_channels: 9
+  scales:
+  - 64
+  - 128
+  - 256
+  - 512
+  batch_size: 64
+  epochs: 60
+  lr_head: 0.0003
+  lr_backbone: 3.0e-05
+  weight_decay: 0.05
+  warmup_epochs: 5
+  margin_loss_weight: 0.3
+  margin_loss_alpha: 0.3
+  oversample_barren: 8
+  val_split: 0.15
+  test_split: 0.1
+  seed: 42
+pseudo_label:
+  window_size: 512
+  stride: 256
+  window_sizes:
+  - 512
+  window_strides:
+  - 256
+  scale_weights:
+  - 1.0
+  confidence_threshold: 0.55
+  crf_iterations: 5
+  ignore_index: 255
+segmentation:
+  model: segformer_b2
+  input_size: 512
+  num_channels: 9
+  num_classes: 7
+  batch_size: 16
+  epochs: 20
+  lr: 8.0e-06
+  weight_decay: 0.01
+  num_workers: 2
+  seed: 42
+  ce_weight: 1.0
+  dice_weight: 2.5
+  boundary_weight: 1.0
+  focal_gamma: 2.0
+  drought_override_weight: 10.0
+  cotton_override_weight: 8.0
+  run_name: best_v8
+  batch_manual: 4
+  batch_pseudo: 4
+  batch_composites: 8
+  composite_per_epoch: 1000
+  ignore_index: 255
+  pretrained_id: nvidia/mit-b2
+  pretrained_local_path: null
+inference:
+  tile_size: 1024
+  tile_overlap: 256
+  batch_size: 16
+  use_tta: false
+  drought_decision:
+    tau1_drought_fraction: 0.15
+    tau2_largest_cc_share: 0.25
+    tau3_nonharvest_fraction: 0.1
+  morph_open_kernel: 3
+  min_component_size:
+    drought: 200
+    barren: 500
+    cotton_ball: 20
+    green_weed: 50
+    dry_weed: 50
+  harvest_zone_cotton_ball_density: 0.05

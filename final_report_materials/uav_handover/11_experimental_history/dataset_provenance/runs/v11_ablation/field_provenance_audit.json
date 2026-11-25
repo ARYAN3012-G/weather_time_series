@@ -1,0 +1,75 @@
+{
+  "training_acquisition_dates": {
+    "20251115": 278,
+    "20251116": 300,
+    "20260119": 389,
+    "20250321": 76,
+    "20260120": 653,
+    "20251110": 115,
+    "20260118": 97,
+    "20251024": 104
+  },
+  "reports": [],
+  "small_test_candidates": [
+    {
+      "name": "PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F1_ORTHO_30_05.jpg",
+      "width": 3072,
+      "height": 2560,
+      "megapixels": 7.86,
+      "size_mb": 1.15,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F3_OTHOMOSAIC 31.jpg",
+      "width": 2263,
+      "height": 2075,
+      "megapixels": 4.7,
+      "size_mb": 1.19,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F4_ORTHO_30_05.jpg",
+      "width": 2410,
+      "height": 2411,
+      "megapixels": 5.81,
+      "size_mb": 0.77,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F6_ORTHO_30_05.jpg",
+      "width": 1536,
+      "height": 2494,
+      "megapixels": 3.83,
+      "size_mb": 0.55,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    },
+    {
+      "name": "PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "path": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/PEDHAKADUBUR_F7_ORTHO_30_05.jpg",
+      "width": 2569,
+      "height": 2082,
+      "megapixels": 5.35,
+      "size_mb": 1.13,
+      "clean_matches": [],
+      "pseudo_matches": [],
+      "patch_matches": [],
+      "status": "candidate_unverified"
+    }
+  ]
+}

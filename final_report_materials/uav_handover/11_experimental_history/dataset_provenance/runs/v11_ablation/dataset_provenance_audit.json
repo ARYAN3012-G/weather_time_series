@@ -1,0 +1,443 @@
+{
+  "dataset_folders": [
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/clean_images",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/clean_masks",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/patches",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results/PULLIAH_ORTHOMOSAIC_30_05",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/results/shilpa half part orthomosaic3",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/pseudo_labels"
+  ],
+  "generic_tiles": [
+    "tile_000.jpg",
+    "tile_001.jpg",
+    "tile_002.jpg",
+    "tile_003.jpg",
+    "tile_004.jpg",
+    "tile_005.jpg",
+    "tile_006.jpg",
+    "tile_007.jpg",
+    "tile_008.jpg",
+    "tile_009.jpg",
+    "tile_010.jpg",
+    "tile_011.jpg",
+    "tile_012.jpg",
+    "tile_013.jpg",
+    "tile_014.jpg",
+    "tile_015.jpg",
+    "tile_016.jpg",
+    "tile_017.jpg",
+    "tile_018.jpg",
+    "tile_019.jpg",
+    "tile_020.jpg",
+    "tile_021.jpg",
+    "tile_022.jpg",
+    "tile_023.jpg",
+    "tile_024.jpg",
+    "tile_025.jpg",
+    "tile_026.jpg",
+    "tile_027.jpg",
+    "tile_028.jpg",
+    "tile_029.jpg",
+    "tile_030.jpg",
+    "tile_031.jpg",
+    "tile_032.jpg",
+    "tile_033.jpg",
+    "tile_034.jpg",
+    "tile_035.jpg",
+    "tile_036.jpg",
+    "tile_037.jpg",
+    "tile_038.jpg",
+    "tile_039.jpg",
+    "tile_040.jpg",
+    "tile_041.jpg",
+    "tile_042.jpg",
+    "tile_043.jpg",
+    "tile_044.jpg",
+    "tile_045.jpg",
+    "tile_046.jpg",
+    "tile_047.jpg",
+    "tile_049.jpg",
+    "tile_050.jpg",
+    "tile_051.jpg",
+    "tile_052.jpg",
+    "tile_053.jpg",
+    "tile_054.jpg",
+    "tile_055.jpg",
+    "tile_056.jpg",
+    "tile_057.jpg",
+    "tile_058.jpg",
+    "tile_059.jpg",
+    "tile_060.jpg",
+    "tile_061.jpg",
+    "tile_062.jpg",
+    "tile_063.jpg",
+    "tile_064.jpg",
+    "tile_065.jpg",
+    "tile_066.jpg",
+    "tile_067.jpg",
+    "tile_068.jpg",
+    "tile_069.jpg",
+    "tile_070.jpg",
+    "tile_071.jpg",
+    "tile_072.jpg",
+    "tile_073.jpg",
+    "tile_074.jpg",
+    "tile_075.jpg",
+    "tile_076.jpg",
+    "tile_077.jpg",
+    "tile_078.jpg",
+    "tile_079.jpg",
+    "tile_080.jpg",
+    "tile_081.jpg",
+    "tile_082.jpg",
+    "tile_083.jpg",
+    "tile_084.jpg",
+    "tile_085.jpg",
+    "tile_086.jpg",
+    "tile_087.jpg",
+    "tile_088.jpg",
+    "tile_089.jpg",
+    "tile_090.jpg",
+    "tile_091.jpg",
+    "tile_092.jpg",
+    "tile_093.jpg",
+    "tile_094.jpg",
+    "tile_095.jpg",
+    "tile_096.jpg",
+    "tile_097.jpg",
+    "tile_098.jpg",
+    "tile_099.jpg",
+    "tile_100.jpg",
+    "tile_101.jpg",
+    "tile_102.jpg",
+    "tile_103.jpg",
+    "tile_104.jpg",
+    "tile_105.jpg",
+    "tile_106.jpg",
+    "tile_107.jpg",
+    "tile_108.jpg",
+    "tile_109.jpg",
+    "tile_110.jpg",
+    "tile_120.jpg",
+    "tile_121.jpg",
+    "tile_122.jpg",
+    "tile_123.jpg",
+    "tile_124.jpg",
+    "tile_125.jpg",
+    "tile_126.jpg",
+    "tile_127.jpg",
+    "tile_128.jpg",
+    "tile_129.jpg",
+    "tile_130.jpg",
+    "tile_131.jpg",
+    "tile_132.jpg",
+    "tile_135.jpg",
+    "tile_136.jpg",
+    "tile_137.jpg",
+    "tile_138.jpg",
+    "tile_146.jpg",
+    "tile_147.jpg",
+    "tile_148.jpg",
+    "tile_149.jpg",
+    "tile_150.jpg",
+    "tile_154.jpg",
+    "tile_160.jpg",
+    "tile_164.jpg",
+    "tile_166.jpg",
+    "tile_167.jpg",
+    "tile_171.jpg",
+    "tile_172.jpg",
+    "tile_173.jpg",
+    "tile_174.jpg",
+    "tile_175.jpg",
+    "tile_176.jpg",
+    "tile_177.jpg",
+    "tile_178.jpg"
+  ],
+  "metadata_files": [
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/configs/barren_manifest.yaml",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/pseudo_labels/manifest.yaml",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/source_overlap.json",
+    "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/runs/v11_ablation/source_disjoint_evaluation.json"
+  ],
+  "archive_matches": [],
+  "script_matches": [
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/parse_metashape_reports.py",
+      "matches": [
+        "3: Parse Metashape processing report PDFs and extract per-orthomosaic metadata",
+        "6: Each report PDF should be named after the orthomosaic it describes, e.g.",
+        "7: reports/field_01.pdf  \u2192  config entry for orthomosaic 'field_01'",
+        "10: \"Survey Data\" / \"Orthomosaic\" sections.",
+        "16: --out configs/orthomosaics_meta.yaml",
+        "39: RE_ORTHO_SIZE = re.compile(r\"Size\\s+([\\d,]+)\\s*x\\s*([\\d,]+)\")  # appears under Orthomosaic section",
+        "63: meta[\"num_source_images\"] = _grab(RE_NUM_IMAGES, cast=int)",
+        "65: # Orthomosaic section appears after \"Orthomosaic\" header. Use the LAST size/res",
+        "66: # match in the document; report has the orthomosaic section near the end.",
+        "70: meta[\"orthomosaic_width_px\"] = int(last.group(1).replace(\",\", \"\"))",
+        "71: meta[\"orthomosaic_height_px\"] = int(last.group(2).replace(\",\", \"\"))",
+        "75: meta[\"orthomosaic_resolution_mm_per_px\"] = float(ortho_res_matches[-1].group(1))",
+        "83: help=\"Directory containing one PDF per orthomosaic\")",
+        "86: ap.add_argument(\"--orthomosaic-suffix\", default=\".jpg\",",
+        "87: help=\"Expected orthomosaic file extension (default: .jpg)\")",
+        "101: out: dict = {\"orthomosaics\": {}}",
+        "103: name = pdf.stem  # filename without .pdf \u2014 should match orthomosaic stem",
+        "106: out[\"orthomosaics\"][name] = meta",
+        "112: out[\"orthomosaics\"][name] = {\"error\": str(e)}",
+        "119: print(f\"Tip: check the YAML and add the orthomosaic filename \"",
+        "120: f\"(e.g. 'orthomosaic_file: field_01{args.orthomosaic_suffix}') to each entry \""
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/merge_new_masks.py",
+      "matches": [
+        "84: new_stem  = f'tile_{new_idx:03d}'"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/predict_all_noninteractive.py",
+      "matches": [
+        "10: --images-dir data/orthomosaic/ \\",
+        "33: def find_orthomosaics(images_dir: Path) -> list[Path]:",
+        "85: for k, v in meta.get('orthomosaics', {}).items():",
+        "93: '# Altitude (metres) for each orthomosaic.',",
+        "114: ap.add_argument('--images-dir',  type=Path, default=Path('data/orthomosaic/'))",
+        "121: default=Path('configs/orthomosaics_meta.yaml'))",
+        "132: images = find_orthomosaics(args.images_dir)",
+        "135: print(f'Found {len(images)} orthomosaic(s).')"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/inspect_barren.py",
+      "matches": [
+        "11: and a template YAML at  configs/barren_manifest.yaml  with all images",
+        "17: 3. Edit configs/barren_manifest.yaml: change each image's `tag:` value to one",
+        "69: <code>configs/barren_manifest.yaml</code> accordingly:</p>",
+        "100: def generate_grid(barren_dir: Path, html_out: Path, manifest_out: Path) -> None:",
+        "106: print(f\"Found {len(images)} images. Generating HTML grid and manifest template...\")",
+        "128: # Manifest YAML (template \u2014 all REVIEW until user edits)",
+        "129: manifest = {",
+        "139: with open(manifest_out, \"w\") as f:",
+        "140: yaml.safe_dump(manifest, f, default_flow_style=False, sort_keys=False)",
+        "141: print(f\"  \u2713 wrote {manifest_out}\")",
+        "142: print(f\"\\nNext: open {html_out} in a browser, then edit {manifest_out}.\")",
+        "145: def apply_manifest(barren_dir: Path, manifest_path: Path, dry_run: bool) -> None:",
+        "146: if not manifest_path.exists():",
+        "147: print(f\"ERROR: {manifest_path} not found. Run without --apply first.\")",
+        "150: with open(manifest_path) as f:",
+        "151: manifest = yaml.safe_load(f)",
+        "153: images_meta: dict = manifest.get(\"images\", {})",
+        "155: print(\"Manifest has no 'images' entries.\")",
+        "225: ap.add_argument(\"--manifest\", type=Path, default=Path(\"configs/barren_manifest.yaml\"))",
+        "228: help=\"Apply the tags from the manifest (move files).\")",
+        "239: apply_manifest(barren_dir, args.manifest, args.dry_run)",
+        "241: generate_grid(barren_dir, args.html, args.manifest)"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/predict_all.py",
+      "matches": [
+        "3: Run inference on all orthomosaic images in a directory.",
+        "15: --images-dir data/orthomosaic/ \\\\",
+        "19: # If altitudes are already in orthomosaics_meta.yaml (from parse_metashape_reports.py),",
+        "41: def find_orthomosaics(images_dir: Path) -> list[Path]:",
+        "52: Load per-image altitudes from configs/orthomosaics_meta.yaml",
+        "61: for key, entry in meta.get('orthomosaics', {}).items():",
+        "126: print(f'Found {len(images)} orthomosaic(s) in the directory.\\n')",
+        "186: print(f'PROCESSING {total} ORTHOMOSAIC(S)')",
+        "260: description='Run drought inference on all orthomosaic images.',",
+        "264: default=Path('data/orthomosaic/'),",
+        "265: help='Directory containing orthomosaic images')",
+        "275: default=Path('configs/orthomosaics_meta.yaml'),",
+        "301: images = find_orthomosaics(args.images_dir)"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/scripts/prepare_cvat.py",
+      "matches": [
+        "5: - Load manifest from pseudo-labeling.",
+        "41: def load_manifest(pseudo_dir: Path) -> list[dict]:",
+        "42: manifest_path = pseudo_dir / 'manifest.yaml'",
+        "43: if not manifest_path.exists():",
+        "45: f'Manifest not found: {manifest_path}\\n'",
+        "48: with open(manifest_path) as f:",
+        "223: stems = [f'tile_{i:03d}' for i in range(len(tiles))]",
+        "231: tile_name = f'tile_{i:03d}'",
+        "261: 'source_image': tile['image_name'],",
+        "308: manifest = load_manifest(pseudo_dir)",
+        "309: print(f'Loaded manifest: {len(manifest)} pseudo-labeled images')",
+        "312: rich = [r for r in manifest",
+        "318: for entry in tqdm(manifest, desc='Extracting tile candidates'):"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/postprocess.py",
+      "matches": [
+        "11: pseudo-labels (not at orthomosaic inference time); they clean noisy",
+        "190: impractically slow on large orthomosaic tiles). Default 1M px"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/pseudo_label/label.py",
+      "matches": [
+        "16: manifest.yaml   per-image stats: path, ignore_fraction, class_fractions",
+        "186: manifest: list[dict] = []",
+        "231: manifest.append(record)",
+        "242: # Write manifest",
+        "244: manifest_path = out_dir / 'manifest.yaml'",
+        "245: with open(manifest_path, 'w') as f:",
+        "246: yaml.safe_dump({'pseudo_labels': manifest}, f,",
+        "250: print(f'Manifest:       {manifest_path}')",
+        "251: print(f'Total images:   {len(manifest)}')",
+        "254: if manifest:",
+        "255: avg_ignore   = sum(r['ignore_fraction'] for r in manifest) / len(manifest)",
+        "256: avg_drought  = sum(r['class_fractions'].get('drought', 0) for r in manifest) / len(manifest)"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/__init__.py",
+      "matches": [
+        "1: \"\"\"Orthomosaic inference pipeline.\"\"\""
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/report_before_indexed_png.py",
+      "matches": [
+        "2: Report generation for orthomosaic predictions.",
+        "4: Outputs per orthomosaic:",
+        "260: 'source_image':     img_path,",
+        "391: '<i>Left: original orthomosaic &nbsp; '"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile.py",
+      "matches": [
+        "2: Tile-and-stitch inference for large orthomosaic images.",
+        "100: Production-grade tiled inference over large orthomosaic images."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/predict.py",
+      "matches": [
+        "2: Orthomosaic inference \u2014 batch 5.",
+        "4: Runs the trained SegFormer model over a full orthomosaic image, produces",
+        "10: --image  data/orthomosaic/field_01.jpg \\\\",
+        "23: Pass the actual altitude for each orthomosaic for accurate m\u00b2 values.",
+        "36: # Removes OpenCV's hard pixel-count limit that rejects large orthomosaics.",
+        "63: def load_orthomosaic(path: Path) -> np.ndarray:",
+        "65: Load a (potentially huge) orthomosaic JPG/TIF as uint8 RGB.",
+        "74: so cv2 should succeed for all normally-sized orthomosaics.",
+        "152: Run full inference on one orthomosaic.",
+        "155: image_path:  Path to the orthomosaic JPG.",
+        "190: print('\\n[1/6] Loading orthomosaic ...')",
+        "191: img_rgb = load_orthomosaic(image_path)",
+        "282: ap = argparse.ArgumentParser(description='Orthomosaic drought inference')",
+        "284: help='Path to orthomosaic JPG')"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/postprocess.py",
+      "matches": [
+        "2: Post-processing for orthomosaic segmentation predictions."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/predict_v11.py",
+      "matches": [
+        "2: Orthomosaic inference \u2014 batch 5.",
+        "4: Runs the trained SegFormer model over a full orthomosaic image, produces",
+        "10: --image  data/orthomosaic/field_01.jpg \\\\",
+        "23: Pass the actual altitude for each orthomosaic for accurate m\u00b2 values.",
+        "36: # Removes OpenCV's hard pixel-count limit that rejects large orthomosaics.",
+        "63: def load_orthomosaic(path: Path) -> np.ndarray:",
+        "65: Load a (potentially huge) orthomosaic JPG/TIF as uint8 RGB.",
+        "74: so cv2 should succeed for all normally-sized orthomosaics.",
+        "152: Run full inference on one orthomosaic.",
+        "155: image_path:  Path to the orthomosaic JPG.",
+        "190: print('\\n[1/6] Loading orthomosaic ...')",
+        "191: img_rgb = load_orthomosaic(image_path)",
+        "282: ap = argparse.ArgumentParser(description='Orthomosaic drought inference')",
+        "284: help='Path to orthomosaic JPG')"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11_before_fp32.py",
+      "matches": [
+        "2: Tile-and-stitch inference for large orthomosaic images.",
+        "100: Production-grade tiled inference over large orthomosaic images."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11_before_weight_removal.py",
+      "matches": [
+        "2: Tile-and-stitch inference for large orthomosaic images.",
+        "100: Production-grade tiled inference over large orthomosaic images."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/tile_v11.py",
+      "matches": [
+        "2: Tile-and-stitch inference for large orthomosaic images.",
+        "100: Production-grade tiled inference over large orthomosaic images."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/inference/report.py",
+      "matches": [
+        "2: Report generation for orthomosaic predictions.",
+        "4: Outputs per orthomosaic:",
+        "271: 'source_image':     img_path,",
+        "402: '<i>Left: original orthomosaic &nbsp; '"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/preprocessing/tensor_builder.py",
+      "matches": [
+        "8: labeling and orthomosaic inference where the bigger context lets",
+        "134: Used during pseudo-labeling and orthomosaic inference, where the larger spatial"
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/classifier/dataset.py",
+      "matches": [
+        "13: - A 'hard set' manifest for a curated validation split."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model.py",
+      "matches": [
+        "9: - Lightweight MLP decoder \u2014 fast inference at orthomosaic scale."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model_b3.py",
+      "matches": [
+        "9: - Lightweight MLP decoder \u2014 fast inference at orthomosaic scale."
+      ]
+    },
+    {
+      "file": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/src/segmentation/model_b3_v91.py",
+      "matches": [
+        "9: - Lightweight MLP decoder \u2014 fast inference at orthomosaic scale."
+      ]
+    }
+  ],
+  "potential_training_matches": {
+    "DJI_20260118084621_0281_D": [
+      "/content/drive/MyDrive/unlabeled/DJI_20260118084621_0281_D.JPG"
+    ],
+    "DJI_20260119081130_0808_D": [
+      "/content/drive/MyDrive/unlabeled/DJI_20260119081130_0808_D.JPG"
+    ],
+    "dji_fly_20250321_102737_0_1742533057237_photo_low_quality": [
+      "/content/drive/MyDrive/unlabeled/dji_fly_20250321_102737_0_1742533057237_photo_low_quality.jpg"
+    ],
+    "dji_fly_20250321_115953_0_1742538593177_photo_low_quality": [
+      "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/patches/soil/kdji_fly_20250321_115953_0_1742538593177_photo_low_quality_0001.png",
+      "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/patches/soil/kdji_fly_20250321_115953_0_1742538593177_photo_low_quality_0002.png",
+      "/content/drive/MyDrive/unlabeled/dji_fly_20250321_115953_0_1742538593177_photo_low_quality.jpg"
+    ]
+  }
+}

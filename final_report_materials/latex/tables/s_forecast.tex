@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{Satellite module: crop-condition (SVI class) forecast on test years 2025--2026 (\mf, mean of 5 seeds) and onset warning (ROC-AUC for fields normal today that fall below normal by the target date).}
+\label{tab:s_forecast}
+\footnotesize
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Version} & \textbf{RF 15 d} & \textbf{XGB 15 d} & \textbf{Onset AUC 15 d} & \textbf{RF 30 d} & \textbf{XGB 30 d} & \textbf{Onset AUC 30 d} \\
+\midrule
+Persistence & 0.648 & 0.648 & 0.50 & 0.520 & 0.520 & 0.50 \\
+1\; Satellite history & 0.679 & 0.667 & 0.76 & 0.563 & 0.555 & 0.69 \\
+2\; + past weather & 0.670 & 0.675 & 0.76 & 0.549 & 0.553 & 0.69 \\
+3\; + weather-module forecast & 0.673 & 0.675 & 0.76 & 0.547 & 0.551 & 0.69 \\
+4\; + actual future weather (upper bound) & 0.674 & 0.686 & 0.77 & 0.554 & 0.573 & 0.72 \\
+Weather only & 0.433 & 0.404 & 0.58 & 0.436 & 0.364 & 0.51 \\
+Logistic baseline on SVI level + trend &  &  & 0.72 &  &  & 0.65 \\
+\bottomrule
+\end{tabular}
+\end{table}

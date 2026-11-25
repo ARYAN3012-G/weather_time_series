@@ -1,0 +1,177 @@
+{
+  "pdf_recovery": [
+    {
+      "field": "SIRA_TIE_POINTS_01",
+      "status": "PASS",
+      "pdf_size_bytes": 42419,
+      "runtime_seconds": 25.47197413444519
+    },
+    {
+      "field": "KNL_MAIZE_TOWER_TILE_POINTS",
+      "status": "PASS",
+      "pdf_size_bytes": 79122,
+      "runtime_seconds": 19.489214420318604
+    },
+    {
+      "field": "LEPAKSHI_TIE_POINTS",
+      "status": "PASS",
+      "pdf_size_bytes": 59059,
+      "runtime_seconds": 20.050119876861572
+    },
+    {
+      "field": "SOMANDHAPALLE_TIE_POINTS",
+      "status": "PASS",
+      "pdf_size_bytes": 50586,
+      "runtime_seconds": 15.07941722869873
+    }
+  ],
+  "verification": [
+    {
+      "field": "BALAJI_VILLAS_TIE_POINTS",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "KNL_DDP_ORTHO",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "KNL_MAIZE_TOWER_TILE_POINTS",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "KNL_puddur",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "LEPAKSHI_TIE_POINTS",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PEDHAKADUBUR_F1_ORTHO_30_05",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PEDHAKADUBUR_F3_OTHOMOSAIC 31",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PEDHAKADUBUR_F4_ORTHO_30_05",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PEDHAKADUBUR_F6_ORTHO_30_05",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PEDHAKADUBUR_F7_ORTHO_30_05",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "PULLIAH_1_ORTHOMOSAIC",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "SIRA_TIE_POINTS_01",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "SOMANDHAPALLE_TIE_POINTS",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    },
+    {
+      "field": "shilpa half part orthomosaic3",
+      "outputs": {
+        "mask.png": true,
+        "overlay.jpg": true,
+        "report.json": true,
+        "report.pdf": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "verified_fields": 14,
+  "verified_files": 56,
+  "total_fields": 14,
+  "total_expected_files": 56,
+  "runtime_seconds": 93.32187366485596,
+  "inference_repeated": false,
+  "model_weights_modified": false
+}

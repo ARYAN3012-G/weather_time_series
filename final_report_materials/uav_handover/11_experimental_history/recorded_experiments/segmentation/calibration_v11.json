@@ -1,0 +1,9 @@
+{
+  "checkpoint": "best_v11.pt",
+  "drought_logit_penalty": 1.2,
+  "dry_weed_logit_penalty": 0.4,
+  "original_validation_miou": 0.6146073555301135,
+  "calibrated_validation_miou": 0.651099,
+  "selection": "tuned_on_validation",
+  "independent_test_verified": false
+}

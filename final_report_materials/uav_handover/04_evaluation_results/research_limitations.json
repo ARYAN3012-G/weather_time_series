@@ -1,0 +1,14 @@
+{
+  "evaluation_split": "validation",
+  "training_tiles": 224,
+  "validation_tiles": 55,
+  "validation_tiles_with_source_overlap": 22,
+  "independent_test_evaluation_completed": false,
+  "candidate_test_tiles": 127,
+  "human_annotation_pending": true,
+  "calibration_evaluated_on_validation_data": true,
+  "stress_score_is_calibrated_probability": false,
+  "field_confirmation_required": true,
+  "physical_area_estimates_require_scale_review": true,
+  "runtime_comparison_same_hardware": false
+}

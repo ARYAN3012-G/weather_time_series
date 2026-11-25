@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Weather module, leave-one-cluster-out: trained on one region, tested on the other region's 2019--2026 data (\mf).}
+\label{tab:w_loco}
+\footnotesize
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Test region} & \textbf{Model} & \textbf{7 days} & \textbf{15 days} & \textbf{30 days} \\
+\midrule
+Train south $\rightarrow$ test Kurnool & Persistence & 0.658 & 0.479 & 0.440 \\
+ & Water-balance ensemble & 0.810 & 0.643 & 0.382 \\
+ & Ensemble, weather + SPEI & 0.682 & 0.518 & 0.346 \\
+ & Ensemble, hybrid & 0.826 & 0.640 & 0.338 \\
+\midrule
+Train Kurnool $\rightarrow$ test south & Persistence & 0.663 & 0.541 & 0.407 \\
+ & Water-balance ensemble & 0.760 & 0.547 & 0.367 \\
+ & Ensemble, weather + SPEI & 0.653 & 0.529 & 0.348 \\
+ & Ensemble, hybrid & 0.796 & 0.627 & 0.424 \\
+\bottomrule
+\end{tabular}
+\end{table}

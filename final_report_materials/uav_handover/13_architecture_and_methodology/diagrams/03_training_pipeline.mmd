@@ -1,0 +1,18 @@
+flowchart TD
+    A[4 Manual Samples] --> D[Mixed Batch]
+    B[4 Pseudo-labeled Samples] --> D
+    C[8 Synthetic Samples] --> D
+    D --> E[Preprocessing and Augmentation]
+    E --> F[Nine-channel Tensor]
+    F --> G[SegFormer-B2]
+    G --> H[Seven-class Logits]
+    H --> I[Focal Loss]
+    H --> J[Dice Loss]
+    H --> K[Lovasz-Softmax Loss]
+    I --> L[Combined Loss]
+    J --> L
+    K --> L
+    L --> M[Backpropagation]
+    M --> N[Optimizer Update]
+    N --> O[Epoch Validation]
+    O --> P[Best mIoU Checkpoint]

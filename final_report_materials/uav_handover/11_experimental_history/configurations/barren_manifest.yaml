@@ -1,0 +1,156 @@
+_instructions: 'For each image, change tag to one of: never-sown / failed-crop / discard.
+  Then run: python scripts/inspect_barren.py --apply'
+images:
+  kdji_fly_20250321_103203_0_1742533323588_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103203_0_1742533323588_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103216_0_1742533336584_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103224_0_1742533344608_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103224_0_1742533344608_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103249_0_1742533369085_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103249_0_1742533369085_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103249_0_1742533369085_photo_low_quality_0003.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103249_0_1742533369085_photo_low_quality_0004.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103308_0_1742533388318_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103308_0_1742533388318_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103322_0_1742533402752_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103322_0_1742533402752_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103328_0_1742533408600_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_103328_0_1742533408600_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104039_0_1742533839060_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104039_0_1742533839060_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104039_0_1742533839060_photo_low_quality_0003.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104052_0_1742533852341_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104109_0_1742533869783_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104109_0_1742533869783_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104109_0_1742533869783_photo_low_quality_0003.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104109_0_1742533869783_photo_low_quality_0004.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104121_0_1742533881057_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104121_0_1742533881057_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104127_0_1742533887427_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104127_0_1742533887427_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_104205_0_1742533925703_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113301_0_1742536981907_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113305_0_1742536985610_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113305_0_1742536985610_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113305_0_1742536985610_photo_low_quality_0003.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113347_0_1742537027104_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113347_0_1742537027104_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113347_0_1742537027104_photo_low_quality_0003.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113512_0_1742537112049_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113512_0_1742537112049_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_113524_0_1742537124577_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115838_0_1742538518067_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115838_0_1742538518067_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115920_0_1742538560059_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115934_0_1742538574128_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115934_0_1742538574128_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115953_0_1742538593177_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_115953_0_1742538593177_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123710_0_1742540830461_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123710_0_1742540830461_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123751_0_1742540871603_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123751_0_1742540871603_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123810_0_1742540890339_photo_low_quality_0001.png:
+    tag: REVIEW
+    notes: ''
+  kdji_fly_20250321_123810_0_1742540890339_photo_low_quality_0002.png:
+    tag: REVIEW
+    notes: ''

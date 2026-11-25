@@ -1,0 +1,137 @@
+{
+  "remaining_images": [
+    {
+      "filename": "PULLIAH_1_ORTHOMOSAIC.jpg",
+      "width": 25707,
+      "height": 22849,
+      "pixels": 587379243,
+      "rgb_gb": 1.762137729,
+      "class_map_gb": 0.587379243,
+      "disk_labels_gb": 2.349516972,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 146856950,
+      "worst_case_metadata_array_gb": 2.49656815
+    },
+    {
+      "filename": "SOMANDHAPALLE_TIE_POINTS.jpg",
+      "width": 19069,
+      "height": 45261,
+      "pixels": 863082009,
+      "rgb_gb": 2.589246027,
+      "class_map_gb": 0.863082009,
+      "disk_labels_gb": 3.452328036,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 215786585,
+      "worst_case_metadata_array_gb": 3.668371945
+    },
+    {
+      "filename": "LEPAKSHI_TIE_POINTS.jpg",
+      "width": 40691,
+      "height": 27842,
+      "pixels": 1132918822,
+      "rgb_gb": 3.398756466,
+      "class_map_gb": 1.132918822,
+      "disk_labels_gb": 4.531675288,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 283236666,
+      "worst_case_metadata_array_gb": 4.815023322
+    },
+    {
+      "filename": "KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+      "width": 35826,
+      "height": 32768,
+      "pixels": 1173946368,
+      "rgb_gb": 3.521839104,
+      "class_map_gb": 1.173946368,
+      "disk_labels_gb": 4.695785472,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 293486592,
+      "worst_case_metadata_array_gb": 4.989272064
+    },
+    {
+      "filename": "SIRA_TIE_POINTS_01.jpg",
+      "width": 25067,
+      "height": 60125,
+      "pixels": 1507153375,
+      "rgb_gb": 4.521460125,
+      "class_map_gb": 1.507153375,
+      "disk_labels_gb": 6.0286135,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 376809642,
+      "worst_case_metadata_array_gb": 6.405763914
+    },
+    {
+      "filename": "shilpa half part orthomosaic3.jpg",
+      "width": 53442,
+      "height": 40081,
+      "pixels": 2142008802,
+      "rgb_gb": 6.426026406,
+      "class_map_gb": 2.142008802,
+      "disk_labels_gb": 8.568035208,
+      "exceeds_int32_pixels": false,
+      "worst_case_components": 535515561,
+      "worst_case_metadata_array_gb": 9.103764537
+    },
+    {
+      "filename": "KNL_puddur.jpg",
+      "width": 34709,
+      "height": 62577,
+      "pixels": 2171985093,
+      "rgb_gb": 6.515955279,
+      "class_map_gb": 2.171985093,
+      "disk_labels_gb": 8.687940372,
+      "exceeds_int32_pixels": true,
+      "worst_case_components": 543020595,
+      "worst_case_metadata_array_gb": 9.231350115
+    },
+    {
+      "filename": "BALAJI_VILLAS_TIE_POINTS.jpg",
+      "width": 51246,
+      "height": 55752,
+      "pixels": 2857066992,
+      "rgb_gb": 8.571200976,
+      "class_map_gb": 2.857066992,
+      "disk_labels_gb": 11.428267968,
+      "exceeds_int32_pixels": true,
+      "worst_case_components": 714266748,
+      "worst_case_metadata_array_gb": 12.142534716
+    }
+  ],
+  "metadata_stress_tests": [
+    {
+      "height": 1024,
+      "width": 1024,
+      "pixels": 1048576,
+      "components": 262144,
+      "metadata_array_bytes": 4456465,
+      "bytes_per_component": 17.000064849853516,
+      "retained_rss_mb": 129.08544,
+      "runtime_seconds": 0.12274533099991913
+    },
+    {
+      "height": 2048,
+      "width": 2048,
+      "pixels": 4194304,
+      "components": 1048576,
+      "metadata_array_bytes": 17825809,
+      "bytes_per_component": 17.00001621246338,
+      "retained_rss_mb": 130.244608,
+      "runtime_seconds": 0.5205549340000744
+    },
+    {
+      "height": 4096,
+      "width": 4096,
+      "pixels": 16777216,
+      "components": 4194304,
+      "metadata_array_bytes": 71303185,
+      "bytes_per_component": 17.000004053115845,
+      "retained_rss_mb": 281.526272,
+      "runtime_seconds": 2.0639748799999325
+    }
+  ],
+  "available_ram_gb": 53.845499904,
+  "available_disk_gb": 252.75828224,
+  "same_gpu_equivalence_passed": true,
+  "production_source_modified": false,
+  "model_weights_modified": false
+}

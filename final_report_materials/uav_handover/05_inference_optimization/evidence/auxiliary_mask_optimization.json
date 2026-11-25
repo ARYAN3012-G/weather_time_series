@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "size": 256,
+      "original_seconds": 0.054823607999423984,
+      "optimized_seconds": 0.023989787999198597,
+      "speedup": 2.285289390688047,
+      "different_class_pixels": 0,
+      "different_harvest_pixels": 0
+    },
+    {
+      "size": 512,
+      "original_seconds": 0.08779338499971345,
+      "optimized_seconds": 0.047009726999931445,
+      "speedup": 1.8675578566929667,
+      "different_class_pixels": 0,
+      "different_harvest_pixels": 0
+    },
+    {
+      "size": 1024,
+      "original_seconds": 0.28811256799963303,
+      "optimized_seconds": 0.14701661799972499,
+      "speedup": 1.9597278996050091,
+      "different_class_pixels": 0,
+      "different_harvest_pixels": 0
+    },
+    {
+      "size": 2048,
+      "original_seconds": 1.1447965790002854,
+      "optimized_seconds": 0.5298322709995773,
+      "speedup": 2.160677334433634,
+      "different_class_pixels": 0,
+      "different_harvest_pixels": 0
+    }
+  ],
+  "all_tests_passed": true
+}

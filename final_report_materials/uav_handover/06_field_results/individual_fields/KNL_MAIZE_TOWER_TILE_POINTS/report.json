@@ -1,0 +1,66 @@
+{
+  "source_image": "/content/drive/.shortcut-targets-by-id/1kX-yyUoqNjMeo35ytBRQGse6zf_PkONe/implementation/drought_detection/orthomosaic/KNL_MAIZE_TOWER_TILE_POINTS.jpg",
+  "area_stats": {
+    "gsd_mm_per_pixel": 1.68,
+    "pixel_area_m2": 2.8223999999999994e-06,
+    "altitude_m": 9.62,
+    "valid_field_pixels": 793995225,
+    "valid_field_area_m2": 2241.0,
+    "agricultural_pixels": 664906927,
+    "agricultural_area_m2": 1876.6,
+    "drought_fraction": 0.0007336019226041241,
+    "non_harvest_drought_fraction": 0.0007208560116287174,
+    "per_class": {
+      "background": {
+        "pixels": 379951143,
+        "area_m2": 1072.37
+      },
+      "soil": {
+        "pixels": 85134240,
+        "area_m2": 240.28
+      },
+      "crop": {
+        "pixels": 619302051,
+        "area_m2": 1747.92
+      },
+      "cotton_ball": {
+        "pixels": 99704,
+        "area_m2": 0.28
+      },
+      "green_weed": {
+        "pixels": 43954058,
+        "area_m2": 124.06
+      },
+      "dry_weed": {
+        "pixels": 45017395,
+        "area_m2": 127.06
+      },
+      "drought": {
+        "pixels": 487777,
+        "area_m2": 1.38
+      }
+    },
+    "gsd_source": "Metashape orthomosaic resolution",
+    "gsd_dimensions_match": true,
+    "physical_scale_verified": false,
+    "area_is_estimate": true,
+    "area_requires_review": false
+  },
+  "drought_decision": {
+    "drought": false,
+    "confidence": 0.205,
+    "stress_score": 0.205,
+    "score_is_calibrated_probability": false,
+    "decision_type": "visual_stress_heuristic",
+    "field_confirmation_required": true,
+    "drought_fraction": 0.0007336019226041241,
+    "non_harvest_drought_fraction": 0.0007208560116287174,
+    "largest_cc_share": 0.4195,
+    "signal_1_fraction": false,
+    "signal_2_non_harvest": false,
+    "signal_3_coherent": true,
+    "tau_fraction": 0.15,
+    "tau_non_harvest": 0.1,
+    "tau_cc_share": 0.25
+  }
+}

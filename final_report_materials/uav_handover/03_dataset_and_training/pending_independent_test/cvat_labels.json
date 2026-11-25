@@ -1,0 +1,44 @@
+[
+  {
+    "name": "background",
+    "color": "#000000",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "soil",
+    "color": "#A67C52",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "crop",
+    "color": "#008000",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "cotton_ball",
+    "color": "#FFFFFF",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "green_weed",
+    "color": "#00FF00",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "dry_weed",
+    "color": "#FFD700",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "drought",
+    "color": "#FF0000",
+    "type": "any",
+    "attributes": []
+  }
+]

@@ -1,0 +1,1038 @@
+[
+  {
+    "file": "src/classifier/__init__.py",
+    "lines": 12,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "crossentropy"
+    ]
+  },
+  {
+    "file": "src/classifier/dataset.py",
+    "lines": 394,
+    "classes": [
+      "PatchDataset"
+    ],
+    "functions": [
+      "_make_train_aug",
+      "_make_val_aug",
+      "mixup_pair",
+      "cutmix_pair",
+      "__init__",
+      "get_class_counts",
+      "get_weighted_sampler",
+      "_find_images",
+      "_load_rgb",
+      "_random_confusion_pair_sample",
+      "__len__",
+      "__getitem__"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "dice",
+      "augment",
+      "vegetation",
+      "feature"
+    ]
+  },
+  {
+    "file": "src/classifier/losses.py",
+    "lines": 204,
+    "classes": [
+      "SoftCrossEntropyLoss",
+      "PairwiseMarginLoss",
+      "ClassifierLoss"
+    ],
+    "functions": [
+      "__init__",
+      "forward",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "crossentropy",
+      "dice",
+      "feature",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/classifier/model.py",
+    "lines": 236,
+    "classes": [
+      "PatchScaleEmbedding",
+      "MultiscalePatchClassifier"
+    ],
+    "functions": [
+      "_size_to_bucket",
+      "__init__",
+      "forward",
+      "__init__",
+      "_init_head",
+      "forward",
+      "get_embeddings",
+      "freeze_backbone",
+      "unfreeze_backbone",
+      "get_optimizer_param_groups"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "pretrained",
+      "dice",
+      "adamw",
+      "vegetation",
+      "exg",
+      "feature",
+      "normalize"
+    ]
+  },
+  {
+    "file": "src/classifier/train.py",
+    "lines": 468,
+    "classes": [],
+    "functions": [
+      "compute_metrics",
+      "save_confusion_matrix",
+      "train",
+      "main"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "pretrained",
+      "adamw",
+      "scheduler"
+    ]
+  },
+  {
+    "file": "src/inference/__init__.py",
+    "lines": 8,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": []
+  },
+  {
+    "file": "src/inference/memory_safe_postprocess.py",
+    "lines": 376,
+    "classes": [],
+    "functions": [
+      "blocks",
+      "select_components",
+      "valid_field_mask",
+      "compute_aux_masks",
+      "soften_problematic_pixels",
+      "morphological_cleanup",
+      "tag_harvest_zones",
+      "postprocess"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "normalize",
+      "boundary_cc"
+    ]
+  },
+  {
+    "file": "src/inference/memory_safe_report.py",
+    "lines": 130,
+    "classes": [],
+    "functions": [
+      "drought_decision"
+    ],
+    "matched_keywords": [
+      "boundary_cc"
+    ]
+  },
+  {
+    "file": "src/inference/postprocess.py",
+    "lines": 222,
+    "classes": [],
+    "functions": [
+      "apply_field_mask",
+      "soften_problematic_pixels",
+      "morphological_cleanup",
+      "tag_harvest_zones",
+      "postprocess"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "normalize"
+    ]
+  },
+  {
+    "file": "src/inference/predict.py",
+    "lines": 319,
+    "classes": [],
+    "functions": [
+      "load_orthomosaic",
+      "load_model",
+      "predict",
+      "main"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained"
+    ]
+  },
+  {
+    "file": "src/inference/predict_v11.py",
+    "lines": 465,
+    "classes": [],
+    "functions": [
+      "load_orthomosaic",
+      "load_model",
+      "_use_memory_safe",
+      "_dispatch_postprocess",
+      "_dispatch_drought_decision",
+      "predict",
+      "main"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained"
+    ]
+  },
+  {
+    "file": "src/inference/report.py",
+    "lines": 570,
+    "classes": [],
+    "functions": [
+      "compute_areas",
+      "drought_decision",
+      "make_color_mask",
+      "_draw_legend_panel",
+      "save_mask_png",
+      "save_overlay_jpg",
+      "save_json_report",
+      "save_pdf_report"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "vegetation"
+    ]
+  },
+  {
+    "file": "src/inference/report_before_indexed_png.py",
+    "lines": 539,
+    "classes": [],
+    "functions": [
+      "compute_areas",
+      "drought_decision",
+      "make_color_mask",
+      "_draw_legend_panel",
+      "save_mask_png",
+      "save_overlay_jpg",
+      "save_json_report",
+      "save_pdf_report"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "focal",
+      "vegetation"
+    ]
+  },
+  {
+    "file": "src/inference/tile.py",
+    "lines": 276,
+    "classes": [
+      "TileStitcher"
+    ],
+    "functions": [
+      "_safe_batch_size",
+      "_hann2d",
+      "__init__",
+      "_forward_batch",
+      "run"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "num_classes"
+    ]
+  },
+  {
+    "file": "src/inference/tile_v11.py",
+    "lines": 402,
+    "classes": [
+      "TileStitcher"
+    ],
+    "functions": [
+      "_safe_batch_size",
+      "_hann2d",
+      "__init__",
+      "_forward_batch",
+      "run_full_reference",
+      "run",
+      "finalize_rows"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "num_classes"
+    ]
+  },
+  {
+    "file": "src/inference/tile_v11_before_fp32.py",
+    "lines": 275,
+    "classes": [
+      "TileStitcher"
+    ],
+    "functions": [
+      "_safe_batch_size",
+      "_hann2d",
+      "__init__",
+      "_forward_batch",
+      "run"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "num_classes"
+    ]
+  },
+  {
+    "file": "src/inference/tile_v11_before_weight_removal.py",
+    "lines": 275,
+    "classes": [
+      "TileStitcher"
+    ],
+    "functions": [
+      "_safe_batch_size",
+      "_hann2d",
+      "__init__",
+      "_forward_batch",
+      "run"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "num_classes"
+    ]
+  },
+  {
+    "file": "src/preprocessing/__init__.py",
+    "lines": 58,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "dice",
+      "exg"
+    ]
+  },
+  {
+    "file": "src/preprocessing/boundary_components.py",
+    "lines": 322,
+    "classes": [],
+    "functions": [
+      "analyze",
+      "selected_mask",
+      "find",
+      "union"
+    ],
+    "matched_keywords": []
+  },
+  {
+    "file": "src/preprocessing/disk_components.py",
+    "lines": 195,
+    "classes": [],
+    "functions": [
+      "strip_components",
+      "component_mask",
+      "find",
+      "union"
+    ],
+    "matched_keywords": []
+  },
+  {
+    "file": "src/preprocessing/gsd.py",
+    "lines": 72,
+    "classes": [
+      "CameraIntrinsics"
+    ],
+    "functions": [
+      "gsd_mm_per_pixel",
+      "pixel_area_m2",
+      "pixels_to_m2",
+      "pixels_to_hectares",
+      "_self_test"
+    ],
+    "matched_keywords": [
+      "focal"
+    ]
+  },
+  {
+    "file": "src/preprocessing/indices.py",
+    "lines": 91,
+    "classes": [],
+    "functions": [
+      "_split",
+      "exg",
+      "exgr",
+      "cive",
+      "gli",
+      "ngrdi",
+      "compute_all_indices"
+    ],
+    "matched_keywords": [
+      "dice",
+      "vegetation",
+      "exg",
+      "exr",
+      "normalize"
+    ]
+  },
+  {
+    "file": "src/preprocessing/masks.py",
+    "lines": 146,
+    "classes": [],
+    "functions": [
+      "_rgb_to_hsv_float",
+      "glare_mask",
+      "shadow_mask",
+      "valid_field_mask",
+      "compute_aux_masks"
+    ],
+    "matched_keywords": [
+      "vegetation"
+    ]
+  },
+  {
+    "file": "src/preprocessing/strip_components.py",
+    "lines": 176,
+    "classes": [],
+    "functions": [
+      "strip_components",
+      "component_mask",
+      "find",
+      "union"
+    ],
+    "matched_keywords": []
+  },
+  {
+    "file": "src/preprocessing/tensor_builder.py",
+    "lines": 147,
+    "classes": [],
+    "functions": [
+      "_normalize_rgb",
+      "_rgb_to_v_channel",
+      "build_9channel",
+      "_local_std",
+      "_glcm_contrast_blocked",
+      "_fft_row_periodicity_blocked",
+      "build_12channel"
+    ],
+    "matched_keywords": [
+      "dice",
+      "pseudo",
+      "vegetation",
+      "exg",
+      "vari",
+      "normalize"
+    ]
+  },
+  {
+    "file": "src/pseudo_label/__init__.py",
+    "lines": 11,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "pseudo"
+    ]
+  },
+  {
+    "file": "src/pseudo_label/label.py",
+    "lines": 295,
+    "classes": [],
+    "functions": [
+      "load_image",
+      "save_mask_png",
+      "save_overlay",
+      "save_confidence_png",
+      "compute_class_fractions",
+      "find_unlabeled_images",
+      "label",
+      "main"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "pretrained",
+      "pseudo",
+      "exg"
+    ]
+  },
+  {
+    "file": "src/pseudo_label/postprocess.py",
+    "lines": 230,
+    "classes": [],
+    "functions": [
+      "apply_crf",
+      "apply_structural_overrides",
+      "postprocess_probmap"
+    ],
+    "matched_keywords": [
+      "dice",
+      "pseudo",
+      "exg",
+      "normalize"
+    ]
+  },
+  {
+    "file": "src/pseudo_label/sliding_window.py",
+    "lines": 192,
+    "classes": [
+      "SlidingWindowInference"
+    ],
+    "functions": [
+      "_hann_window_2d",
+      "__init__",
+      "run"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "pseudo"
+    ]
+  },
+  {
+    "file": "src/pseudo_label/viz.py",
+    "lines": 210,
+    "classes": [],
+    "functions": [
+      "apply_palette",
+      "draw_legend_bar",
+      "overlay_with_legend",
+      "add_stat_bar"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "dice",
+      "pseudo"
+    ]
+  },
+  {
+    "file": "src/segmentation/__init__.py",
+    "lines": 15,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "segformer",
+      "dice",
+      "pseudo",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/compositor.py",
+    "lines": 316,
+    "classes": [
+      "SyntheticCompositor"
+    ],
+    "functions": [
+      "__init__",
+      "sample",
+      "_paste_confusion_pair",
+      "_paste_small_cotton",
+      "_paste_random_mix",
+      "_paste_one",
+      "_load_background"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "dice",
+      "pseudo"
+    ]
+  },
+  {
+    "file": "src/segmentation/dataset.py",
+    "lines": 325,
+    "classes": [
+      "CleanMaskDataset",
+      "PseudoLabelDataset",
+      "CompositeDataset",
+      "MixedSegmentationDataset"
+    ],
+    "functions": [
+      "_augment_image_and_mask",
+      "__init__",
+      "__len__",
+      "__getitem__",
+      "__init__",
+      "__len__",
+      "__getitem__",
+      "__init__",
+      "__len__",
+      "__getitem__",
+      "__init__",
+      "set_epoch",
+      "__len__",
+      "__getitem__"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "dice",
+      "pseudo",
+      "augment"
+    ]
+  },
+  {
+    "file": "src/segmentation/eval_calibration_v11.py",
+    "lines": 448,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/eval_confusion_v11.py",
+    "lines": 470,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/eval_dryweed_v11.py",
+    "lines": 450,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/eval_source_independent_v11.py",
+    "lines": 490,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize",
+      "source_id"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/losses.py",
+    "lines": 303,
+    "classes": [
+      "FocalLoss",
+      "DiceLoss",
+      "LovaszSoftmaxLoss",
+      "SegmentationLoss"
+    ],
+    "functions": [
+      "make_class_weights",
+      "_lovasz_grad",
+      "lovasz_softmax_flat",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "num_classes",
+      "crossentropy",
+      "dice",
+      "focal",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/model.py",
+    "lines": 171,
+    "classes": [
+      "SegFormerB2"
+    ],
+    "functions": [
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "vegetation",
+      "feature"
+    ]
+  },
+  {
+    "file": "src/segmentation/model_b3.py",
+    "lines": 171,
+    "classes": [
+      "SegFormerB3"
+    ],
+    "functions": [
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "vegetation",
+      "feature"
+    ]
+  },
+  {
+    "file": "src/segmentation/model_b3_v91.py",
+    "lines": 171,
+    "classes": [
+      "SegFormerB3"
+    ],
+    "functions": [
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "vegetation",
+      "feature"
+    ]
+  },
+  {
+    "file": "src/segmentation/model_deeplab.py",
+    "lines": 25,
+    "classes": [
+      "DeepLabV3Plus"
+    ],
+    "functions": [
+      "__init__",
+      "forward"
+    ],
+    "matched_keywords": [
+      "in_channels",
+      "num_classes",
+      "pretrained"
+    ]
+  },
+  {
+    "file": "src/segmentation/train.py",
+    "lines": 538,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_b3.py",
+    "lines": 536,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_b3_v91.py",
+    "lines": 541,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_before_local_pseudo_fix.py",
+    "lines": 535,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_before_v5_fix.py",
+    "lines": 527,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_deeplab_v10.py",
+    "lines": 544,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_v11.py",
+    "lines": 538,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/segmentation/train_v12.py",
+    "lines": 538,
+    "classes": [],
+    "functions": [
+      "collate_fn",
+      "compute_iou_per_class",
+      "update_confusion",
+      "save_prediction_overlay",
+      "train",
+      "main",
+      "colorize"
+    ],
+    "matched_keywords": [
+      "segformer",
+      "in_channels",
+      "num_classes",
+      "pretrained",
+      "dice",
+      "focal",
+      "adamw",
+      "scheduler",
+      "pseudo",
+      "augment",
+      "normalize",
+      "class_weights"
+    ]
+  },
+  {
+    "file": "src/utils/__init__.py",
+    "lines": 22,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "num_classes"
+    ]
+  },
+  {
+    "file": "src/utils/constants.py",
+    "lines": 61,
+    "classes": [],
+    "functions": [],
+    "matched_keywords": [
+      "num_classes",
+      "pseudo",
+      "vegetation"
+    ]
+  }
+]

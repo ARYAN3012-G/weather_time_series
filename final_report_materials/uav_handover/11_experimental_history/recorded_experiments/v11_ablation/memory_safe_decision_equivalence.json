@@ -1,0 +1,120 @@
+{
+  "total_tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "decision_thresholds_unchanged": true,
+  "results": [
+    {
+      "case": "no_drought",
+      "pixels": 359613,
+      "reference_seconds": 0.0015857010000672744,
+      "optimized_seconds": 0.0001737950000233468,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "all_drought",
+      "pixels": 359613,
+      "reference_seconds": 0.0015909609999198437,
+      "optimized_seconds": 0.007873823999943852,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "single_drought_pixel",
+      "pixels": 359613,
+      "reference_seconds": 0.0008064679999506552,
+      "optimized_seconds": 0.003067792000024383,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "all_background",
+      "pixels": 359613,
+      "reference_seconds": 0.0008068979999507064,
+      "optimized_seconds": 0.00015049800003907876,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "all_soil",
+      "pixels": 359613,
+      "reference_seconds": 0.0007973500000844069,
+      "optimized_seconds": 0.00015849899989461846,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "random_classes",
+      "pixels": 1575425,
+      "reference_seconds": 0.038600100999929055,
+      "optimized_seconds": 0.065595526999914,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "cross_strip_drought",
+      "pixels": 1575425,
+      "reference_seconds": 0.0035165750000487606,
+      "optimized_seconds": 0.015981759000055717,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "distributed_drought",
+      "pixels": 1575425,
+      "reference_seconds": 0.05212803899996743,
+      "optimized_seconds": 0.08529643800000031,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "harvest_with_drought",
+      "pixels": 1575425,
+      "reference_seconds": 0.01387147500008723,
+      "optimized_seconds": 0.034118250999995325,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F1_ORTHO_30_05",
+      "pixels": 1048576,
+      "reference_seconds": 0.0018746250000276632,
+      "optimized_seconds": 0.0003934559999834164,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F3_OTHOMOSAIC 31",
+      "pixels": 1048576,
+      "reference_seconds": 0.001931710999997449,
+      "optimized_seconds": 0.00042862400005105883,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F4_ORTHO_30_05",
+      "pixels": 1048576,
+      "reference_seconds": 0.001864513999976225,
+      "optimized_seconds": 0.0004002749999472144,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F6_ORTHO_30_05",
+      "pixels": 1048576,
+      "reference_seconds": 0.001838604999989002,
+      "optimized_seconds": 0.00039656000001286884,
+      "differences": {},
+      "status": "PASS"
+    },
+    {
+      "case": "PEDHAKADUBUR_F7_ORTHO_30_05",
+      "pixels": 1048576,
+      "reference_seconds": 0.0018473749998975109,
+      "optimized_seconds": 0.0003962609999916822,
+      "differences": {},
+      "status": "PASS"
+    }
+  ]
+}

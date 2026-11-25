@@ -1,0 +1,87 @@
+[
+  {
+    "category": "01_model_architecture",
+    "source": "src/segmentation/model.py",
+    "lines": 171
+  },
+  {
+    "category": "02_feature_engineering",
+    "source": "src/preprocessing/indices.py",
+    "lines": 91
+  },
+  {
+    "category": "02_feature_engineering",
+    "source": "src/preprocessing/tensor_builder.py",
+    "lines": 147
+  },
+  {
+    "category": "02_feature_engineering",
+    "source": "src/preprocessing/masks.py",
+    "lines": 146
+  },
+  {
+    "category": "03_training_methodology",
+    "source": "src/segmentation/train_v11.py",
+    "lines": 538
+  },
+  {
+    "category": "03_training_methodology",
+    "source": "src/segmentation/losses.py",
+    "lines": 303
+  },
+  {
+    "category": "03_training_methodology",
+    "source": "src/segmentation/dataset.py",
+    "lines": 325
+  },
+  {
+    "category": "03_training_methodology",
+    "source": "src/segmentation/compositor.py",
+    "lines": 316
+  },
+  {
+    "category": "04_pseudo_labeling",
+    "source": "src/pseudo_label/label.py",
+    "lines": 295
+  },
+  {
+    "category": "05_calibration",
+    "source": "src/segmentation/eval_calibration_v11.py",
+    "lines": 448
+  },
+  {
+    "category": "06_inference_and_optimization",
+    "source": "src/inference/predict_v11.py",
+    "lines": 465
+  },
+  {
+    "category": "06_inference_and_optimization",
+    "source": "src/inference/tile_v11.py",
+    "lines": 402
+  },
+  {
+    "category": "06_inference_and_optimization",
+    "source": "src/inference/postprocess.py",
+    "lines": 222
+  },
+  {
+    "category": "06_inference_and_optimization",
+    "source": "src/inference/memory_safe_postprocess.py",
+    "lines": 376
+  },
+  {
+    "category": "06_inference_and_optimization",
+    "source": "src/inference/memory_safe_report.py",
+    "lines": 130
+  },
+  {
+    "category": "07_area_and_reporting",
+    "source": "src/preprocessing/gsd.py",
+    "lines": 72
+  },
+  {
+    "category": "07_area_and_reporting",
+    "source": "src/inference/report.py",
+    "lines": 570
+  }
+]

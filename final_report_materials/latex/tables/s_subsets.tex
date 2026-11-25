@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Satellite module: 15-day crop-condition forecast by field type and season (test 2025--2026, \mf; last column onset ROC-AUC of version 3).}
+\label{tab:s_subsets}
+\footnotesize
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Subset} & \textbf{Persistence} & \textbf{Sat.\ RF} & \textbf{Sat.\ XGB} & \textbf{+ wx forecast XGB} & \textbf{Weather only} & \textbf{Onset AUC} \\
+\midrule
+All fields & 0.648 & 0.679 & 0.667 & 0.675 & 0.404 & 0.76 \\
+Rainfed fields & 0.617 & 0.667 & 0.655 & 0.663 & 0.407 & 0.75 \\
+Irrigated fields & 0.685 & 0.693 & 0.682 & 0.690 & 0.394 & 0.78 \\
+Kharif targets (Jun--Nov) & 0.608 & 0.656 & 0.628 & 0.632 & 0.329 & 0.73 \\
+Rabi targets (Dec--Mar) & 0.654 & 0.659 & 0.660 & 0.673 & 0.357 & 0.77 \\
+2026 drought season (Jul--Nov) & 0.547 & 0.618 & 0.577 & 0.550 & 0.167 & 0.67 \\
+\bottomrule
+\end{tabular}
+\end{table}
