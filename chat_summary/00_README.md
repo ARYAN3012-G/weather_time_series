@@ -63,7 +63,12 @@ python -I ../chat_summary/tools/make_zip.py
 ## Rules to remember (from the chat)
 
 - **Security:** the CDS API token is in `C:\Users\aryan\.cdsapirc`. Never paste or commit it.
-- **Git:** never commit or push without explicit permission. Nothing from this chat was committed. `final_report_materials/` and `rabi_module_v2/` are not in git.
+- **Git:** never commit or push without explicit permission. At the end of the chat (25 Nov 2026) everything was pushed with permission:
+  - `weather_time_series` (main): `final_report_materials/` + `chat_summary/`
+  - `Rabi-Drought-Monitoring-`, branch `rabi-drought-v2`: drought2 soil indicator
+  - `Rabi-Drought-Monitoring-`, branch `rabi-combined-v2`: rabi_module_v2 (detect_v6, MODIS test, combined)
+  - `Sentinel2-Drought-Confirmation`: was already up to date
+  - Not pushed: `output/` (old pre-v2 report build).
 - **Honesty:** don't overclaim.
   - Validation is not independent testing.
   - RGB drone images show visual stress, not its cause.
