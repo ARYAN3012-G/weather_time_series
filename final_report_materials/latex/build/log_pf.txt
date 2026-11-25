@@ -440,9 +440,7 @@ as in
 Overfull \vbox (5.43466pt too high) detected at line 424
 [16]
 Overfull \vbox (6.05185pt too high) detected at line 460
-[17]
-Overfull \vbox (2.12949pt too high) detected at line 510
-[18] [19]
+[17] [18] [19]
 Overfull \vbox (2.62065pt too high) detected at line 563
 [20 <./figures/prof/lawnmower_path.png (PNG copy)> <./figures/prof/p11_0.png (P
 NG copy)> <./figures/prof/p11_2.png (PNG copy)> <./figures/prof/ortho_cotton.pn
@@ -488,7 +486,7 @@ aryan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
 amsfonts/cm/cmsy9.pfb><C:/Users/aryan/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msam7.pfb>
 Output written on c:\Users\aryan\OneDrive\Desktop\weather_module\final_report_m
-aterials\latex\build\pres_check.pdf (29 pages, 11705505 bytes).
+aterials\latex\build\pres_check.pdf (29 pages, 11705402 bytes).
 Transcript written on c:\Users\aryan\OneDrive\Desktop\weather_module\final_repo
 rt_materials\latex\build\pres_check.log.
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.

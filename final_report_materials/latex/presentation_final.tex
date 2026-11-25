@@ -478,17 +478,17 @@ SPEI (rain-based) & 0.60 & $+0.44$ \\
 \end{card}
 \column{0.49\textwidth}
 \begin{card}{Field level: 30 days ahead (test 2023--25)}
-\footnotesize
-\renewcommand{\arraystretch}{1.12}
-\begin{tabularx}{\linewidth}{@{}Ycc@{}}
-\toprule
-\textbf{Warnings from} & \textbf{Precision} & \textbf{Caught} \\ \midrule
-Random guess & 0.24 & -- \\
-Random forest, all & 0.54 & 30 / 108 \\
-\textbf{Random forest, dry soil} & \textbf{0.67} & 20 / 108 \\
-\bottomrule
-\end{tabularx}\\[3pt]
-{\scriptsize\raggedright\color{muted} Precision = share of warnings that were right. Warnings come 16 days before drying.\par}
+\centering
+\begin{minipage}[t]{0.49\linewidth}\centering
+{\color{accent}\bfseries\normalsize 54\% precision}\\[-1pt]{\scriptsize\color{muted} random guess: 24\%}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}\centering
+{\color{accent}\bfseries\normalsize 16 days}\\[-1pt]{\scriptsize\color{muted} early warning}
+\end{minipage}\\[8pt]
+\begin{minipage}{0.95\linewidth}\centering\footnotesize
+\textbf{67\% precision} when the soil is dry\\[2pt]
+\textbf{30 of 108} drying events caught
+\end{minipage}
 \end{card}
 \end{columns}
 \vspace{1mm}
@@ -498,12 +498,12 @@ Random forest, all & 0.54 & 30 / 108 \\
 \footnotesize For rabi, \textbf{soil moisture} predicts crop loss better than rain (0.80 vs 0.60), and a soil check makes field warnings more reliable.
 \end{keycard}
 \column{0.49\textwidth}
-\begin{warncard}{Why field numbers are low}
+\begin{warncard}{Why it misses events}
 \scriptsize\raggedright
 \begin{itemize}
-\item Few, sure warnings (each = a drone trip), so many events missed
-\item Harvest also lowers greenness: wet-soil warnings are mostly harvest
-\item Only 2023 was dry; 2024--25 were wet
+\item Warns only when sure: each warning = a drone trip
+\item Harvest also lowers greenness (looks like drought)
+\item Only 2023 was a dry test season
 \end{itemize}
 \end{warncard}
 \end{columns}
